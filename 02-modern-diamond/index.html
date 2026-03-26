@@ -3,497 +3,387 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ornate Fine Jewellery | Pune's Most Trusted Jeweller Since 1987</title>
-<meta name="description" content="Ornate Fine Jewellery — BIS Hallmarked gold, diamond & bridal jewellery in Pune. 37 years of legacy. Custom design studio. Exchange & buyback guaranteed.">
+<title>Radiance Diamonds | Pune's Diamond Specialists</title>
+<meta name="description" content="Radiance Diamonds — Pune's dedicated diamond jewellery store. Solitaires, engagement rings, lab-grown diamonds. GIA/IGI certified. Free resizing for life.">
 <style>
   :root {
-    --gold: #C9A84C;
-    --gold-light: #E8C87A;
-    --gold-dark: #9B7A2F;
-    --deep: #1A1008;
-    --dark: #0F0A05;
-    --warm: #2D1F0A;
-    --cream: #F5EDD6;
-    --text: #E8DCC8;
-    --muted: #9A8870;
+    --blue: #1A3A6B;
+    --blue-light: #2A5AAB;
+    --ice: #E8F0F8;
+    --white: #FFFFFF;
+    --silver: #C0C8D4;
+    --dark: #0A1628;
+    --text: #D0DCE8;
+    --accent: #4A90D9;
+    --diamond: #B8D4F0;
   }
-  * { margin:0; padding:0; box-sizing:border-box; }
-  body { font-family:'Georgia',serif; background:var(--dark); color:var(--text); overflow-x:hidden; }
-  
-  /* NAV */
-  nav { position:fixed; top:0; width:100%; z-index:100; background:rgba(15,10,5,0.97); border-bottom:1px solid rgba(201,168,76,0.2); padding:16px 40px; display:flex; justify-content:space-between; align-items:center; }
-  .nav-logo { font-size:1.4rem; color:var(--gold); letter-spacing:3px; text-transform:uppercase; font-weight:normal; }
-  .nav-logo span { font-size:0.7rem; display:block; letter-spacing:6px; color:var(--muted); text-transform:uppercase; }
-  .nav-links { display:flex; gap:32px; list-style:none; }
-  .nav-links a { color:var(--muted); text-decoration:none; font-size:0.85rem; letter-spacing:2px; text-transform:uppercase; font-family:Arial,sans-serif; transition:color 0.3s; }
-  .nav-links a:hover { color:var(--gold); }
-  .nav-cta { background:transparent; border:1px solid var(--gold); color:var(--gold); padding:10px 24px; font-size:0.8rem; letter-spacing:2px; text-transform:uppercase; cursor:pointer; font-family:Arial,sans-serif; transition:all 0.3s; }
-  .nav-cta:hover { background:var(--gold); color:var(--dark); }
-
-  /* HERO */
-  .hero { min-height:100vh; display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden; background: radial-gradient(ellipse at 30% 50%, rgba(201,168,76,0.08) 0%, transparent 60%), radial-gradient(ellipse at 70% 80%, rgba(155,122,47,0.06) 0%, transparent 50%), var(--dark); }
-  .hero-particles { position:absolute; inset:0; overflow:hidden; }
-  .particle { position:absolute; width:2px; height:2px; background:var(--gold); border-radius:50%; opacity:0; animation:sparkle 4s infinite; }
-  @keyframes sparkle { 0%,100%{opacity:0;transform:scale(0)} 50%{opacity:0.8;transform:scale(1)} }
-  .hero-ornament { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:600px; height:600px; border:1px solid rgba(201,168,76,0.08); border-radius:50%; animation:rotate 30s linear infinite; }
-  .hero-ornament::before { content:''; position:absolute; inset:30px; border:1px solid rgba(201,168,76,0.05); border-radius:50%; }
-  .hero-ornament::after { content:''; position:absolute; inset:60px; border:1px solid rgba(201,168,76,0.03); border-radius:50%; }
-  @keyframes rotate { from{transform:translate(-50%,-50%) rotate(0deg)} to{transform:translate(-50%,-50%) rotate(360deg)} }
-  .hero-content { position:relative; z-index:2; text-align:center; max-width:800px; padding:120px 20px 80px; }
-  .hero-badge { display:inline-block; border:1px solid rgba(201,168,76,0.4); padding:8px 24px; font-size:0.7rem; letter-spacing:4px; text-transform:uppercase; color:var(--gold); font-family:Arial,sans-serif; margin-bottom:40px; }
-  .hero h1 { font-size:clamp(2.8rem,5vw,4.5rem); font-weight:normal; line-height:1.15; color:var(--cream); margin-bottom:8px; }
-  .hero h1 em { font-style:italic; color:var(--gold); }
-  .hero-sub { font-size:1rem; color:var(--muted); letter-spacing:3px; text-transform:uppercase; font-family:Arial,sans-serif; margin-bottom:32px; }
-  .hero p { font-size:1.1rem; color:var(--text); opacity:0.8; line-height:1.8; margin-bottom:48px; max-width:580px; margin-left:auto; margin-right:auto; }
-  .hero-actions { display:flex; gap:20px; justify-content:center; flex-wrap:wrap; }
-  .btn-primary { background:var(--gold); color:var(--dark); padding:16px 40px; font-size:0.85rem; letter-spacing:3px; text-transform:uppercase; border:none; cursor:pointer; font-family:Arial,sans-serif; font-weight:600; transition:all 0.3s; }
-  .btn-primary:hover { background:var(--gold-light); transform:translateY(-2px); }
-  .btn-outline { background:transparent; color:var(--gold); border:1px solid var(--gold); padding:16px 40px; font-size:0.85rem; letter-spacing:3px; text-transform:uppercase; cursor:pointer; font-family:Arial,sans-serif; transition:all 0.3s; }
-  .btn-outline:hover { background:rgba(201,168,76,0.1); }
-
-  /* TRUST BAR */
-  .trust-bar { background:var(--warm); border-top:1px solid rgba(201,168,76,0.15); border-bottom:1px solid rgba(201,168,76,0.15); padding:24px 40px; display:flex; justify-content:center; gap:60px; flex-wrap:wrap; }
-  .trust-item { text-align:center; }
-  .trust-num { font-size:1.8rem; color:var(--gold); font-weight:normal; display:block; }
-  .trust-label { font-size:0.7rem; color:var(--muted); letter-spacing:2px; text-transform:uppercase; font-family:Arial,sans-serif; margin-top:4px; }
-
-  /* SECTION */
-  section { padding:100px 40px; max-width:1200px; margin:0 auto; }
-  .section-header { text-align:center; margin-bottom:70px; }
-  .section-tag { font-size:0.7rem; letter-spacing:4px; text-transform:uppercase; color:var(--gold); font-family:Arial,sans-serif; margin-bottom:16px; display:block; }
-  .section-title { font-size:clamp(2rem,3vw,2.8rem); font-weight:normal; color:var(--cream); margin-bottom:16px; }
-  .section-line { width:60px; height:1px; background:var(--gold); margin:0 auto 20px; }
-  .section-desc { font-size:1rem; color:var(--muted); line-height:1.8; max-width:560px; margin:0 auto; font-family:Arial,sans-serif; }
-
-  /* COLLECTIONS */
-  .collections-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:2px; }
-  .collection-card { position:relative; overflow:hidden; cursor:pointer; }
-  .collection-visual { height:380px; display:flex; align-items:center; justify-content:center; position:relative; transition:transform 0.6s; }
-  .collection-card:hover .collection-visual { transform:scale(1.03); }
-  .collection-icon { font-size:5rem; opacity:0.6; }
-  .collection-overlay { position:absolute; inset:0; background:linear-gradient(to top, rgba(15,10,5,0.9) 0%, transparent 50%); display:flex; flex-direction:column; justify-content:flex-end; padding:32px; }
-  .collection-name { font-size:1.4rem; color:var(--cream); margin-bottom:8px; }
-  .collection-count { font-size:0.75rem; letter-spacing:2px; text-transform:uppercase; color:var(--gold); font-family:Arial,sans-serif; }
-  .c1 { background:linear-gradient(135deg, #2D1F0A 0%, #3D2A0F 100%); }
-  .c2 { background:linear-gradient(135deg, #0A0F1A 0%, #0F1A2D 100%); }
-  .c3 { background:linear-gradient(135deg, #1A0A10 0%, #2D0F1A 100%); }
-  .c4 { background:linear-gradient(135deg, #0A1A15 0%, #0F2D22 100%); }
-
-  /* SERVICES */
-  .services-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:2px; }
-  .service-card { background:var(--warm); padding:48px 36px; border:1px solid rgba(201,168,76,0.1); transition:all 0.3s; position:relative; overflow:hidden; }
-  .service-card::before { content:''; position:absolute; top:0; left:0; width:100%; height:2px; background:var(--gold); transform:scaleX(0); transition:transform 0.4s; }
-  .service-card:hover { border-color:rgba(201,168,76,0.3); transform:translateY(-4px); }
-  .service-card:hover::before { transform:scaleX(1); }
-  .service-icon { font-size:2.5rem; margin-bottom:24px; display:block; }
-  .service-title { font-size:1.2rem; color:var(--cream); margin-bottom:12px; font-weight:normal; }
-  .service-desc { font-size:0.9rem; color:var(--muted); line-height:1.8; font-family:Arial,sans-serif; }
-
-  /* WHY US */
-  .why-grid { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; }
-  .why-visual { position:relative; }
-  .why-frame { border:1px solid rgba(201,168,76,0.2); padding:60px; text-align:center; position:relative; }
-  .why-frame::before, .why-frame::after { content:''; position:absolute; width:20px; height:20px; border-color:var(--gold); border-style:solid; }
-  .why-frame::before { top:12px; left:12px; border-width:1px 0 0 1px; }
-  .why-frame::after { bottom:12px; right:12px; border-width:0 1px 1px 0; }
-  .why-icon-large { font-size:8rem; opacity:0.4; }
-  .why-list { list-style:none; }
-  .why-item { display:flex; gap:20px; padding:24px 0; border-bottom:1px solid rgba(201,168,76,0.1); }
-  .why-item:last-child { border:none; }
-  .why-check { color:var(--gold); font-size:1.2rem; flex-shrink:0; margin-top:4px; }
-  .why-item-title { font-size:1rem; color:var(--cream); margin-bottom:6px; }
-  .why-item-text { font-size:0.85rem; color:var(--muted); line-height:1.7; font-family:Arial,sans-serif; }
-
-  /* TESTIMONIALS */
-  .testimonials-full { background:var(--warm); padding:100px 40px; }
-  .testimonials-inner { max-width:1200px; margin:0 auto; }
-  .testi-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:2px; margin-top:60px; }
-  .testi-card { background:var(--dark); padding:44px 36px; position:relative; }
-  .testi-card::before { content:'"'; position:absolute; top:20px; left:28px; font-size:6rem; color:rgba(201,168,76,0.1); line-height:1; }
-  .testi-stars { color:var(--gold); font-size:1rem; margin-bottom:20px; letter-spacing:2px; }
-  .testi-text { font-size:0.95rem; color:var(--text); line-height:1.9; margin-bottom:28px; font-style:italic; }
-  .testi-author { display:flex; align-items:center; gap:16px; }
-  .testi-avatar { width:44px; height:44px; border-radius:50%; background:linear-gradient(135deg,var(--gold-dark),var(--gold)); display:flex; align-items:center; justify-content:center; font-size:1.1rem; color:var(--dark); font-weight:bold; font-family:Arial,sans-serif; flex-shrink:0; }
-  .testi-name { font-size:0.9rem; color:var(--cream); margin-bottom:2px; }
-  .testi-detail { font-size:0.75rem; color:var(--gold); font-family:Arial,sans-serif; letter-spacing:1px; }
-
-  /* PROCESS */
-  .process-steps { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:0; position:relative; }
-  .process-steps::before { content:''; position:absolute; top:40px; left:10%; right:10%; height:1px; background:rgba(201,168,76,0.2); }
-  .step { text-align:center; padding:0 20px; position:relative; z-index:1; }
-  .step-num { width:80px; height:80px; border-radius:50%; background:var(--dark); border:1px solid var(--gold); display:flex; align-items:center; justify-content:center; margin:0 auto 24px; font-size:1.5rem; color:var(--gold); }
-  .step-title { font-size:1rem; color:var(--cream); margin-bottom:10px; }
-  .step-text { font-size:0.82rem; color:var(--muted); line-height:1.7; font-family:Arial,sans-serif; }
-
-  /* CTA */
-  .cta-full { background:linear-gradient(135deg, var(--warm) 0%, rgba(201,168,76,0.08) 50%, var(--warm) 100%); border-top:1px solid rgba(201,168,76,0.15); border-bottom:1px solid rgba(201,168,76,0.15); padding:100px 40px; text-align:center; }
-  .cta-title { font-size:clamp(2rem,3.5vw,3rem); color:var(--cream); margin-bottom:16px; font-weight:normal; }
-  .cta-sub { font-size:0.95rem; color:var(--muted); margin-bottom:40px; font-family:Arial,sans-serif; line-height:1.8; max-width:520px; margin-left:auto; margin-right:auto; }
-  .cta-actions { display:flex; gap:20px; justify-content:center; flex-wrap:wrap; }
-
-  /* FOOTER */
-  footer { background:var(--deep); padding:60px 40px 30px; }
-  .footer-inner { max-width:1200px; margin:0 auto; }
-  .footer-top { display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:48px; margin-bottom:48px; }
-  .footer-brand { font-size:1.2rem; color:var(--gold); letter-spacing:3px; text-transform:uppercase; margin-bottom:16px; }
-  .footer-brand span { font-size:0.6rem; display:block; letter-spacing:4px; color:var(--muted); margin-top:2px; }
-  .footer-text { font-size:0.85rem; color:var(--muted); line-height:1.8; font-family:Arial,sans-serif; }
-  .footer-heading { font-size:0.7rem; letter-spacing:3px; text-transform:uppercase; color:var(--gold); font-family:Arial,sans-serif; margin-bottom:20px; }
-  .footer-links { list-style:none; }
-  .footer-links li { margin-bottom:10px; }
-  .footer-links a { font-size:0.85rem; color:var(--muted); text-decoration:none; font-family:Arial,sans-serif; transition:color 0.3s; }
-  .footer-links a:hover { color:var(--gold); }
-  .footer-bottom { border-top:1px solid rgba(201,168,76,0.1); padding-top:24px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; }
-  .footer-copy { font-size:0.8rem; color:var(--muted); font-family:Arial,sans-serif; }
-  .footer-cert { font-size:0.8rem; color:var(--gold); font-family:Arial,sans-serif; letter-spacing:1px; }
-
-  @media(max-width:768px) {
-    nav { padding:14px 20px; }
-    .nav-links, .nav-cta { display:none; }
-    section { padding:70px 20px; }
-    .why-grid { grid-template-columns:1fr; }
-    .footer-top { grid-template-columns:1fr 1fr; }
-    .trust-bar { gap:30px; }
-    .process-steps::before { display:none; }
-  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:'Segoe UI',Arial,sans-serif;background:var(--dark);color:var(--text);overflow-x:hidden;}
+  nav{position:fixed;top:0;width:100%;z-index:100;background:rgba(10,22,40,0.97);backdrop-filter:blur(20px);border-bottom:1px solid rgba(74,144,217,0.2);padding:16px 40px;display:flex;justify-content:space-between;align-items:center;}
+  .logo{font-size:1.4rem;font-weight:300;color:var(--white);letter-spacing:4px;text-transform:uppercase;}
+  .logo b{color:var(--accent);font-weight:700;}
+  .logo span{font-size:0.6rem;display:block;color:var(--silver);letter-spacing:3px;margin-top:2px;}
+  .nav-links{display:flex;gap:32px;list-style:none;}
+  .nav-links a{color:var(--silver);text-decoration:none;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;transition:color 0.3s;}
+  .nav-links a:hover{color:var(--accent);}
+  .nav-btn{background:var(--accent);color:var(--white);border:none;padding:10px 24px;font-size:0.8rem;letter-spacing:1px;text-transform:uppercase;cursor:pointer;transition:all 0.3s;border-radius:2px;}
+  .nav-btn:hover{background:var(--blue-light);}
+  .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;background:radial-gradient(ellipse at 20% 50%,rgba(74,144,217,0.12),transparent 60%),radial-gradient(ellipse at 80% 20%,rgba(26,58,107,0.15),transparent 50%),var(--dark);position:relative;overflow:hidden;}
+  .diamond-bg{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0.03;}
+  .diamond-bg span{font-size:40rem;user-select:none;}
+  .hero-content{position:relative;z-index:2;text-align:center;max-width:820px;padding:120px 20px 80px;}
+  .hero-badge{display:inline-flex;align-items:center;gap:12px;background:rgba(74,144,217,0.1);border:1px solid rgba(74,144,217,0.3);padding:10px 24px;font-size:0.72rem;letter-spacing:3px;text-transform:uppercase;color:var(--accent);margin-bottom:40px;border-radius:30px;}
+  .hero h1{font-size:clamp(2.5rem,5vw,4rem);font-weight:300;color:var(--white);line-height:1.2;margin-bottom:24px;}
+  .hero h1 strong{font-weight:700;background:linear-gradient(135deg,var(--accent),var(--diamond));-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+  .hero p{font-size:1.05rem;color:var(--silver);line-height:1.8;margin-bottom:48px;max-width:560px;margin-left:auto;margin-right:auto;}
+  .hero-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
+  .btn-a{background:linear-gradient(135deg,var(--accent),var(--blue-light));color:var(--white);border:none;padding:16px 40px;font-size:0.88rem;letter-spacing:2px;text-transform:uppercase;cursor:pointer;border-radius:3px;font-weight:600;transition:all 0.3s;}
+  .btn-a:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(74,144,217,0.3);}
+  .btn-b{background:transparent;color:var(--accent);border:1px solid var(--accent);padding:16px 40px;font-size:0.88rem;letter-spacing:2px;text-transform:uppercase;cursor:pointer;border-radius:3px;transition:all 0.3s;}
+  .btn-b:hover{background:rgba(74,144,217,0.1);}
+  .stats-row{display:flex;gap:48px;justify-content:center;margin-top:60px;flex-wrap:wrap;}
+  .stat{text-align:center;}
+  .stat-n{font-size:2rem;color:var(--accent);font-weight:300;}
+  .stat-l{font-size:0.7rem;color:var(--silver);letter-spacing:2px;text-transform:uppercase;margin-top:4px;}
+  section{padding:90px 40px;max-width:1200px;margin:0 auto;}
+  .sh{text-align:center;margin-bottom:60px;}
+  .st{font-size:0.7rem;color:var(--accent);letter-spacing:3px;text-transform:uppercase;margin-bottom:12px;display:block;}
+  .sh h2{font-size:clamp(1.8rem,3vw,2.6rem);font-weight:300;color:var(--white);margin-bottom:12px;}
+  .sh h2 b{font-weight:700;}
+  .sh-line{width:50px;height:2px;background:linear-gradient(90deg,transparent,var(--accent),transparent);margin:0 auto 16px;}
+  .sh p{font-size:0.9rem;color:var(--silver);line-height:1.8;max-width:500px;margin:0 auto;}
+  .products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:2px;}
+  .product-card{background:rgba(26,58,107,0.2);border:1px solid rgba(74,144,217,0.1);padding:0;overflow:hidden;transition:all 0.3s;cursor:pointer;}
+  .product-card:hover{border-color:rgba(74,144,217,0.4);transform:translateY(-4px);box-shadow:0 20px 40px rgba(74,144,217,0.1);}
+  .product-img{height:240px;display:flex;align-items:center;justify-content:center;font-size:5rem;background:linear-gradient(135deg,rgba(26,58,107,0.5),rgba(10,22,40,0.8));}
+  .product-info{padding:24px;}
+  .product-badge{display:inline-block;background:rgba(74,144,217,0.15);color:var(--accent);padding:4px 12px;font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;border-radius:2px;}
+  .product-name{font-size:1rem;color:var(--white);font-weight:300;margin-bottom:8px;}
+  .product-meta{font-size:0.8rem;color:var(--silver);line-height:1.6;}
+  .features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;}
+  .feat{background:rgba(26,58,107,0.15);border:1px solid rgba(74,144,217,0.1);padding:36px 28px;border-radius:4px;transition:all 0.3s;}
+  .feat:hover{border-color:rgba(74,144,217,0.3);}
+  .feat-icon{font-size:2rem;margin-bottom:16px;display:block;}
+  .feat h3{font-size:1rem;color:var(--white);font-weight:400;margin-bottom:10px;}
+  .feat p{font-size:0.85rem;color:var(--silver);line-height:1.7;}
+  .compare-table{width:100%;border-collapse:collapse;margin-top:32px;}
+  .compare-table th{background:rgba(74,144,217,0.15);padding:16px 20px;text-align:left;font-size:0.75rem;color:var(--accent);letter-spacing:2px;text-transform:uppercase;font-weight:600;border-bottom:2px solid rgba(74,144,217,0.3);}
+  .compare-table td{padding:14px 20px;font-size:0.88rem;color:var(--text);border-bottom:1px solid rgba(74,144,217,0.1);}
+  .compare-table tr:hover td{background:rgba(74,144,217,0.05);}
+  .check{color:var(--accent);}
+  .cta-sect{background:linear-gradient(135deg,rgba(26,58,107,0.4),rgba(74,144,217,0.1));border:1px solid rgba(74,144,217,0.2);padding:80px 60px;text-align:center;margin:0 40px 80px;}
+  .cta-sect h2{font-size:clamp(1.8rem,3vw,2.8rem);color:var(--white);font-weight:300;margin-bottom:16px;}
+  .cta-sect p{color:var(--silver);margin-bottom:40px;line-height:1.8;max-width:500px;margin-left:auto;margin-right:auto;}
+  footer{background:#060E1A;padding:60px 40px 28px;border-top:1px solid rgba(74,144,217,0.1);}
+  .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;max-width:1200px;margin:0 auto 48px;}
+  .f-logo{font-size:1.1rem;color:var(--white);letter-spacing:3px;text-transform:uppercase;margin-bottom:14px;font-weight:300;}
+  .f-logo b{color:var(--accent);font-weight:700;}
+  .f-text{font-size:0.83rem;color:var(--silver);line-height:1.8;}
+  .fh{font-size:0.68rem;letter-spacing:3px;text-transform:uppercase;color:var(--accent);margin-bottom:18px;}
+  .fl{list-style:none;}
+  .fl li{margin-bottom:8px;}
+  .fl a{font-size:0.83rem;color:var(--silver);text-decoration:none;transition:color 0.3s;}
+  .fl a:hover{color:var(--accent);}
+  .f-bottom{max-width:1200px;margin:0 auto;border-top:1px solid rgba(74,144,217,0.1);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
+  .f-copy{font-size:0.78rem;color:var(--silver);}
+  .f-cert{font-size:0.78rem;color:var(--accent);letter-spacing:1px;}
+  @media(max-width:768px){nav{padding:14px 20px;} .nav-links,.nav-btn{display:none;} section{padding:60px 20px;} .footer-grid{grid-template-columns:1fr 1fr;} .cta-sect{padding:60px 24px;margin:0 20px 60px;}}
 </style>
-</head>
-<body>
 
-<!-- NAV -->
-<nav>
-  <div class="nav-logo">
-    Ornate
-    <span>Fine Jewellery</span>
-  </div>
-  <ul class="nav-links">
-    <li><a href="#">Collections</a></li>
-    <li><a href="#">Bridal</a></li>
-    <li><a href="#">Custom Design</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
-  <button class="nav-cta">Book Appointment</button>
-</nav>
-
-<!-- HERO -->
-<div class="hero">
-  <div class="hero-particles" id="particles"></div>
-  <div class="hero-ornament"></div>
-  <div class="hero-content">
-    <div class="hero-badge">Est. 1987 · Pune's Heritage Jeweller</div>
-    <h1>Crafting <em>Timeless</em><br>Brilliance Since 1987</h1>
-    <p class="hero-sub">BIS Hallmarked · IGI Certified Diamonds · Custom Atelier</p>
-    <p>Three generations of master craftsmanship. Every piece tells a story of love, legacy, and uncompromising quality. From bridal to everyday elegance — jewellery that endures.</p>
-    <div class="hero-actions">
-      <button class="btn-primary">Explore Collections</button>
-      <button class="btn-outline">Book Private Viewing</button>
-    </div>
-  </div>
-</div>
-
-<!-- TRUST BAR -->
-<div class="trust-bar">
-  <div class="trust-item"><span class="trust-num">37</span><span class="trust-label">Years of Legacy</span></div>
-  <div class="trust-item"><span class="trust-num">15,000+</span><span class="trust-label">Families Served</span></div>
-  <div class="trust-item"><span class="trust-num">100%</span><span class="trust-label">BIS Hallmarked</span></div>
-  <div class="trust-item"><span class="trust-num">4</span><span class="trust-label">Showrooms in Pune</span></div>
-  <div class="trust-item"><span class="trust-num">IGI</span><span class="trust-label">Diamond Certified</span></div>
-</div>
-
-<!-- COLLECTIONS -->
-<section>
-  <div class="section-header">
-    <span class="section-tag">Our Collections</span>
-    <h2 class="section-title">Crafted for Every Occasion</h2>
-    <div class="section-line"></div>
-    <p class="section-desc">From intimate everyday wear to grand bridal sets — each collection is a labour of love, crafted by master artisans using the finest metals and stones.</p>
-  </div>
-  <div class="collections-grid">
-    <div class="collection-card">
-      <div class="collection-visual c1">
-        <span class="collection-icon">💍</span>
-        <div class="collection-overlay">
-          <div class="collection-name">Bridal Collection</div>
-          <div class="collection-count">320+ Designs</div>
-        </div>
-      </div>
-    </div>
-    <div class="collection-card">
-      <div class="collection-visual c2">
-        <span class="collection-icon">💎</span>
-        <div class="collection-overlay">
-          <div class="collection-name">Diamond Jewellery</div>
-          <div class="collection-count">IGI Certified · 180+ Pieces</div>
-        </div>
-      </div>
-    </div>
-    <div class="collection-card">
-      <div class="collection-visual c1">
-        <span class="collection-icon">🏺</span>
-        <div class="collection-overlay">
-          <div class="collection-name">Gold Jewellery</div>
-          <div class="collection-count">BIS 916 Hallmarked · 500+ Designs</div>
-        </div>
-      </div>
-    </div>
-    <div class="collection-card">
-      <div class="collection-visual c4">
-        <span class="collection-icon">✨</span>
-        <div class="collection-overlay">
-          <div class="collection-name">Everyday Elegance</div>
-          <div class="collection-count">Light Weight · Daily Wear</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SERVICES -->
-<div style="background:var(--warm); padding:2px 0;">
-<section>
-  <div class="section-header">
-    <span class="section-tag">Services</span>
-    <h2 class="section-title">Beyond Beautiful Jewellery</h2>
-    <div class="section-line"></div>
-    <p class="section-desc">Complete jewellery services under one roof — from design to repair, exchange to certification.</p>
-  </div>
-  <div class="services-grid">
-    <div class="service-card">
-      <span class="service-icon">🎨</span>
-      <h3 class="service-title">Custom Design Studio</h3>
-      <p class="service-desc">Bring your vision to life. Our designers work with you to create bespoke pieces that are uniquely yours — from concept sketch to finished creation in 15–21 days.</p>
-    </div>
-    <div class="service-card">
-      <span class="service-icon">👰</span>
-      <h3 class="service-title">Bridal Stylist</h3>
-      <p class="service-desc">Dedicated bridal consultation. We understand your wedding look, outfit palette, and budget — then curate or create the perfect jewellery ensemble for your special day.</p>
-    </div>
-    <div class="service-card">
-      <span class="service-icon">🔄</span>
-      <h3 class="service-title">Exchange & Upgrade</h3>
-      <p class="service-desc">Transparent exchange rates on old gold and diamond jewellery. No hidden deductions. Upgrade to a new design at fair market value — always.</p>
-    </div>
-    <div class="service-card">
-      <span class="service-icon">🛡️</span>
-      <h3 class="service-title">Repair & Restoration</h3>
-      <p class="service-desc">Expert repair for broken clasps, resizing, rhodium plating, and full restoration of antique heirlooms. Same-day service for minor repairs.</p>
-    </div>
-    <div class="service-card">
-      <span class="service-icon">📋</span>
-      <h3 class="service-title">Free Valuation Certificate</h3>
-      <p class="service-desc">Get a certified valuation report for insurance, gifting, or resale purposes. Conducted by our in-house gemologist — complimentary for all purchases above ₹50,000.</p>
-    </div>
-    <div class="service-card">
-      <span class="service-icon">📦</span>
-      <h3 class="service-title">Gift Concierge</h3>
-      <p class="service-desc">Struggling to choose the perfect gift? Our gift concierge service helps you select, personalise, and deliver jewellery for birthdays, anniversaries, and celebrations.</p>
-    </div>
-  </div>
-</section>
-</div>
-
-<!-- WHY ORNATE -->
-<section>
-  <div class="section-header">
-    <span class="section-tag">Why Choose Ornate</span>
-    <h2 class="section-title">A Legacy Built on Trust</h2>
-    <div class="section-line"></div>
-  </div>
-  <div class="why-grid">
-    <div class="why-visual">
-      <div class="why-frame">
-        <span class="why-icon-large">👑</span>
-        <p style="color:var(--gold);letter-spacing:2px;font-size:0.75rem;text-transform:uppercase;font-family:Arial,sans-serif;margin-top:24px;">37 Years · 3 Generations</p>
-        <p style="color:var(--muted);font-size:0.85rem;font-family:Arial,sans-serif;margin-top:8px;line-height:1.7;">A family business rooted in integrity, built on the trust of 15,000+ Pune families across four decades.</p>
-      </div>
-    </div>
-    <ul class="why-list">
-      <li class="why-item">
-        <span class="why-check">◆</span>
-        <div>
-          <div class="why-item-title">100% BIS Hallmarked Gold</div>
-          <div class="why-item-text">Every gold piece carries BIS Hallmark — the government's purity guarantee. 22KT (916) and 18KT certified. You always know exactly what you're buying.</div>
-        </div>
-      </li>
-      <li class="why-item">
-        <span class="why-check">◆</span>
-        <div>
-          <div class="why-item-title">IGI Certified Diamonds Only</div>
-          <div class="why-item-text">We only sell IGI-certified diamonds with full grading reports. Colour, clarity, cut, carat — all transparently disclosed. No verbal assurances.</div>
-        </div>
-      </li>
-      <li class="why-item">
-        <span class="why-check">◆</span>
-        <div>
-          <div class="why-item-title">Transparent Making Charges</div>
-          <div class="why-item-text">Fixed making charges displayed on every tag. No surprise deductions at billing. What you see is what you pay — always.</div>
-        </div>
-      </li>
-      <li class="why-item">
-        <span class="why-check">◆</span>
-        <div>
-          <div class="why-item-title">Lifetime Exchange Policy</div>
-          <div class="why-item-text">Exchange any Ornate piece at its current gold rate, any time. No time limit. Upgrade your collection as your style evolves.</div>
-        </div>
-      </li>
-      <li class="why-item">
-        <span class="why-check">◆</span>
-        <div>
-          <div class="why-item-title">In-House Gemologist</div>
-          <div class="why-item-text">GIA-trained gemologist on staff. All diamonds graded in-house before purchase. Valuation certificates issued on request.</div>
-        </div>
-      </li>
-    </ul>
-  </div>
-</section>
-
-<!-- CUSTOM DESIGN PROCESS -->
-<div style="background:var(--warm); padding:2px 0;">
-<section>
-  <div class="section-header">
-    <span class="section-tag">Custom Design Process</span>
-    <h2 class="section-title">Your Vision, Our Craftsmanship</h2>
-    <div class="section-line"></div>
-    <p class="section-desc">Creating a bespoke piece has never been simpler. Our 4-step process takes you from idea to heirloom in 15–21 days.</p>
-  </div>
-  <div class="process-steps">
-    <div class="step">
-      <div class="step-num">💭</div>
-      <div class="step-title">Consultation</div>
-      <p class="step-text">Share your vision, inspiration images, occasion, and budget. One-on-one with our senior designer at our studio.</p>
-    </div>
-    <div class="step">
-      <div class="step-num">✏️</div>
-      <div class="step-title">Design Sketch</div>
-      <p class="step-text">Our artisan creates detailed hand-sketches and 3D renders for your approval. Revisions included.</p>
-    </div>
-    <div class="step">
-      <div class="step-num">⚒️</div>
-      <div class="step-title">Crafting</div>
-      <p class="step-text">Master craftsmen handcraft your piece using the finest gold and certified stones. Hallmarked and quality checked.</p>
-    </div>
-    <div class="step">
-      <div class="step-num">🎁</div>
-      <div class="step-title">Delivery</div>
-      <p class="step-text">Your piece is presented in signature Ornate packaging with certification, care guide, and valuation report.</p>
-    </div>
-  </div>
-</section>
-</div>
-
-<!-- TESTIMONIALS -->
-<div class="testimonials-full">
-  <div class="testimonials-inner">
-    <div class="section-header">
-      <span class="section-tag">Testimonials</span>
-      <h2 class="section-title" style="color:var(--cream)">Stories of Trust</h2>
-      <div class="section-line"></div>
-      <p class="section-desc">From bridal moments to everyday elegance — our customers' words mean everything.</p>
-    </div>
-    <div class="testi-grid">
-      <div class="testi-card">
-        <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">My mother bought her wedding set from Ornate in 1994. Thirty years later, I bought mine from the same showroom. The quality, the honesty, the service — everything is exactly as she described. This is what a jewellery legacy looks like.</p>
-        <div class="testi-author">
-          <div class="testi-avatar">P</div>
-          <div>
-            <div class="testi-name">Priya Deshpande</div>
-            <div class="testi-detail">Bridal Customer · Koregaon Park</div>
-          </div>
-        </div>
-      </div>
-      <div class="testi-card">
-        <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">I wanted a completely custom mangalsutra — something modern but with traditional elements. The design team understood exactly what I wanted. The 3D render blew my mind, and the actual piece was even better. Worth every rupee.</p>
-        <div class="testi-author">
-          <div class="testi-avatar">N</div>
-          <div>
-            <div class="testi-name">Neha Kulkarni</div>
-            <div class="testi-detail">Custom Design · Baner</div>
-          </div>
-        </div>
-      </div>
-      <div class="testi-card">
-        <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">The exchange policy is absolutely genuine. I brought old gold that was 25 years old and they gave me the current market rate with no argument. Used it to upgrade my entire collection. Completely transparent from start to finish.</p>
-        <div class="testi-author">
-          <div class="testi-avatar">R</div>
-          <div>
-            <div class="testi-name">Rajesh Joshi</div>
-            <div class="testi-detail">Gold Exchange · Aundh</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- CTA -->
-<div class="cta-full">
-  <h2 class="cta-title">Begin Your Jewellery Journey</h2>
-  <p class="cta-sub">Visit any of our 4 Pune showrooms, or book a private appointment with our senior designer. We bring the showroom to your home for bridal consultations.</p>
-  <div class="cta-actions">
-    <button class="btn-primary">Book Private Appointment</button>
-    <button class="btn-outline">Call: +91 98765 43210</button>
-  </div>
-  <p style="margin-top:32px;font-size:0.8rem;color:var(--muted);font-family:Arial,sans-serif;letter-spacing:1px;">4 Showrooms: Koregaon Park · Baner · Kothrud · Viman Nagar</p>
-</div>
-
-<!-- FOOTER -->
-<footer>
-  <div class="footer-inner">
-    <div class="footer-top">
-      <div>
-        <div class="footer-brand">Ornate <span>Fine Jewellery</span></div>
-        <p class="footer-text">37 years of master craftsmanship and unwavering integrity. BIS Hallmarked gold. IGI Certified diamonds. A legacy built on the trust of 15,000+ Pune families.</p>
-      </div>
-      <div>
-        <div class="footer-heading">Collections</div>
-        <ul class="footer-links">
-          <li><a href="#">Bridal Sets</a></li>
-          <li><a href="#">Diamond Rings</a></li>
-          <li><a href="#">Gold Necklaces</a></li>
-          <li><a href="#">Earrings</a></li>
-          <li><a href="#">Bangles & Kadas</a></li>
-        </ul>
-      </div>
-      <div>
-        <div class="footer-heading">Services</div>
-        <ul class="footer-links">
-          <li><a href="#">Custom Design</a></li>
-          <li><a href="#">Bridal Styling</a></li>
-          <li><a href="#">Gold Exchange</a></li>
-          <li><a href="#">Repairs</a></li>
-          <li><a href="#">Valuation</a></li>
-        </ul>
-      </div>
-      <div>
-        <div class="footer-heading">Contact</div>
-        <ul class="footer-links">
-          <li><a href="#">+91 98765 43210</a></li>
-          <li><a href="#">info@ornatejewellery.in</a></li>
-          <li><a href="#">Koregaon Park</a></li>
-          <li><a href="#">Mon–Sun: 10am–9pm</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span class="footer-copy">© 2026 Ornate Fine Jewellery. All rights reserved.</span>
-      <span class="footer-cert">BIS HALLMARKED · IGI CERTIFIED · SINCE 1987</span>
-    </div>
-  </div>
-</footer>
-
-<script>
-// Generate sparkle particles
-const container = document.getElementById('particles');
-for(let i=0;i<40;i++){
-  const p=document.createElement('div');
-  p.className='particle';
-  p.style.cssText=`left:${Math.random()*100}%;top:${Math.random()*100}%;animation-delay:${Math.random()*4}s;animation-duration:${3+Math.random()*3}s;`;
-  container.appendChild(p);
+<link rel="canonical" href="https://radiancediamondspune.in/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=1200&h=630&fit=crop">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "JewelryStore",
+  "name": "Radiance Diamonds",
+  "description": "Certified Diamond Jewellery Specialists in Pune Since 2004",
+  "url": "https://radiancediamondspune.in/",
+  "telephone": "+919876543211",
+  "email": "hello@radiancediamonds.in",
+  "priceRange": "₹₹₹₹",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "FC Road, Near Goodluck Chowk",
+    "addressLocality": "Deccan, Pune",
+    "addressRegion": "Maharashtra",
+    "postalCode": "411004",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "18.5180",
+    "longitude": "73.8394"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "bestRating": "5",
+    "ratingCount": "1560"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Mo-Sa"
+      ],
+      "opens": "10:30",
+      "closes": "20:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Su"
+      ],
+      "opens": "11:00",
+      "closes": "16:00"
+    }
+  ],
+  "image": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=1200&h=630&fit=crop"
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Are the diamonds at Radiance Diamonds GIA certified in Pune?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, all diamonds above 0.30 carats come with GIA or IGI certification guaranteeing cut, clarity, colour, and carat weight. We stock 2,400+ certified diamonds — natural and lab-grown."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Radiance Diamonds make custom engagement rings in Pune?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we specialise in custom engagement rings. Choose your diamond, select or design your setting, and our craftsmen create your dream ring in 7-14 days. 3D CAD renders for approval before production."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the Diamond Upgrade Program at Radiance Pune?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Trade in your existing diamond for a larger stone, paying only the difference. Applicable to all GIA-certified diamonds purchased from our store. Written exchange value — fully transparent."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does a diamond ring cost at Radiance Diamonds Pune?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Diamond engagement rings start from ₹25,000 for solitaire settings. Lab-grown solitaires from ₹70,000 for 1 carat. Premium GIA-certified natural solitaires range ₹1,00,000-₹25,00,000+."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where is Radiance Diamonds located in Pune?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Radiance Diamonds is on FC Road, near Goodluck Chowk, Deccan, Pune 411004. Also at our Koregaon Park showroom. Mon-Sat 10:30 AM-8 PM, Sunday 11 AM-4 PM. Free consultation available."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<nav>
+  <div class="logo"><b>Radiance</b> Diamonds<span>GIA · IGI Certified Specialists</span></div>
+  <ul class="nav-links">
+    <li><a href="#">Solitaires</a></li><li><a href="#">Engagement</a></li><li><a href="#">Lab-Grown</a></li><li><a href="#">About</a></li>
+  </ul>
+  <button class="nav-btn">Book Consultation</button>
+</nav>
+<div class="hero">
+  <div class="diamond-bg"><span>💎</span></div>
+  <div class="hero-content">
+    <div class="hero-badge">💎 Pune's Diamond Specialists · Since 2004</div>
+    <h1>Every Diamond<br><strong>Tells Your Story</strong></h1>
+    <p>Pune's only dedicated diamond jewellery boutique. GIA & IGI certified solitaires, engagement rings, and lab-grown diamonds. Over 2,400 certified diamonds in stock — always.</p>
+    <div class="hero-btns">
+      <button class="btn-a">Explore Diamonds</button>
+      <button class="btn-b">Lab-Grown Collection</button>
+    </div>
+    <div class="stats-row">
+      <div class="stat"><div class="stat-n">2,400+</div><div class="stat-l">Certified Diamonds</div></div>
+      <div class="stat"><div class="stat-n">22</div><div class="stat-l">Years of Expertise</div></div>
+      <div class="stat"><div class="stat-n">100%</div><div class="stat-l">GIA / IGI Certified</div></div>
+      <div class="stat"><div class="stat-n">∞</div><div class="stat-l">Free Resizing</div></div>
+    </div>
+  </div>
+</div>
+<section>
+  <div class="sh">
+    <span class="st">Collections</span>
+    <h2>Find Your <b>Perfect Diamond</b></h2>
+    <div class="sh-line"></div>
+    <p>Every diamond graded, every detail disclosed. Our experts guide you to the perfect stone within your budget.</p>
+  </div>
+  <div class="products-grid">
+    <div class="product-card">
+      <div class="product-img">💍</div>
+      <div class="product-info">
+        <span class="product-badge">Best Seller</span>
+        <div class="product-name">Solitaire Engagement Rings</div>
+        <div class="product-meta">Round Brilliant · Princess · Oval · Cushion<br>GIA Certified · 0.30ct to 3.00ct</div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-img">🌿</div>
+      <div class="product-info">
+        <span class="product-badge">Eco-Conscious</span>
+        <div class="product-name">Lab-Grown Diamonds</div>
+        <div class="product-meta">Chemically identical · 40% less cost<br>IGI Certified · Same brilliance</div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-img">💛</div>
+      <div class="product-info">
+        <span class="product-badge">Trending</span>
+        <div class="product-name">Diamond Sets (Necklace + Earrings)</div>
+        <div class="product-meta">Bridal & anniversary sets<br>18KT / 22KT gold settings</div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-img">✨</div>
+      <div class="product-info">
+        <span class="product-badge">Daily Wear</span>
+        <div class="product-name">Everyday Diamond Jewellery</div>
+        <div class="product-meta">Small stones, big brilliance<br>Starting ₹12,000</div>
+      </div>
+    </div>
+  </div>
+</section>
+<div style="background:rgba(26,58,107,0.15);padding:2px 0;">
+<section>
+  <div class="sh">
+    <span class="st">Why Radiance</span>
+    <h2>The <b>Diamond Difference</b></h2>
+    <div class="sh-line"></div>
+  </div>
+  <div class="features-grid">
+    <div class="feat"><span class="feat-icon">📋</span><h3>Full Grading Report</h3><p>Every diamond comes with a GIA or IGI grading report. The 4Cs — Cut, Colour, Clarity, Carat — are fully disclosed. No verbal guarantees.</p></div>
+    <div class="feat"><span class="feat-icon">🔬</span><h3>In-Store Gemologist</h3><p>Our GIA-trained gemologist is present daily. She inspects every stone under 10× magnification before it enters our inventory.</p></div>
+    <div class="feat"><span class="feat-icon">🌿</span><h3>Lab-Grown Specialists</h3><p>Pune's most comprehensive lab-grown collection. Same chemical structure, same brilliance — at 30-40% less than mined diamonds.</p></div>
+    <div class="feat"><span class="feat-icon">📏</span><h3>Lifetime Free Resizing</h3><p>Finger sizes change. Your ring shouldn't stop fitting. Unlimited free resizing for all rings purchased from Radiance — for life.</p></div>
+    <div class="feat"><span class="feat-icon">💱</span><h3>Diamond Exchange</h3><p>Upgrade your diamond anytime. We offer fair exchange value based on current market rates — transparent and written.</p></div>
+    <div class="feat"><span class="feat-icon">🔐</span><h3>Insured Delivery</h3><p>All purchases above ₹1 lakh are delivered to your home with full insurance. Free, safe, discreet.</p></div>
+  </div>
+</section>
+</div>
+<section>
+  <div class="sh">
+    <span class="st">Natural vs Lab-Grown</span>
+    <h2>Making the <b>Right Choice</b></h2>
+    <div class="sh-line"></div>
+    <p>We help you understand the difference — no pressure, no commission bias. Your diamond, your decision.</p>
+  </div>
+  <table class="compare-table">
+    <thead>
+      <tr><th>Feature</th><th>Natural Diamond</th><th>Lab-Grown Diamond</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Chemical Composition</td><td><span class="check">✓</span> Pure Carbon (C)</td><td><span class="check">✓</span> Pure Carbon (C)</td></tr>
+      <tr><td>Brilliance & Hardness</td><td><span class="check">✓</span> 10/10 Mohs</td><td><span class="check">✓</span> 10/10 Mohs</td></tr>
+      <tr><td>Certification</td><td>GIA / IGI</td><td>IGI</td></tr>
+      <tr><td>Resale Value</td><td>Holds well long-term</td><td>Lower resale currently</td></tr>
+      <tr><td>Environmental Impact</td><td>Mined from earth</td><td>Minimal environmental impact</td></tr>
+      <tr><td>Price (1ct round)</td><td>₹2.5L – ₹6L+</td><td>₹70K – ₹1.8L</td></tr>
+      <tr><td>Best For</td><td>Investment, heirlooms</td><td>Fashion, daily wear, value</td></tr>
+    </tbody>
+  </table>
+</section>
+<div class="cta-sect">
+  <h2>Your Perfect Diamond Awaits</h2>
+  <p>Book a free 45-minute consultation. Browse 2,400+ certified diamonds in person. Our experts guide you — zero pressure, zero commission.</p>
+  <div class="hero-btns">
+    <button class="btn-a">Book Free Consultation</button>
+    <button class="btn-b">WhatsApp: +91 98765 43211</button>
+  </div>
+</div>
+
+
+
+<!-- FAQ SECTION — SEO Enhanced -->
+<section id="faq" style="padding: 80px 5%; max-width: 900px; margin: 0 auto;">
+  <div style="text-align:center; margin-bottom: 48px;">
+    <span style="font-size: 0.75rem; letter-spacing: 4px; text-transform: uppercase; color: #4A90D9; display: block; margin-bottom: 12px; font-family: 'Segoe UI', Arial, sans-serif;">FAQ</span>
+    <h2 style="font-size: 2rem; font-weight: 700; margin-bottom: 12px; color: #D0DCE8;">Frequently Asked Questions</h2>
+    <div style="width: 50px; height: 2px; background: #4A90D9; margin: 0 auto 16px;"></div>
+    <p style="color: #8A98A8; font-size: 0.95rem; font-family: 'Segoe UI', Arial, sans-serif;">Everything you need to know about Radiance Diamonds</p>
+  </div>
+  <div style="display:flex; flex-direction:column; gap: 10px;">
+
+    <details style="background: rgba(74,144,217,0.06); border: 1px solid rgba(74,144,217,0.2); border-radius: 10px; overflow: hidden; transition: border-color 0.3s;">
+      <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #D0DCE8; font-family: 'Segoe UI', Arial, sans-serif;">
+        Are the diamonds at Radiance Diamonds GIA certified in Pune?
+        <span style="font-size: 1.2rem; color: #4A90D9; margin-left: 12px; flex-shrink:0; transition: transform 0.3s;">+</span>
+      </summary>
+      <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #8A98A8; line-height: 1.7; font-family: 'Segoe UI', Arial, sans-serif;">Yes, all diamonds above 0.30 carats come with GIA or IGI certification guaranteeing cut, clarity, colour, and carat weight. We stock 2,400+ certified diamonds — natural and lab-grown.</div>
+    </details>
+
+    <details style="background: rgba(74,144,217,0.06); border: 1px solid rgba(74,144,217,0.2); border-radius: 10px; overflow: hidden; transition: border-color 0.3s;">
+      <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #D0DCE8; font-family: 'Segoe UI', Arial, sans-serif;">
+        Does Radiance Diamonds make custom engagement rings in Pune?
+        <span style="font-size: 1.2rem; color: #4A90D9; margin-left: 12px; flex-shrink:0; transition: transform 0.3s;">+</span>
+      </summary>
+      <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #8A98A8; line-height: 1.7; font-family: 'Segoe UI', Arial, sans-serif;">Yes, we specialise in custom engagement rings. Choose your diamond, select or design your setting, and our craftsmen create your dream ring in 7-14 days. 3D CAD renders for approval before production.</div>
+    </details>
+
+    <details style="background: rgba(74,144,217,0.06); border: 1px solid rgba(74,144,217,0.2); border-radius: 10px; overflow: hidden; transition: border-color 0.3s;">
+      <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #D0DCE8; font-family: 'Segoe UI', Arial, sans-serif;">
+        What is the Diamond Upgrade Program at Radiance Pune?
+        <span style="font-size: 1.2rem; color: #4A90D9; margin-left: 12px; flex-shrink:0; transition: transform 0.3s;">+</span>
+      </summary>
+      <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #8A98A8; line-height: 1.7; font-family: 'Segoe UI', Arial, sans-serif;">Trade in your existing diamond for a larger stone, paying only the difference. Applicable to all GIA-certified diamonds purchased from our store. Written exchange value — fully transparent.</div>
+    </details>
+
+    <details style="background: rgba(74,144,217,0.06); border: 1px solid rgba(74,144,217,0.2); border-radius: 10px; overflow: hidden; transition: border-color 0.3s;">
+      <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #D0DCE8; font-family: 'Segoe UI', Arial, sans-serif;">
+        How much does a diamond ring cost at Radiance Diamonds Pune?
+        <span style="font-size: 1.2rem; color: #4A90D9; margin-left: 12px; flex-shrink:0; transition: transform 0.3s;">+</span>
+      </summary>
+      <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #8A98A8; line-height: 1.7; font-family: 'Segoe UI', Arial, sans-serif;">Diamond engagement rings start from ₹25,000 for solitaire settings. Lab-grown solitaires from ₹70,000 for 1 carat. Premium GIA-certified natural solitaires range ₹1,00,000-₹25,00,000+.</div>
+    </details>
+
+    <details style="background: rgba(74,144,217,0.06); border: 1px solid rgba(74,144,217,0.2); border-radius: 10px; overflow: hidden; transition: border-color 0.3s;">
+      <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #D0DCE8; font-family: 'Segoe UI', Arial, sans-serif;">
+        Where is Radiance Diamonds located in Pune?
+        <span style="font-size: 1.2rem; color: #4A90D9; margin-left: 12px; flex-shrink:0; transition: transform 0.3s;">+</span>
+      </summary>
+      <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #8A98A8; line-height: 1.7; font-family: 'Segoe UI', Arial, sans-serif;">Radiance Diamonds is on FC Road, near Goodluck Chowk, Deccan, Pune 411004. Also at our Koregaon Park showroom. Mon-Sat 10:30 AM-8 PM, Sunday 11 AM-4 PM. Free consultation available.</div>
+    </details>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="f-logo"><b>Radiance</b> Diamonds</div>
+      <p class="f-text">Pune's dedicated diamond boutique since 2004. 2,400+ GIA/IGI certified natural and lab-grown diamonds. Expert guidance, zero pressure.</p>
+    </div>
+    <div>
+      <div class="fh">Shop</div>
+      <ul class="fl"><li><a href="#">Engagement Rings</a></li><li><a href="#">Solitaires</a></li><li><a href="#">Lab-Grown</a></li><li><a href="#">Sets & Suites</a></li><li><a href="#">Daily Wear</a></li></ul>
+    </div>
+    <div>
+      <div class="fh">Services</div>
+      <ul class="fl"><li><a href="#">Free Consultation</a></li><li><a href="#">Custom Setting</a></li><li><a href="#">Exchange</a></li><li><a href="#">Resizing</a></li><li><a href="#">Insured Delivery</a></li></ul>
+    </div>
+    <div>
+      <div class="fh">Visit</div>
+      <ul class="fl"><li><a href="#">Koregaon Park Showroom</a></li><li><a href="#">+91 98765 43211</a></li><li><a href="#">hello@radiancediamonds.in</a></li><li><a href="#">Mon–Sun 10am–8pm</a></li></ul>
+    </div>
+  </div>
+  <div class="f-bottom">
+    <span class="f-copy">© 2026 Radiance Diamonds. All rights reserved.</span>
+    <span class="f-cert">GIA MEMBER · IGI CERTIFIED · EST. 2004</span>
+  </div>
+</footer>
 </body>
 </html>
