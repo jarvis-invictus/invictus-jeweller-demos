@@ -88,6 +88,14 @@
  .f-copy{font-size:0.78rem;color:var(--silver);}
  .f-cert{font-size:0.78rem;color:var(--accent);letter-spacing:1px;}
  @media(max-width:768px){nav{padding:14px 20px;} .nav-links,.nav-btn{display:none;} section{padding:60px 20px;} .footer-grid{grid-template-columns:1fr 1fr;} .cta-sect{padding:60px 24px;margin:0 20px 60px;}}
+
+  @media(max-width:768px){
+    .nav-links, .nav-cta { display:none!important; }
+    #mob-links-02moderndiamond { display:none; }
+    #mob-links-02moderndiamond.show { display:flex!important; flex-direction:column; position:absolute; top:70px; left:0; right:0; background:white; padding:1rem; box-shadow:0 4px 12px rgba(0,0,0,0.15); z-index:50; }
+    #mob-links-02moderndiamond.show a { margin:0!important; padding:10px 0; border-bottom:1px solid #eee; color:#333!important; display:block; }
+    #mob-btn-02moderndiamond { display:block!important; }
+  }
 </style>
 
 <link rel="canonical" href="https://radiancediamondspune.in/">
@@ -176,7 +184,7 @@
  "name": "How much does a diamond ring cost at Radiance Diamonds Pune?",
  "acceptedAnswer": {
  "@type": "Answer",
- "text": "Diamond engagement rings start from 25,000 for solitaire settings. Lab-grown solitaires from 70,000 for 1 carat. Premium GIA-certified natural solitaires range 1,00,000-25,00,000+."
+ "text": "Diamond engagement rings start from ₹25,000 for solitaire settings. Lab-grown solitaires from ₹70,000 for 1 carat. Premium GIA-certified natural solitaires range 1,00,000-25,00,000+."
  }
  },
  {
@@ -198,6 +206,11 @@
  <li><a href="#">Solitaires</a></li><li><a href="#">Engagement</a></li><li><a href="#">Lab-Grown</a></li><li><a href="#">About</a></li>
  </ul>
  <button class="nav-btn">Book Consultation</button>
+<button id="mob-btn-02moderndiamond" style="display:none;padding:8px;cursor:pointer;background:none;border:none;" onclick="document.getElementById('mob-links-02moderndiamond').classList.toggle('show')" aria-label="Menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+<div id="mob-links-02moderndiamond"><a href="#">Solitaires</a>
+<a href="#">Engagement</a>
+<a href="#">Lab-Grown</a>
+<a href="#">About</a></div>
 </nav>
 <div class="hero">
  <div class="diamond-bg"></div>
@@ -348,7 +361,7 @@
  How much does a diamond ring cost at Radiance Diamonds Pune?
  <span style="font-size: 1.2rem; color: #4A90D9; margin-left: 12px; flex-shrink:0; transition: transform 0.3s;">+</span>
  </summary>
- <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #8A98A8; line-height: 1.7; font-family: 'Segoe UI', Arial, sans-serif;">Diamond engagement rings start from 25,000 for solitaire settings. Lab-grown solitaires from 70,000 for 1 carat. Premium GIA-certified natural solitaires range 1,00,000-25,00,000+.</div>
+ <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #8A98A8; line-height: 1.7; font-family: 'Segoe UI', Arial, sans-serif;">Diamond engagement rings start from ₹25,000 for solitaire settings. Lab-grown solitaires from ₹70,000 for 1 carat. Premium GIA-certified natural solitaires range 1,00,000-25,00,000+.</div>
  </details>
 
  <details style="background: rgba(74,144,217,0.06); border: 1px solid rgba(74,144,217,0.2); border-radius: 10px; overflow: hidden; transition: border-color 0.3s;">

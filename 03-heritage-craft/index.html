@@ -87,6 +87,14 @@
  .fb{max-width:1200px;margin:0 auto;border-top:1px solid rgba(224,123,32,0.1);padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;}
  .fc{font-size:0.78rem;color:var(--muted);font-family:Arial,sans-serif;}
  @media(max-width:768px){nav{padding:14px 20px;} .nav-links,.nav-btn{display:none;} section{padding:60px 20px;} .trad-row{grid-template-columns:1fr;} .fg{grid-template-columns:1fr 1fr;} .cta-sect{padding:60px 24px;margin:0 20px 60px;}}
+
+  @media(max-width:768px){
+    .nav-links, .nav-cta { display:none!important; }
+    #mob-links-03heritagecraft { display:none; }
+    #mob-links-03heritagecraft.show { display:flex!important; flex-direction:column; position:absolute; top:70px; left:0; right:0; background:white; padding:1rem; box-shadow:0 4px 12px rgba(0,0,0,0.15); z-index:50; }
+    #mob-links-03heritagecraft.show a { margin:0!important; padding:10px 0; border-bottom:1px solid #eee; color:#333!important; display:block; }
+    #mob-btn-03heritagecraft { display:block!important; }
+  }
 </style>
 
 <link rel="canonical" href="https://mangaljewellerspune.in/">
@@ -203,6 +211,11 @@
  <li><a href="#">Temple Jewellery</a></li><li><a href="#">Bridal</a></li><li><a href="#">Kolhapuri</a></li><li><a href="#">About</a></li>
  </ul>
  <button class="nav-btn">Visit Showroom</button>
+<button id="mob-btn-03heritagecraft" style="display:none;padding:8px;cursor:pointer;background:none;border:none;" onclick="document.getElementById('mob-links-03heritagecraft').classList.toggle('show')" aria-label="Menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+<div id="mob-links-03heritagecraft"><a href="#">Temple Jewellery</a>
+<a href="#">Bridal</a>
+<a href="#">Kolhapuri</a>
+<a href="#">About</a></div>
 </nav>
 <div class="hero">
  <div class="hero-pattern"></div>

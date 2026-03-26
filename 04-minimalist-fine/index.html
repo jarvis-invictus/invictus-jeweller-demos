@@ -94,6 +94,14 @@
  .fb{max-width:1200px;margin:0 auto;border-top:1px solid rgba(107,143,113,0.1);padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;}
  .fc{font-size:0.75rem;color:var(--muted);}
  @media(max-width:900px){.hero{grid-template-columns:1fr;padding:100px 24px 60px;gap:48px;} .hero-right{display:none;} .values-row{grid-template-columns:1fr;} .fg{grid-template-columns:1fr 1fr;} .nav-links,.nav-btn{display:none;} nav{padding:14px 24px;} section{padding:60px 24px;}}
+
+  @media(max-width:768px){
+    .nav-links, .nav-cta { display:none!important; }
+    #mob-links-04minimalistfine { display:none; }
+    #mob-links-04minimalistfine.show { display:flex!important; flex-direction:column; position:absolute; top:70px; left:0; right:0; background:white; padding:1rem; box-shadow:0 4px 12px rgba(0,0,0,0.15); z-index:50; }
+    #mob-links-04minimalistfine.show a { margin:0!important; padding:10px 0; border-bottom:1px solid #eee; color:#333!important; display:block; }
+    #mob-btn-04minimalistfine { display:block!important; }
+  }
 </style>
 
 <link rel="canonical" href="https://silverandstonepune.in/">
@@ -196,12 +204,18 @@
  <li><a href="#">Silver</a></li><li><a href="#">Gemstones</a></li><li><a href="#">Gold</a></li><li><a href="#">New In</a></li><li><a href="#">Gift</a></li>
  </ul>
  <button class="nav-btn">Shop Now</button>
+<button id="mob-btn-04minimalistfine" style="display:none;padding:8px;cursor:pointer;background:none;border:none;" onclick="document.getElementById('mob-links-04minimalistfine').classList.toggle('show')" aria-label="Menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+<div id="mob-links-04minimalistfine"><a href="#">Silver</a>
+<a href="#">Gemstones</a>
+<a href="#">Gold</a>
+<a href="#">New In</a>
+<a href="#">Gift</a></div>
 </nav>
 <div class="hero">
  <div class="hero-left">
  <div class="hero-tag">New Collection — Monsoon 2026</div>
  <h1>Jewellery That Feels<br>Like <em>You</em></h1>
- <p>Contemporary jewellery for the modern Pune woman. Sterling silver, natural gemstones, minimalist gold — designed for real life, priced for everyone. Starting 800.</p>
+ <p>Contemporary jewellery for the modern Pune woman. Sterling silver, natural gemstones, minimalist gold — designed for real life, priced for everyone. Starting ₹800.</p>
  <div class="hero-btns">
  <button class="btn-p">Shop the Collection</button>
  <button class="btn-g">New Arrivals</button>
@@ -327,7 +341,7 @@
  <div class="fg">
  <div>
  <div class="fl"><em>Silver</em> & Stone</div>
- <p class="ft">Contemporary jewellery for the modern Pune woman. 925 Sterling Silver, natural gemstones, 14KT gold. Designed in Pune. Starting 800. Free delivery on orders above 1,500.</p>
+ <p class="ft">Contemporary jewellery for the modern Pune woman. 925 Sterling Silver, natural gemstones, 14KT gold. Designed in Pune. Starting ₹800. Free delivery on orders above 1,500.</p>
  </div>
  <div>
  <div class="fh">Shop</div>

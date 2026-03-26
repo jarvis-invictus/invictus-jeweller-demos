@@ -156,6 +156,14 @@
  .trust-bar { gap:30px; }
  .process-steps::before { display:none; }
  }
+
+  @media(max-width:768px){
+    .nav-links, .nav-cta { display:none!important; }
+    #mob-links-01royalgold { display:none; }
+    #mob-links-01royalgold.show { display:flex!important; flex-direction:column; position:absolute; top:70px; left:0; right:0; background:white; padding:1rem; box-shadow:0 4px 12px rgba(0,0,0,0.15); z-index:50; }
+    #mob-links-01royalgold.show a { margin:0!important; padding:10px 0; border-bottom:1px solid #eee; color:#333!important; display:block; }
+    #mob-btn-01royalgold { display:block!important; }
+  }
 </style>
 
 <link rel="canonical" href="https://ornatefinejewellery.in/">
@@ -272,9 +280,15 @@
  <li><a href="#">Bridal</a></li>
  <li><a href="#">Custom Design</a></li>
  <li><a href="#">About</a></li>
- <li><a href="#">Contact</a></li>
+ <li><a href="https://wa.me/919876543210?text=Hello%2C%20I%20would%20like%20to%20enquire">Contact</a></li>
  </ul>
  <button class="nav-cta">Book Appointment</button>
+<button id="mob-btn-01royalgold" style="display:none;padding:8px;cursor:pointer;background:none;border:none;" onclick="document.getElementById('mob-links-01royalgold').classList.toggle('show')" aria-label="Menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+<div id="mob-links-01royalgold"><a href="#">Collections</a>
+<a href="#">Bridal</a>
+<a href="#">Custom Design</a>
+<a href="#">About</a>
+<a href="https://wa.me/919876543210?text=Hello%2C%20I%20would%20like%20to%20enquire">Contact</a></div>
 </nav>
 
 <!-- HERO -->
