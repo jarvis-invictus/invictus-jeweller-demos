@@ -6,627 +6,627 @@
 <title>Aurum Lab | Lab-Grown Diamond Jewellery Pune</title>
 <meta name="description" content="Aurum Lab – Pune's pioneer in certified lab-grown diamonds and sustainable fine jewellery. Same brilliance, better value, ethical sourcing.">
 <style>
-  :root {
-    --bg: #0a0a0f;
-    --surface: #12121a;
-    --card: #1a1a26;
-    --accent: #c9a84c;
-    --accent2: #7b68ee;
-    --text: #f0efea;
-    --muted: #888;
-    --green: #4ade80;
-    --border: rgba(201,168,76,0.2);
-  }
-  * { margin:0; padding:0; box-sizing:border-box; }
-  body { font-family: 'Georgia', serif; background: var(--bg); color: var(--text); }
-  a { color: inherit; text-decoration: none; }
-  
-  /* NAV */
-  nav {
-    position: fixed; top: 0; width: 100%; z-index: 100;
-    background: rgba(10,10,15,0.95); backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--border);
-    display: flex; align-items: center; justify-content: space-between;
-    padding: 0 5%;
-  }
-  .logo { font-size: 1.5rem; letter-spacing: 0.12em; color: var(--accent); padding: 20px 0; }
-  .logo span { color: var(--accent2); }
-  .nav-links { display: flex; gap: 2rem; font-size: 0.85rem; letter-spacing: 0.05em; font-family: sans-serif; }
-  .nav-links a:hover { color: var(--accent); }
-  .nav-cta {
-    background: var(--accent); color: #000; font-family: sans-serif;
-    padding: 10px 24px; font-size: 0.82rem; letter-spacing: 0.08em;
-    border: none; cursor: pointer; font-weight: 600;
-  }
+ :root {
+ --bg: #0a0a0f;
+ --surface: #12121a;
+ --card: #1a1a26;
+ --accent: #c9a84c;
+ --accent2: #7b68ee;
+ --text: #f0efea;
+ --muted: #888;
+ --green: #4ade80;
+ --border: rgba(201,168,76,0.2);
+ }
+ * { margin:0; padding:0; box-sizing:border-box; }
+ body { font-family: 'Georgia', serif; background: var(--bg); color: var(--text); }
+ a { color: inherit; text-decoration: none; }
+ 
+ /* NAV */
+ nav {
+ position: fixed; top: 0; width: 100%; z-index: 100;
+ background: rgba(10,10,15,0.95); backdrop-filter: blur(12px);
+ border-bottom: 1px solid var(--border);
+ display: flex; align-items: center; justify-content: space-between;
+ padding: 0 5%;
+ }
+ .logo { font-size: 1.5rem; letter-spacing: 0.12em; color: var(--accent); padding: 20px 0; }
+ .logo span { color: var(--accent2); }
+ .nav-links { display: flex; gap: 2rem; font-size: 0.85rem; letter-spacing: 0.05em; font-family: sans-serif; }
+ .nav-links a:hover { color: var(--accent); }
+ .nav-cta {
+ background: var(--accent); color: #000; font-family: sans-serif;
+ padding: 10px 24px; font-size: 0.82rem; letter-spacing: 0.08em;
+ border: none; cursor: pointer; font-weight: 600;
+ }
 
-  /* HERO */
-  .hero {
-    min-height: 100vh; display: flex; align-items: center;
-    padding: 120px 5% 80px;
-    background: radial-gradient(ellipse 80% 60% at 60% 40%, rgba(123,104,238,0.12) 0%, transparent 70%),
-                radial-gradient(ellipse 60% 40% at 20% 70%, rgba(201,168,76,0.08) 0%, transparent 60%),
-                var(--bg);
-    position: relative; overflow: hidden;
-  }
-  .hero::before {
-    content: '';
-    position: absolute; top: -100px; right: -100px;
-    width: 600px; height: 600px;
-    background: conic-gradient(from 0deg, transparent, rgba(201,168,76,0.06), transparent, rgba(123,104,238,0.06), transparent);
-    border-radius: 50%; animation: spin 20s linear infinite;
-  }
-  @keyframes spin { to { transform: rotate(360deg); } }
-  
-  .hero-content { max-width: 600px; position: relative; z-index: 1; }
-  .hero-badge {
-    display: inline-block; background: rgba(74,222,128,0.1);
-    border: 1px solid rgba(74,222,128,0.3); color: var(--green);
-    font-family: sans-serif; font-size: 0.75rem; letter-spacing: 0.1em;
-    padding: 6px 16px; margin-bottom: 1.5rem;
-  }
-  .hero h1 { font-size: clamp(2.8rem, 6vw, 4.5rem); line-height: 1.1; margin-bottom: 1.5rem; font-weight: 400; }
-  .hero h1 em { font-style: normal; color: var(--accent); }
-  .hero h1 span { color: var(--accent2); }
-  .hero-sub { font-family: sans-serif; font-size: 1.1rem; color: #bbb; line-height: 1.7; margin-bottom: 2.5rem; max-width: 480px; }
-  .hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; }
-  .btn-primary {
-    background: var(--accent); color: #000;
-    padding: 14px 32px; font-family: sans-serif; font-size: 0.9rem;
-    letter-spacing: 0.06em; font-weight: 700; border: none; cursor: pointer; transition: opacity 0.2s;
-  }
-  .btn-primary:hover { opacity: 0.85; }
-  .btn-outline {
-    background: transparent; color: var(--text);
-    padding: 14px 32px; font-family: sans-serif; font-size: 0.9rem;
-    letter-spacing: 0.06em; border: 1px solid rgba(255,255,255,0.2); cursor: pointer; transition: border-color 0.2s;
-  }
-  .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+ /* HERO */
+ .hero {
+ min-height: 100vh; display: flex; align-items: center;
+ padding: 120px 5% 80px;
+ background: radial-gradient(ellipse 80% 60% at 60% 40%, rgba(123,104,238,0.12) 0%, transparent 70%),
+ radial-gradient(ellipse 60% 40% at 20% 70%, rgba(201,168,76,0.08) 0%, transparent 60%),
+ var(--bg);
+ position: relative; overflow: hidden;
+ }
+ .hero::before {
+ content: '';
+ position: absolute; top: -100px; right: -100px;
+ width: 600px; height: 600px;
+ background: conic-gradient(from 0deg, transparent, rgba(201,168,76,0.06), transparent, rgba(123,104,238,0.06), transparent);
+ border-radius: 50%; animation: spin 20s linear infinite;
+ }
+ @keyframes spin { to { transform: rotate(360deg); } }
+ 
+ .hero-content { max-width: 600px; position: relative; z-index: 1; }
+ .hero-badge {
+ display: inline-block; background: rgba(74,222,128,0.1);
+ border: 1px solid rgba(74,222,128,0.3); color: var(--green);
+ font-family: sans-serif; font-size: 0.75rem; letter-spacing: 0.1em;
+ padding: 6px 16px; margin-bottom: 1.5rem;
+ }
+ .hero h1 { font-size: clamp(2.8rem, 6vw, 4.5rem); line-height: 1.1; margin-bottom: 1.5rem; font-weight: 400; }
+ .hero h1 em { font-style: normal; color: var(--accent); }
+ .hero h1 span { color: var(--accent2); }
+ .hero-sub { font-family: sans-serif; font-size: 1.1rem; color: #bbb; line-height: 1.7; margin-bottom: 2.5rem; max-width: 480px; }
+ .hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; }
+ .btn-primary {
+ background: var(--accent); color: #000;
+ padding: 14px 32px; font-family: sans-serif; font-size: 0.9rem;
+ letter-spacing: 0.06em; font-weight: 700; border: none; cursor: pointer; transition: opacity 0.2s;
+ }
+ .btn-primary:hover { opacity: 0.85; }
+ .btn-outline {
+ background: transparent; color: var(--text);
+ padding: 14px 32px; font-family: sans-serif; font-size: 0.9rem;
+ letter-spacing: 0.06em; border: 1px solid rgba(255,255,255,0.2); cursor: pointer; transition: border-color 0.2s;
+ }
+ .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
 
-  .stats-bar {
-    display: flex; gap: 2.5rem; margin-top: 3rem; flex-wrap: wrap;
-  }
-  .stat-item { font-family: sans-serif; }
-  .stat-item .num { font-size: 1.8rem; font-weight: 700; color: var(--accent); display: block; }
-  .stat-item .lbl { font-size: 0.75rem; color: var(--muted); letter-spacing: 0.06em; text-transform: uppercase; }
+ .stats-bar {
+ display: flex; gap: 2.5rem; margin-top: 3rem; flex-wrap: wrap;
+ }
+ .stat-item { font-family: sans-serif; }
+ .stat-item .num { font-size: 1.8rem; font-weight: 700; color: var(--accent); display: block; }
+ .stat-item .lbl { font-size: 0.75rem; color: var(--muted); letter-spacing: 0.06em; text-transform: uppercase; }
 
-  .hero-visual {
-    flex: 1; display: flex; justify-content: center; align-items: center;
-    position: relative; z-index: 1; min-width: 300px;
-  }
-  .diamond-visual {
-    width: 280px; height: 280px; position: relative;
-  }
-  .diamond-svg { width: 100%; height: 100%; }
+ .hero-visual {
+ flex: 1; display: flex; justify-content: center; align-items: center;
+ position: relative; z-index: 1; min-width: 300px;
+ }
+ .diamond-visual {
+ width: 280px; height: 280px; position: relative;
+ }
+ .diamond-svg { width: 100%; height: 100%; }
 
-  /* SECTIONS */
-  section { padding: 100px 5%; }
-  .section-label {
-    font-family: sans-serif; font-size: 0.72rem; letter-spacing: 0.15em;
-    text-transform: uppercase; color: var(--accent); margin-bottom: 0.8rem;
-  }
-  h2 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 400; margin-bottom: 1rem; }
-  h2 span { color: var(--accent); }
-  .section-sub { font-family: sans-serif; color: var(--muted); line-height: 1.7; max-width: 560px; margin-bottom: 3rem; }
+ /* SECTIONS */
+ section { padding: 100px 5%; }
+ .section-label {
+ font-family: sans-serif; font-size: 0.72rem; letter-spacing: 0.15em;
+ text-transform: uppercase; color: var(--accent); margin-bottom: 0.8rem;
+ }
+ h2 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 400; margin-bottom: 1rem; }
+ h2 span { color: var(--accent); }
+ .section-sub { font-family: sans-serif; color: var(--muted); line-height: 1.7; max-width: 560px; margin-bottom: 3rem; }
 
-  /* WHY LAB-GROWN */
-  .why-section { background: var(--surface); }
-  .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
-  .why-card {
-    background: var(--card); border: 1px solid var(--border);
-    padding: 2rem; position: relative; overflow: hidden;
-  }
-  .why-card::before {
-    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
-    background: linear-gradient(90deg, var(--accent2), var(--accent));
-  }
-  .why-icon { font-size: 2.5rem; margin-bottom: 1rem; }
-  .why-card h3 { font-size: 1.15rem; margin-bottom: 0.6rem; color: var(--accent); }
-  .why-card p { font-family: sans-serif; font-size: 0.9rem; color: var(--muted); line-height: 1.6; }
-  .vs-box {
-    background: rgba(123,104,238,0.08); border: 1px solid rgba(123,104,238,0.3);
-    padding: 2rem; grid-column: 1/-1;
-  }
-  .vs-grid { display: grid; grid-template-columns: 1fr 60px 1fr; gap: 1rem; align-items: center; font-family: sans-serif; }
-  .vs-col h4 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 1rem; color: var(--muted); }
-  .vs-col.lab h4 { color: var(--green); }
-  .vs-row { display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.05); font-size: 0.88rem; }
-  .vs-row:last-child { border-bottom: none; }
-  .vs-row .check { color: var(--green); font-weight: 700; }
-  .vs-row .cross { color: #ef4444; }
-  .vs-divider { text-align: center; font-size: 1.4rem; font-weight: 700; color: var(--muted); }
+ /* WHY LAB-GROWN */
+ .why-section { background: var(--surface); }
+ .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
+ .why-card {
+ background: var(--card); border: 1px solid var(--border);
+ padding: 2rem; position: relative; overflow: hidden;
+ }
+ .why-card::before {
+ content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+ background: linear-gradient(90deg, var(--accent2), var(--accent));
+ }
+ .why-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+ .why-card h3 { font-size: 1.15rem; margin-bottom: 0.6rem; color: var(--accent); }
+ .why-card p { font-family: sans-serif; font-size: 0.9rem; color: var(--muted); line-height: 1.6; }
+ .vs-box {
+ background: rgba(123,104,238,0.08); border: 1px solid rgba(123,104,238,0.3);
+ padding: 2rem; grid-column: 1/-1;
+ }
+ .vs-grid { display: grid; grid-template-columns: 1fr 60px 1fr; gap: 1rem; align-items: center; font-family: sans-serif; }
+ .vs-col h4 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 1rem; color: var(--muted); }
+ .vs-col.lab h4 { color: var(--green); }
+ .vs-row { display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.05); font-size: 0.88rem; }
+ .vs-row:last-child { border-bottom: none; }
+ .vs-row .check { color: var(--green); font-weight: 700; }
+ .vs-row .cross { color: #ef4444; }
+ .vs-divider { text-align: center; font-size: 1.4rem; font-weight: 700; color: var(--muted); }
 
-  /* COLLECTIONS */
-  .collections-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
-  .collection-card {
-    background: var(--card); border: 1px solid var(--border);
-    padding: 2rem; cursor: pointer; transition: transform 0.2s, border-color 0.2s;
-  }
-  .collection-card:hover { transform: translateY(-4px); border-color: var(--accent); }
-  .coll-emoji { font-size: 3rem; margin-bottom: 1.2rem; display: block; }
-  .collection-card h3 { font-size: 1.2rem; margin-bottom: 0.5rem; }
-  .collection-card p { font-family: sans-serif; font-size: 0.85rem; color: var(--muted); line-height: 1.6; margin-bottom: 1rem; }
-  .price-range { font-family: sans-serif; font-size: 0.82rem; color: var(--accent); letter-spacing: 0.05em; }
+ /* COLLECTIONS */
+ .collections-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+ .collection-card {
+ background: var(--card); border: 1px solid var(--border);
+ padding: 2rem; cursor: pointer; transition: transform 0.2s, border-color 0.2s;
+ }
+ .collection-card:hover { transform: translateY(-4px); border-color: var(--accent); }
+ .coll-emoji { font-size: 3rem; margin-bottom: 1.2rem; display: block; }
+ .collection-card h3 { font-size: 1.2rem; margin-bottom: 0.5rem; }
+ .collection-card p { font-family: sans-serif; font-size: 0.85rem; color: var(--muted); line-height: 1.6; margin-bottom: 1rem; }
+ .price-range { font-family: sans-serif; font-size: 0.82rem; color: var(--accent); letter-spacing: 0.05em; }
 
-  /* PROCESS */
-  .process-section { background: var(--surface); }
-  .steps { display: flex; flex-direction: column; gap: 0; max-width: 700px; }
-  .step { display: flex; gap: 2rem; padding: 2rem 0; border-bottom: 1px solid var(--border); }
-  .step:last-child { border-bottom: none; }
-  .step-num { 
-    min-width: 48px; height: 48px; border: 2px solid var(--accent);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 1.2rem; font-weight: 700; color: var(--accent);
-    flex-shrink: 0;
-  }
-  .step-text h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
-  .step-text p { font-family: sans-serif; font-size: 0.9rem; color: var(--muted); line-height: 1.6; }
+ /* PROCESS */
+ .process-section { background: var(--surface); }
+ .steps { display: flex; flex-direction: column; gap: 0; max-width: 700px; }
+ .step { display: flex; gap: 2rem; padding: 2rem 0; border-bottom: 1px solid var(--border); }
+ .step:last-child { border-bottom: none; }
+ .step-num { 
+ min-width: 48px; height: 48px; border: 2px solid var(--accent);
+ display: flex; align-items: center; justify-content: center;
+ font-size: 1.2rem; font-weight: 700; color: var(--accent);
+ flex-shrink: 0;
+ }
+ .step-text h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+ .step-text p { font-family: sans-serif; font-size: 0.9rem; color: var(--muted); line-height: 1.6; }
 
-  /* CERTIFICATIONS */
-  .certs { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-top: 2rem; }
-  .cert-badge {
-    background: var(--card); border: 1px solid var(--border);
-    padding: 1rem 1.5rem; font-family: sans-serif; text-align: center;
-  }
-  .cert-badge .cert-logo { font-size: 1.8rem; display: block; margin-bottom: 0.4rem; }
-  .cert-badge .cert-name { font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+ /* CERTIFICATIONS */
+ .certs { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-top: 2rem; }
+ .cert-badge {
+ background: var(--card); border: 1px solid var(--border);
+ padding: 1rem 1.5rem; font-family: sans-serif; text-align: center;
+ }
+ .cert-badge .cert-logo { font-size: 1.8rem; display: block; margin-bottom: 0.4rem; }
+ .cert-badge .cert-name { font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
 
-  /* PRICING COMPARE */
-  .price-table { width: 100%; border-collapse: collapse; font-family: sans-serif; }
-  .price-table th, .price-table td { padding: 1rem 1.5rem; text-align: left; border-bottom: 1px solid var(--border); }
-  .price-table th { font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
-  .price-table td { font-size: 0.9rem; }
-  .price-table .lab-price { color: var(--green); font-weight: 700; }
-  .price-table .mined-price { color: #ef4444; text-decoration: line-through; color: var(--muted); }
-  .price-table .savings { color: var(--accent); font-weight: 700; }
-  .price-table tr:hover td { background: var(--card); }
+ /* PRICING COMPARE */
+ .price-table { width: 100%; border-collapse: collapse; font-family: sans-serif; }
+ .price-table th, .price-table td { padding: 1rem 1.5rem; text-align: left; border-bottom: 1px solid var(--border); }
+ .price-table th { font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+ .price-table td { font-size: 0.9rem; }
+ .price-table .lab-price { color: var(--green); font-weight: 700; }
+ .price-table .mined-price { color: #ef4444; text-decoration: line-through; color: var(--muted); }
+ .price-table .savings { color: var(--accent); font-weight: 700; }
+ .price-table tr:hover td { background: var(--card); }
 
-  /* TESTIMONIALS */
-  .testi-section { background: var(--surface); }
-  .testi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
-  .testi-card { background: var(--card); border: 1px solid var(--border); padding: 2rem; }
-  .stars { color: var(--accent); font-size: 1rem; margin-bottom: 1rem; letter-spacing: 2px; }
-  .testi-card blockquote { font-size: 0.92rem; color: #ccc; line-height: 1.7; margin-bottom: 1.5rem; font-style: italic; }
-  .testi-card cite { font-family: sans-serif; font-size: 0.8rem; color: var(--muted); font-style: normal; }
-  .testi-card cite strong { color: var(--text); display: block; }
+ /* TESTIMONIALS */
+ .testi-section { background: var(--surface); }
+ .testi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+ .testi-card { background: var(--card); border: 1px solid var(--border); padding: 2rem; }
+ .stars { color: var(--accent); font-size: 1rem; margin-bottom: 1rem; letter-spacing: 2px; }
+ .testi-card blockquote { font-size: 0.92rem; color: #ccc; line-height: 1.7; margin-bottom: 1.5rem; font-style: italic; }
+ .testi-card cite { font-family: sans-serif; font-size: 0.8rem; color: var(--muted); font-style: normal; }
+ .testi-card cite strong { color: var(--text); display: block; }
 
-  /* CTA */
-  .cta-section {
-    text-align: center; padding: 120px 5%;
-    background: radial-gradient(ellipse 70% 60% at 50% 50%, rgba(201,168,76,0.08) 0%, transparent 70%), var(--bg);
-  }
-  .cta-section h2 { font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 1rem; }
-  .cta-section p { font-family: sans-serif; color: var(--muted); margin-bottom: 2.5rem; font-size: 1.05rem; }
-  .cta-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+ /* CTA */
+ .cta-section {
+ text-align: center; padding: 120px 5%;
+ background: radial-gradient(ellipse 70% 60% at 50% 50%, rgba(201,168,76,0.08) 0%, transparent 70%), var(--bg);
+ }
+ .cta-section h2 { font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 1rem; }
+ .cta-section p { font-family: sans-serif; color: var(--muted); margin-bottom: 2.5rem; font-size: 1.05rem; }
+ .cta-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
 
-  /* FOOTER */
-  footer { background: var(--surface); border-top: 1px solid var(--border); padding: 3rem 5%; }
-  .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 2rem; }
-  .footer-brand p { font-family: sans-serif; font-size: 0.85rem; color: var(--muted); line-height: 1.7; margin-top: 1rem; max-width: 260px; }
-  footer h4 { font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 1rem; font-family: sans-serif; }
-  footer ul { list-style: none; }
-  footer ul li { font-family: sans-serif; font-size: 0.85rem; color: #888; margin-bottom: 0.6rem; }
-  .footer-bottom { border-top: 1px solid var(--border); padding-top: 1.5rem; display: flex; justify-content: space-between; font-family: sans-serif; font-size: 0.78rem; color: var(--muted); flex-wrap: wrap; gap: 1rem; }
+ /* FOOTER */
+ footer { background: var(--surface); border-top: 1px solid var(--border); padding: 3rem 5%; }
+ .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 2rem; }
+ .footer-brand p { font-family: sans-serif; font-size: 0.85rem; color: var(--muted); line-height: 1.7; margin-top: 1rem; max-width: 260px; }
+ footer h4 { font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 1rem; font-family: sans-serif; }
+ footer ul { list-style: none; }
+ footer ul li { font-family: sans-serif; font-size: 0.85rem; color: #888; margin-bottom: 0.6rem; }
+ .footer-bottom { border-top: 1px solid var(--border); padding-top: 1.5rem; display: flex; justify-content: space-between; font-family: sans-serif; font-size: 0.78rem; color: var(--muted); flex-wrap: wrap; gap: 1rem; }
 
-  @media (max-width: 768px) {
-    .hero { flex-direction: column; }
-    .hero-visual { display: none; }
-    .footer-grid { grid-template-columns: 1fr 1fr; }
-    .vs-grid { grid-template-columns: 1fr; }
-    .vs-divider { display: none; }
-    nav .nav-links { display: none; }
-  }
+ @media (max-width: 768px) {
+ .hero { flex-direction: column; }
+ .hero-visual { display: none; }
+ .footer-grid { grid-template-columns: 1fr 1fr; }
+ .vs-grid { grid-template-columns: 1fr; }
+ .vs-divider { display: none; }
+ nav .nav-links { display: none; }
+ }
 </style>
 
 <link rel="canonical" href="https://aurumlab.in/">
 <meta property="og:image" content="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=1200&h=630&fit=crop">
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "JewelryStore",
-  "name": "Aurum Lab",
-  "description": "Lab-Grown Diamond Jewellery Boutique in Pune",
-  "url": "https://aurumlab.in/",
-  "telephone": "+919876543210",
-  "email": "hello@aurumlab.in",
-  "priceRange": "₹₹₹",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Koregaon Park Plaza, Ground Floor",
-    "addressLocality": "Koregaon Park, Pune",
-    "addressRegion": "Maharashtra",
-    "postalCode": "411001",
-    "addressCountry": "IN"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": "18.5355",
-    "longitude": "73.8935"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.8",
-    "bestRating": "5",
-    "ratingCount": "520"
-  },
-  "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Tu-Su"
-      ],
-      "opens": "11:00",
-      "closes": "20:00"
-    }
-  ],
-  "image": "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=1200&h=630&fit=crop"
+ "@context": "https://schema.org",
+ "@type": "JewelryStore",
+ "name": "Aurum Lab",
+ "description": "Lab-Grown Diamond Jewellery Boutique in Pune",
+ "url": "https://aurumlab.in/",
+ "telephone": "+919876543210",
+ "email": "hello@aurumlab.in",
+ "priceRange": "",
+ "address": {
+ "@type": "PostalAddress",
+ "streetAddress": "Koregaon Park Plaza, Ground Floor",
+ "addressLocality": "Koregaon Park, Pune",
+ "addressRegion": "Maharashtra",
+ "postalCode": "411001",
+ "addressCountry": "IN"
+ },
+ "geo": {
+ "@type": "GeoCoordinates",
+ "latitude": "18.5355",
+ "longitude": "73.8935"
+ },
+ "aggregateRating": {
+ "@type": "AggregateRating",
+ "ratingValue": "4.8",
+ "bestRating": "5",
+ "ratingCount": "520"
+ },
+ "openingHoursSpecification": [
+ {
+ "@type": "OpeningHoursSpecification",
+ "dayOfWeek": [
+ "Tu-Su"
+ ],
+ "opens": "11:00",
+ "closes": "20:00"
+ }
+ ],
+ "image": "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=1200&h=630&fit=crop"
 }
 </script>
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What are lab-grown diamonds at Aurum Lab Pune?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Lab-grown diamonds are real diamonds created using CVD/HPHT technology with identical chemical, physical, and optical properties to mined diamonds. 40-70% more affordable and 100% conflict-free. All IGI/GIA certified."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Are Aurum Lab diamonds certified and genuine?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, every Aurum Lab diamond comes with IGI or GIA certification — the world's most trusted gemological labs. Each stone has a laser inscription and full 4C grading report. Same standards as mined diamonds."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How much cheaper are lab-grown diamonds at Aurum Lab?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Lab-grown diamonds are 40-70% less expensive. A 1-carat VS1 E lab diamond costs ~₹1,45,000 vs ~₹4,20,000 mined. Spend the savings on a better cut, larger stone, or premium setting."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does Aurum Lab create custom engagement rings?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, we specialise in custom engagement rings. Choose your lab-grown diamond, design your setting with 3D CAD renders, and our craftsmen create your perfect ring in 7-14 working days in 18K/22K gold or platinum."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Where is Aurum Lab located in Pune?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Aurum Lab is at Koregaon Park Plaza, Ground Floor, Pune 411001. Also accessible from Senapati Bapat Road. Open Tuesday-Sunday 11 AM-8 PM. Free consultations and diamond education by appointment."
-      }
-    }
-  ]
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+ {
+ "@type": "Question",
+ "name": "What are lab-grown diamonds at Aurum Lab Pune?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "Lab-grown diamonds are real diamonds created using CVD/HPHT technology with identical chemical, physical, and optical properties to mined diamonds. 40-70% more affordable and 100% conflict-free. All IGI/GIA certified."
+ }
+ },
+ {
+ "@type": "Question",
+ "name": "Are Aurum Lab diamonds certified and genuine?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "Yes, every Aurum Lab diamond comes with IGI or GIA certification — the world's most trusted gemological labs. Each stone has a laser inscription and full 4C grading report. Same standards as mined diamonds."
+ }
+ },
+ {
+ "@type": "Question",
+ "name": "How much cheaper are lab-grown diamonds at Aurum Lab?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "Lab-grown diamonds are 40-70% less expensive. A 1-carat VS1 E lab diamond costs ~1,45,000 vs ~4,20,000 mined. Spend the savings on a better cut, larger stone, or premium setting."
+ }
+ },
+ {
+ "@type": "Question",
+ "name": "Does Aurum Lab create custom engagement rings?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "Yes, we specialise in custom engagement rings. Choose your lab-grown diamond, design your setting with 3D CAD renders, and our craftsmen create your perfect ring in 7-14 working days in 18K/22K gold or platinum."
+ }
+ },
+ {
+ "@type": "Question",
+ "name": "Where is Aurum Lab located in Pune?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "Aurum Lab is at Koregaon Park Plaza, Ground Floor, Pune 411001. Also accessible from Senapati Bapat Road. Open Tuesday-Sunday 11 AM-8 PM. Free consultations and diamond education by appointment."
+ }
+ }
+ ]
 }
 </script>
 </head>
 <body>
 
 <nav>
-  <div class="logo">AURUM<span>LAB</span></div>
-  <div class="nav-links">
-    <a href="#">Collections</a>
-    <a href="#">Why Lab-Grown</a>
-    <a href="#">Certifications</a>
-    <a href="#">Bespoke</a>
-    <a href="#">Visit</a>
-  </div>
-  <button class="nav-cta">Book Appointment</button>
+ <div class="logo">AURUM<span>LAB</span></div>
+ <div class="nav-links">
+ <a href="#">Collections</a>
+ <a href="#">Why Lab-Grown</a>
+ <a href="#">Certifications</a>
+ <a href="#">Bespoke</a>
+ <a href="#">Visit</a>
+ </div>
+ <button class="nav-cta">Book Appointment</button>
 </nav>
 
 <!-- HERO -->
 <section class="hero" style="display:flex; gap:4rem;">
-  <div class="hero-content">
-    <div class="hero-badge">🌱 IGI & GIA Certified Lab-Grown Diamonds</div>
-    <h1>Diamonds.<br><em>Reimagined.</em><br><span>Responsibly.</span></h1>
-    <p class="hero-sub">Pune's first dedicated lab-grown diamond boutique. Same optical, chemical, and physical properties as mined diamonds — at 40–70% lower cost, with zero mining impact.</p>
-    <div class="hero-ctas">
-      <button class="btn-primary">Explore Collections</button>
-      <button class="btn-outline">Compare Lab vs Mined</button>
-    </div>
-    <div class="stats-bar">
-      <div class="stat-item"><span class="num">40-70%</span><span class="lbl">Cost Savings vs Mined</span></div>
-      <div class="stat-item"><span class="num">100%</span><span class="lbl">Certified Diamonds</span></div>
-      <div class="stat-item"><span class="num">0</span><span class="lbl">Mining Impact</span></div>
-    </div>
-  </div>
-  <div class="hero-visual">
-    <svg class="diamond-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <linearGradient id="dg1" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" style="stop-color:#c9a84c;stop-opacity:1"/>
-          <stop offset="50%" style="stop-color:#e8d5a3;stop-opacity:1"/>
-          <stop offset="100%" style="stop-color:#7b68ee;stop-opacity:1"/>
-        </linearGradient>
-        <linearGradient id="dg2" x1="100%" y1="0%" x2="0%" y2="100%">
-          <stop offset="0%" style="stop-color:#7b68ee;stop-opacity:0.6"/>
-          <stop offset="100%" style="stop-color:#c9a84c;stop-opacity:0.4"/>
-        </linearGradient>
-      </defs>
-      <!-- Diamond shape -->
-      <polygon points="100,20 160,75 100,180 40,75" fill="url(#dg1)" opacity="0.9"/>
-      <polygon points="100,20 160,75 100,75" fill="url(#dg2)" opacity="0.5"/>
-      <polygon points="100,20 40,75 100,75" fill="white" opacity="0.15"/>
-      <polygon points="100,75 160,75 100,180" fill="url(#dg2)" opacity="0.7"/>
-      <polygon points="100,75 40,75 100,180" fill="url(#dg1)" opacity="0.5"/>
-      <!-- Sparkle lines -->
-      <line x1="100" y1="5" x2="100" y2="15" stroke="#c9a84c" stroke-width="2" opacity="0.8"/>
-      <line x1="175" y1="75" x2="165" y2="75" stroke="#c9a84c" stroke-width="2" opacity="0.8"/>
-      <line x1="25" y1="75" x2="35" y2="75" stroke="#c9a84c" stroke-width="2" opacity="0.8"/>
-      <line x1="150" y1="35" x2="143" y2="42" stroke="#7b68ee" stroke-width="1.5" opacity="0.7"/>
-      <line x1="50" y1="35" x2="57" y2="42" stroke="#7b68ee" stroke-width="1.5" opacity="0.7"/>
-    </svg>
-  </div>
+ <div class="hero-content">
+ <div class="hero-badge"> IGI & GIA Certified Lab-Grown Diamonds</div>
+ <h1>Diamonds.<br><em>Reimagined.</em><br><span>Responsibly.</span></h1>
+ <p class="hero-sub">Pune's first dedicated lab-grown diamond boutique. Same optical, chemical, and physical properties as mined diamonds — at 40–70% lower cost, with zero mining impact.</p>
+ <div class="hero-ctas">
+ <button class="btn-primary">Explore Collections</button>
+ <button class="btn-outline">Compare Lab vs Mined</button>
+ </div>
+ <div class="stats-bar">
+ <div class="stat-item"><span class="num">40-70%</span><span class="lbl">Cost Savings vs Mined</span></div>
+ <div class="stat-item"><span class="num">100%</span><span class="lbl">Certified Diamonds</span></div>
+ <div class="stat-item"><span class="num">0</span><span class="lbl">Mining Impact</span></div>
+ </div>
+ </div>
+ <div class="hero-visual">
+ <svg class="diamond-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+ <linearGradient id="dg1" x1="0%" y1="0%" x2="100%" y2="100%">
+ <stop offset="0%" style="stop-color:#c9a84c;stop-opacity:1"/>
+ <stop offset="50%" style="stop-color:#e8d5a3;stop-opacity:1"/>
+ <stop offset="100%" style="stop-color:#7b68ee;stop-opacity:1"/>
+ </linearGradient>
+ <linearGradient id="dg2" x1="100%" y1="0%" x2="0%" y2="100%">
+ <stop offset="0%" style="stop-color:#7b68ee;stop-opacity:0.6"/>
+ <stop offset="100%" style="stop-color:#c9a84c;stop-opacity:0.4"/>
+ </linearGradient>
+ </defs>
+ <!-- Diamond shape -->
+ <polygon points="100,20 160,75 100,180 40,75" fill="url(#dg1)" opacity="0.9"/>
+ <polygon points="100,20 160,75 100,75" fill="url(#dg2)" opacity="0.5"/>
+ <polygon points="100,20 40,75 100,75" fill="white" opacity="0.15"/>
+ <polygon points="100,75 160,75 100,180" fill="url(#dg2)" opacity="0.7"/>
+ <polygon points="100,75 40,75 100,180" fill="url(#dg1)" opacity="0.5"/>
+ <!-- Sparkle lines -->
+ <line x1="100" y1="5" x2="100" y2="15" stroke="#c9a84c" stroke-width="2" opacity="0.8"/>
+ <line x1="175" y1="75" x2="165" y2="75" stroke="#c9a84c" stroke-width="2" opacity="0.8"/>
+ <line x1="25" y1="75" x2="35" y2="75" stroke="#c9a84c" stroke-width="2" opacity="0.8"/>
+ <line x1="150" y1="35" x2="143" y2="42" stroke="#7b68ee" stroke-width="1.5" opacity="0.7"/>
+ <line x1="50" y1="35" x2="57" y2="42" stroke="#7b68ee" stroke-width="1.5" opacity="0.7"/>
+ </svg>
+ </div>
 </section>
 
 <!-- WHY LAB-GROWN -->
 <section class="why-section">
-  <div class="section-label">The Science</div>
-  <h2>Real Diamonds. <span>Better Origin.</span></h2>
-  <p class="section-sub">Lab-grown diamonds are not simulants. They are real diamonds — created in controlled environments that replicate natural geological processes in weeks, not millions of years.</p>
-  
-  <div class="why-grid">
-    <div class="why-card">
-      <div class="why-icon">💎</div>
-      <h3>Chemically Identical</h3>
-      <p>Pure carbon crystal structure, identical optical properties, hardness (10 on Mohs), and sparkle. A gemologist cannot distinguish without lab equipment.</p>
-    </div>
-    <div class="why-card">
-      <div class="why-icon">🌿</div>
-      <h3>Ethical & Sustainable</h3>
-      <p>No open-pit mining, no habitat destruction, no conflict zones. Lab-grown production uses 90% less water and leaves no permanent land scarring.</p>
-    </div>
-    <div class="why-card">
-      <div class="why-icon">📉</div>
-      <h3>40–70% Better Value</h3>
-      <p>The same 1-carat diamond that costs ₹4,00,000 mined, costs ₹1,40,000 lab-grown. Spend the difference on a better cut, clarity, or setting.</p>
-    </div>
-    <div class="why-card">
-      <div class="why-icon">📋</div>
-      <h3>IGI / GIA Certified</h3>
-      <p>Every diamond comes with an internationally recognised grading report. Same 4C standards: Cut, Colour, Clarity, Carat — no compromise.</p>
-    </div>
-    
-    <!-- VS comparison -->
-    <div class="vs-box">
-      <h3 style="font-family:sans-serif; font-size:0.9rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--muted); margin-bottom:1.5rem;">Lab-Grown vs Mined — At a Glance</h3>
-      <div class="vs-grid">
-        <div class="vs-col">
-          <h4>Natural Mined</h4>
-          <div class="vs-row"><span>Carbon crystal ✓</span></div>
-          <div class="vs-row"><span>Same hardness ✓</span></div>
-          <div class="vs-row"><span class="cross">High cost ✗</span></div>
-          <div class="vs-row"><span class="cross">Mining damage ✗</span></div>
-          <div class="vs-row"><span class="cross">Conflict risk ✗</span></div>
-        </div>
-        <div class="vs-divider">VS</div>
-        <div class="vs-col lab">
-          <h4>Aurum Lab-Grown</h4>
-          <div class="vs-row"><span>Carbon crystal <span class="check">✓</span></span></div>
-          <div class="vs-row"><span>Same hardness <span class="check">✓</span></span></div>
-          <div class="vs-row"><span class="check">40-70% lower cost ✓</span></div>
-          <div class="vs-row"><span class="check">Zero mining ✓</span></div>
-          <div class="vs-row"><span class="check">100% conflict-free ✓</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
+ <div class="section-label">The Science</div>
+ <h2>Real Diamonds. <span>Better Origin.</span></h2>
+ <p class="section-sub">Lab-grown diamonds are not simulants. They are real diamonds — created in controlled environments that replicate natural geological processes in weeks, not millions of years.</p>
+ 
+ <div class="why-grid">
+ <div class="why-card">
+ <div class="why-icon"></div>
+ <h3>Chemically Identical</h3>
+ <p>Pure carbon crystal structure, identical optical properties, hardness (10 on Mohs), and sparkle. A gemologist cannot distinguish without lab equipment.</p>
+ </div>
+ <div class="why-card">
+ <div class="why-icon"></div>
+ <h3>Ethical & Sustainable</h3>
+ <p>No open-pit mining, no habitat destruction, no conflict zones. Lab-grown production uses 90% less water and leaves no permanent land scarring.</p>
+ </div>
+ <div class="why-card">
+ <div class="why-icon"></div>
+ <h3>40–70% Better Value</h3>
+ <p>The same 1-carat diamond that costs 4,00,000 mined, costs 1,40,000 lab-grown. Spend the difference on a better cut, clarity, or setting.</p>
+ </div>
+ <div class="why-card">
+ <div class="why-icon"></div>
+ <h3>IGI / GIA Certified</h3>
+ <p>Every diamond comes with an internationally recognised grading report. Same 4C standards: Cut, Colour, Clarity, Carat — no compromise.</p>
+ </div>
+ 
+ <!-- VS comparison -->
+ <div class="vs-box">
+ <h3 style="font-family:sans-serif; font-size:0.9rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--muted); margin-bottom:1.5rem;">Lab-Grown vs Mined — At a Glance</h3>
+ <div class="vs-grid">
+ <div class="vs-col">
+ <h4>Natural Mined</h4>
+ <div class="vs-row"><span>Carbon crystal </span></div>
+ <div class="vs-row"><span>Same hardness </span></div>
+ <div class="vs-row"><span class="cross">High cost ✗</span></div>
+ <div class="vs-row"><span class="cross">Mining damage ✗</span></div>
+ <div class="vs-row"><span class="cross">Conflict risk ✗</span></div>
+ </div>
+ <div class="vs-divider">VS</div>
+ <div class="vs-col lab">
+ <h4>Aurum Lab-Grown</h4>
+ <div class="vs-row"><span>Carbon crystal </span></div>
+ <div class="vs-row"><span>Same hardness </span></div>
+ <div class="vs-row"><span class="check">40-70% lower cost </span></div>
+ <div class="vs-row"><span class="check">Zero mining </span></div>
+ <div class="vs-row"><span class="check">100% conflict-free </span></div>
+ </div>
+ </div>
+ </div>
+ </div>
 </section>
 
 <!-- COLLECTIONS -->
 <section>
-  <div class="section-label">Our Collections</div>
-  <h2>Jewellery That <span>Means Something</span></h2>
-  <p class="section-sub">From solitaire engagements to daily-wear pieces, every collection designed for the modern Indian woman who values both beauty and conscience.</p>
-  
-  <div class="collections-grid">
-    <div class="collection-card">
-      <span class="coll-emoji">💍</span>
-      <h3>Solitaire Engagement</h3>
-      <p>Round brilliant, princess, and oval cuts in 18k gold settings. Accompanied by full IGI certification with unique laser inscription.</p>
-      <div class="price-range">Starting ₹75,000 — 0.30 Ct, VS1, F</div>
-    </div>
-    <div class="collection-card">
-      <span class="coll-emoji">✨</span>
-      <h3>Tennis & Line Bracelets</h3>
-      <p>Classic 4-prong diamond tennis bracelets, channel-set eternity bands, and mixed-metal contemporary pieces.</p>
-      <div class="price-range">Starting ₹42,000 — 3 Ct total</div>
-    </div>
-    <div class="collection-card">
-      <span class="coll-emoji">👂</span>
-      <h3>Stud & Drop Earrings</h3>
-      <p>From 0.15 Ct everyday studs to 3 Ct chandelier drops. Princess, cushion, and marquise options in white, rose, and yellow gold.</p>
-      <div class="price-range">Starting ₹18,000 — 0.15 Ct pair</div>
-    </div>
-    <div class="collection-card">
-      <span class="coll-emoji">📿</span>
-      <h3>Pendants & Necklaces</h3>
-      <p>Station necklaces, single-stone pendants, and layered designs. Perfect for gifting or celebrating milestones.</p>
-      <div class="price-range">Starting ₹24,000 — 0.25 Ct pendant</div>
-    </div>
-    <div class="collection-card">
-      <span class="coll-emoji">👑</span>
-      <h3>Bespoke Designs</h3>
-      <p>Your vision, our craft. Bring a sketch, a photo, or just an idea — we'll CAD-render it and create your dream piece within 3 weeks.</p>
-      <div class="price-range">Custom quote — typically 20–30% less than ready pieces</div>
-    </div>
-    <div class="collection-card">
-      <span class="coll-emoji">🎁</span>
-      <h3>Anniversary & Gifts</h3>
-      <p>Curated gift sets, engraving service, and luxury packaging. Corporate gifting program available for bulk orders.</p>
-      <div class="price-range">Gift sets from ₹15,000</div>
-    </div>
-  </div>
+ <div class="section-label">Our Collections</div>
+ <h2>Jewellery That <span>Means Something</span></h2>
+ <p class="section-sub">From solitaire engagements to daily-wear pieces, every collection designed for the modern Indian woman who values both beauty and conscience.</p>
+ 
+ <div class="collections-grid">
+ <div class="collection-card">
+ 
+ <h3>Solitaire Engagement</h3>
+ <p>Round brilliant, princess, and oval cuts in 18k gold settings. Accompanied by full IGI certification with unique laser inscription.</p>
+ <div class="price-range">Starting 75,000 — 0.30 Ct, VS1, F</div>
+ </div>
+ <div class="collection-card">
+ <span class="coll-emoji">✨</span>
+ <h3>Tennis & Line Bracelets</h3>
+ <p>Classic 4-prong diamond tennis bracelets, channel-set eternity bands, and mixed-metal contemporary pieces.</p>
+ <div class="price-range">Starting 42,000 — 3 Ct total</div>
+ </div>
+ <div class="collection-card">
+ 
+ <h3>Stud & Drop Earrings</h3>
+ <p>From 0.15 Ct everyday studs to 3 Ct chandelier drops. Princess, cushion, and marquise options in white, rose, and yellow gold.</p>
+ <div class="price-range">Starting 18,000 — 0.15 Ct pair</div>
+ </div>
+ <div class="collection-card">
+ 
+ <h3>Pendants & Necklaces</h3>
+ <p>Station necklaces, single-stone pendants, and layered designs. Perfect for gifting or celebrating milestones.</p>
+ <div class="price-range">Starting 24,000 — 0.25 Ct pendant</div>
+ </div>
+ <div class="collection-card">
+ 
+ <h3>Bespoke Designs</h3>
+ <p>Your vision, our craft. Bring a sketch, a photo, or just an idea — we'll CAD-render it and create your dream piece within 3 weeks.</p>
+ <div class="price-range">Custom quote — typically 20–30% less than ready pieces</div>
+ </div>
+ <div class="collection-card">
+ 
+ <h3>Anniversary & Gifts</h3>
+ <p>Curated gift sets, engraving service, and luxury packaging. Corporate gifting program available for bulk orders.</p>
+ <div class="price-range">Gift sets from 15,000</div>
+ </div>
+ </div>
 </section>
 
 <!-- PRICE COMPARISON -->
 <section class="why-section">
-  <div class="section-label">Value Calculator</div>
-  <h2>See the <span>Difference</span></h2>
-  <p class="section-sub">Real price comparisons for identical 4C specifications. Every Aurum Lab diamond has the same certificate grades as its mined equivalent.</p>
-  
-  <table class="price-table">
-    <thead>
-      <tr>
-        <th>Diamond Spec</th>
-        <th>Mined Price</th>
-        <th>Aurum Lab Price</th>
-        <th>Your Savings</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>0.30 Ct, VS1, F, Excellent Cut</td>
-        <td class="mined-price">₹55,000</td>
-        <td class="lab-price">₹22,000</td>
-        <td class="savings">Save ₹33,000 (60%)</td>
-      </tr>
-      <tr>
-        <td>0.50 Ct, VS2, G, Excellent Cut</td>
-        <td class="mined-price">₹1,10,000</td>
-        <td class="lab-price">₹42,000</td>
-        <td class="savings">Save ₹68,000 (62%)</td>
-      </tr>
-      <tr>
-        <td>1.00 Ct, VS1, E, Excellent Cut</td>
-        <td class="mined-price">₹4,20,000</td>
-        <td class="lab-price">₹1,45,000</td>
-        <td class="savings">Save ₹2,75,000 (65%)</td>
-      </tr>
-      <tr>
-        <td>1.50 Ct, VVS2, F, Ideal Cut</td>
-        <td class="mined-price">₹9,00,000</td>
-        <td class="lab-price">₹2,80,000</td>
-        <td class="savings">Save ₹6,20,000 (69%)</td>
-      </tr>
-      <tr>
-        <td>2.00 Ct, VS1, D, Excellent Cut</td>
-        <td class="mined-price">₹18,50,000</td>
-        <td class="lab-price">₹5,60,000</td>
-        <td class="savings">Save ₹12,90,000 (70%)</td>
-      </tr>
-    </tbody>
-  </table>
-  <p style="font-family:sans-serif; font-size:0.8rem; color:var(--muted); margin-top:1rem;">*Prices indicative. Final pricing depends on current market rates and setting choice. All lab-grown prices include IGI certification.</p>
+ <div class="section-label">Value Calculator</div>
+ <h2>See the <span>Difference</span></h2>
+ <p class="section-sub">Real price comparisons for identical 4C specifications. Every Aurum Lab diamond has the same certificate grades as its mined equivalent.</p>
+ 
+ <table class="price-table">
+ <thead>
+ <tr>
+ <th>Diamond Spec</th>
+ <th>Mined Price</th>
+ <th>Aurum Lab Price</th>
+ <th>Your Savings</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>0.30 Ct, VS1, F, Excellent Cut</td>
+ <td class="mined-price">55,000</td>
+ <td class="lab-price">22,000</td>
+ <td class="savings">Save 33,000 (60%)</td>
+ </tr>
+ <tr>
+ <td>0.50 Ct, VS2, G, Excellent Cut</td>
+ <td class="mined-price">1,10,000</td>
+ <td class="lab-price">42,000</td>
+ <td class="savings">Save 68,000 (62%)</td>
+ </tr>
+ <tr>
+ <td>1.00 Ct, VS1, E, Excellent Cut</td>
+ <td class="mined-price">4,20,000</td>
+ <td class="lab-price">1,45,000</td>
+ <td class="savings">Save 2,75,000 (65%)</td>
+ </tr>
+ <tr>
+ <td>1.50 Ct, VVS2, F, Ideal Cut</td>
+ <td class="mined-price">9,00,000</td>
+ <td class="lab-price">2,80,000</td>
+ <td class="savings">Save 6,20,000 (69%)</td>
+ </tr>
+ <tr>
+ <td>2.00 Ct, VS1, D, Excellent Cut</td>
+ <td class="mined-price">18,50,000</td>
+ <td class="lab-price">5,60,000</td>
+ <td class="savings">Save 12,90,000 (70%)</td>
+ </tr>
+ </tbody>
+ </table>
+ <p style="font-family:sans-serif; font-size:0.8rem; color:var(--muted); margin-top:1rem;">*Prices indicative. Final pricing depends on current market rates and setting choice. All lab-grown prices include IGI certification.</p>
 </section>
 
 <!-- OUR PROCESS -->
 <section>
-  <div class="section-label">How It Works</div>
-  <h2>From Consultation <span>to Creation</span></h2>
-  <div class="steps">
-    <div class="step">
-      <div class="step-num">01</div>
-      <div class="step-text">
-        <h3>Free Consultation</h3>
-        <p>Visit our Koregaon Park boutique or book a video consultation. We understand your occasion, budget, and style preferences. No pressure, no commission-based sales.</p>
-      </div>
-    </div>
-    <div class="step">
-      <div class="step-num">02</div>
-      <div class="step-text">
-        <h3>Diamond Selection</h3>
-        <p>Browse our certified inventory or let us source a specific diamond to your exact specs — cut, colour, clarity, carat. All loose diamonds arrive with full IGI/GIA reports.</p>
-      </div>
-    </div>
-    <div class="step">
-      <div class="step-num">03</div>
-      <div class="step-text">
-        <h3>Setting Design</h3>
-        <p>Choose from our ready settings or go bespoke. Bespoke orders include a 3D CAD render for your approval before production begins. No surprises.</p>
-      </div>
-    </div>
-    <div class="step">
-      <div class="step-num">04</div>
-      <div class="step-text">
-        <h3>Handcrafted Completion</h3>
-        <p>Master craftsmen set your diamond in 18k/22k gold or platinum. Ready-to-buy pieces in 3–7 days; bespoke in 14–21 days. Hallmarked and certified on delivery.</p>
-      </div>
-    </div>
-    <div class="step">
-      <div class="step-num">05</div>
-      <div class="step-text">
-        <h3>Lifetime Aftercare</h3>
-        <p>Free cleaning and rhodium re-plating every year. Lifetime prong tightening. Complimentary re-sizing once. Your jewellery, forever protected.</p>
-      </div>
-    </div>
-  </div>
+ <div class="section-label">How It Works</div>
+ <h2>From Consultation <span>to Creation</span></h2>
+ <div class="steps">
+ <div class="step">
+ <div class="step-num">01</div>
+ <div class="step-text">
+ <h3>Free Consultation</h3>
+ <p>Visit our Koregaon Park boutique or book a video consultation. We understand your occasion, budget, and style preferences. No pressure, no commission-based sales.</p>
+ </div>
+ </div>
+ <div class="step">
+ <div class="step-num">02</div>
+ <div class="step-text">
+ <h3>Diamond Selection</h3>
+ <p>Browse our certified inventory or let us source a specific diamond to your exact specs — cut, colour, clarity, carat. All loose diamonds arrive with full IGI/GIA reports.</p>
+ </div>
+ </div>
+ <div class="step">
+ <div class="step-num">03</div>
+ <div class="step-text">
+ <h3>Setting Design</h3>
+ <p>Choose from our ready settings or go bespoke. Bespoke orders include a 3D CAD render for your approval before production begins. No surprises.</p>
+ </div>
+ </div>
+ <div class="step">
+ <div class="step-num">04</div>
+ <div class="step-text">
+ <h3>Handcrafted Completion</h3>
+ <p>Master craftsmen set your diamond in 18k/22k gold or platinum. Ready-to-buy pieces in 3–7 days; bespoke in 14–21 days. Hallmarked and certified on delivery.</p>
+ </div>
+ </div>
+ <div class="step">
+ <div class="step-num">05</div>
+ <div class="step-text">
+ <h3>Lifetime Aftercare</h3>
+ <p>Free cleaning and rhodium re-plating every year. Lifetime prong tightening. Complimentary re-sizing once. Your jewellery, forever protected.</p>
+ </div>
+ </div>
+ </div>
 </section>
 
 <!-- CERTIFICATIONS -->
 <section class="why-section">
-  <div class="section-label">Trust & Verification</div>
-  <h2>Every Diamond <span>Certified</span></h2>
-  <p class="section-sub">We never sell uncertified diamonds. Each stone carries a grading report from the world's most trusted gemological laboratories, with a unique laser inscription invisible to the naked eye.</p>
-  <div class="certs">
-    <div class="cert-badge">
-      <span class="cert-logo">🏛️</span>
-      <div class="cert-name">IGI Certified</div>
-    </div>
-    <div class="cert-badge">
-      <span class="cert-logo">💠</span>
-      <div class="cert-name">GIA Certified</div>
-    </div>
-    <div class="cert-badge">
-      <span class="cert-logo">🔖</span>
-      <div class="cert-name">BIS Hallmark 916</div>
-    </div>
-    <div class="cert-badge">
-      <span class="cert-logo">🌐</span>
-      <div class="cert-name">Laser Inscribed</div>
-    </div>
-    <div class="cert-badge">
-      <span class="cert-logo">📱</span>
-      <div class="cert-name">QR Verify</div>
-    </div>
-  </div>
+ <div class="section-label">Trust & Verification</div>
+ <h2>Every Diamond <span>Certified</span></h2>
+ <p class="section-sub">We never sell uncertified diamonds. Each stone carries a grading report from the world's most trusted gemological laboratories, with a unique laser inscription invisible to the naked eye.</p>
+ <div class="certs">
+ <div class="cert-badge">
+ 
+ <div class="cert-name">IGI Certified</div>
+ </div>
+ <div class="cert-badge">
+ 
+ <div class="cert-name">GIA Certified</div>
+ </div>
+ <div class="cert-badge">
+ 
+ <div class="cert-name">BIS Hallmark 916</div>
+ </div>
+ <div class="cert-badge">
+ 
+ <div class="cert-name">Laser Inscribed</div>
+ </div>
+ <div class="cert-badge">
+ 
+ <div class="cert-name">QR Verify</div>
+ </div>
+ </div>
 </section>
 
 <!-- TESTIMONIALS -->
 <section class="testi-section">
-  <div class="section-label">Client Stories</div>
-  <h2>Real People. <span>Real Choices.</span></h2>
-  <div class="testi-grid">
-    <div class="testi-card">
-      <div class="stars">★★★★★</div>
-      <blockquote>"We were planning a ₹4 lakh solitaire. Aurum Lab showed us an identical diamond for ₹1.4 lakh — same IGI certificate. We used the difference to book our honeymoon. Best decision ever."</blockquote>
-      <cite><strong>Priya & Rohan Joshi</strong>Engagement Ring, January 2026</cite>
-    </div>
-    <div class="testi-card">
-      <div class="stars">★★★★★</div>
-      <blockquote>"I was sceptical — is it a 'real' diamond? Aurum's team spent an hour explaining the science. After seeing the IGI report and comparing under a loupe, I was convinced. My 1.5 Ct solitaire is stunning."</blockquote>
-      <cite><strong>Neha Kulkarni</strong>Solitaire Pendant, November 2025</cite>
-    </div>
-    <div class="testi-card">
-      <div class="stars">★★★★★</div>
-      <blockquote>"Corporate gifting for 25 employees — diamond stud sets within budget, beautifully packaged, on time. The team was incredibly professional. We'll be back for our next milestone."</blockquote>
-      <cite><strong>Aditya Sharma</strong>Director, Corporate Gifts, December 2025</cite>
-    </div>
-  </div>
+ <div class="section-label">Client Stories</div>
+ <h2>Real People. <span>Real Choices.</span></h2>
+ <div class="testi-grid">
+ <div class="testi-card">
+ <div class="stars">5 out of 5</div>
+ <blockquote>"We were planning a 4 lakh solitaire. Aurum Lab showed us an identical diamond for 1.4 lakh — same IGI certificate. We used the difference to book our honeymoon. Best decision ever."</blockquote>
+ <cite><strong>Priya & Rohan Joshi</strong>Engagement Ring, January 2026</cite>
+ </div>
+ <div class="testi-card">
+ <div class="stars">5 out of 5</div>
+ <blockquote>"I was sceptical — is it a 'real' diamond? Aurum's team spent an hour explaining the science. After seeing the IGI report and comparing under a loupe, I was convinced. My 1.5 Ct solitaire is stunning."</blockquote>
+ <cite><strong>Neha Kulkarni</strong>Solitaire Pendant, November 2025</cite>
+ </div>
+ <div class="testi-card">
+ <div class="stars">5 out of 5</div>
+ <blockquote>"Corporate gifting for 25 employees — diamond stud sets within budget, beautifully packaged, on time. The team was incredibly professional. We'll be back for our next milestone."</blockquote>
+ <cite><strong>Aditya Sharma</strong>Director, Corporate Gifts, December 2025</cite>
+ </div>
+ </div>
 </section>
 
 <!-- CTA -->
 <section class="cta-section">
-  <div class="section-label">Visit Us</div>
-  <h2>Start Your <em style="font-style:normal; color:var(--accent)">Diamond Journey</em></h2>
-  <p>Free consultation. No obligation. Just honest conversations about diamonds.<br>Walk in or book your private appointment today.</p>
-  <div class="cta-btns">
-    <button class="btn-primary">Book Free Consultation</button>
-    <button class="btn-outline">WhatsApp Us</button>
-  </div>
-  <p style="font-family:sans-serif; font-size:0.85rem; color:var(--muted); margin-top:2rem;">
-    📍 Aurum Lab, Ground Floor, Koregaon Park Plaza, Pune 411001 &nbsp;|&nbsp; 📞 +91 98765 43210 &nbsp;|&nbsp; Open Tue–Sun, 11 AM – 8 PM
-  </p>
+ <div class="section-label">Visit Us</div>
+ <h2>Start Your <em style="font-style:normal; color:var(--accent)">Diamond Journey</em></h2>
+ <p>Free consultation. No obligation. Just honest conversations about diamonds.<br>Walk in or book your private appointment today.</p>
+ <div class="cta-btns">
+ <button class="btn-primary">Book Free Consultation</button>
+ <button class="btn-outline">WhatsApp Us</button>
+ </div>
+ <p style="font-family:sans-serif; font-size:0.85rem; color:var(--muted); margin-top:2rem;">
+ Aurum Lab, Ground Floor, Koregaon Park Plaza, Pune 411001 &nbsp;|&nbsp; +91 98765 43210 &nbsp;|&nbsp; Open Tue–Sun, 11 AM – 8 PM
+ </p>
 </section>
 
 
@@ -634,97 +634,97 @@
 
 <!-- FAQ SECTION — SEO Enhanced -->
 <section id="faq" style="padding: 80px 5%; max-width: 900px; margin: 0 auto;">
-  <div style="text-align:center; margin-bottom: 48px;">
-    <span style="font-size: 0.75rem; letter-spacing: 4px; text-transform: uppercase; color: #c9a84c; display: block; margin-bottom: 12px; font-family: 'Segoe UI', Arial, sans-serif;">FAQ</span>
-    <h2 style="font-size: 2rem; font-weight: 700; margin-bottom: 12px; color: #f0efea;">Frequently Asked Questions</h2>
-    <div style="width: 50px; height: 2px; background: #c9a84c; margin: 0 auto 16px;"></div>
-    <p style="color: #888; font-size: 0.95rem; font-family: 'Segoe UI', Arial, sans-serif;">Everything you need to know about Aurum Lab</p>
-  </div>
-  <div style="display:flex; flex-direction:column; gap: 10px;">
+ <div style="text-align:center; margin-bottom: 48px;">
+ <span style="font-size: 0.75rem; letter-spacing: 4px; text-transform: uppercase; color: #c9a84c; display: block; margin-bottom: 12px; font-family: 'Segoe UI', Arial, sans-serif;">FAQ</span>
+ <h2 style="font-size: 2rem; font-weight: 700; margin-bottom: 12px; color: #f0efea;">Frequently Asked Questions</h2>
+ <div style="width: 50px; height: 2px; background: #c9a84c; margin: 0 auto 16px;"></div>
+ <p style="color: #888; font-size: 0.95rem; font-family: 'Segoe UI', Arial, sans-serif;">Everything you need to know about Aurum Lab</p>
+ </div>
+ <div style="display:flex; flex-direction:column; gap: 10px;">
 
-    <details style="background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.2); border-radius: 10px; overflow: hidden; transition: border-color 0.3s;">
-      <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #f0efea; font-family: 'Segoe UI', Arial, sans-serif;">
-        What are lab-grown diamonds at Aurum Lab Pune?
-        <span style="font-size: 1.2rem; color: #c9a84c; margin-left: 12px; flex-shrink:0; transition: transform 0.3s;">+</span>
-      </summary>
-      <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #888; line-height: 1.7; font-family: 'Segoe UI', Arial, sans-serif;">Lab-grown diamonds are real diamonds created using CVD/HPHT technology with identical chemical, physical, and optical properties to mined diamonds. 40-70% more affordable and 100% conflict-free. All IGI/GIA certified.</div>
-    </details>
+ <details style="background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.2); border-radius: 10px; overflow: hidden; transition: border-color 0.3s;">
+ <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #f0efea; font-family: 'Segoe UI', Arial, sans-serif;">
+ What are lab-grown diamonds at Aurum Lab Pune?
+ <span style="font-size: 1.2rem; color: #c9a84c; margin-left: 12px; flex-shrink:0; transition: transform 0.3s;">+</span>
+ </summary>
+ <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #888; line-height: 1.7; font-family: 'Segoe UI', Arial, sans-serif;">Lab-grown diamonds are real diamonds created using CVD/HPHT technology with identical chemical, physical, and optical properties to mined diamonds. 40-70% more affordable and 100% conflict-free. All IGI/GIA certified.</div>
+ </details>
 
-    <details style="background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.2); border-radius: 10px; overflow: hidden; transition: border-color 0.3s;">
-      <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #f0efea; font-family: 'Segoe UI', Arial, sans-serif;">
-        Are Aurum Lab diamonds certified and genuine?
-        <span style="font-size: 1.2rem; color: #c9a84c; margin-left: 12px; flex-shrink:0; transition: transform 0.3s;">+</span>
-      </summary>
-      <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #888; line-height: 1.7; font-family: 'Segoe UI', Arial, sans-serif;">Yes, every Aurum Lab diamond comes with IGI or GIA certification — the world's most trusted gemological labs. Each stone has a laser inscription and full 4C grading report. Same standards as mined diamonds.</div>
-    </details>
+ <details style="background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.2); border-radius: 10px; overflow: hidden; transition: border-color 0.3s;">
+ <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #f0efea; font-family: 'Segoe UI', Arial, sans-serif;">
+ Are Aurum Lab diamonds certified and genuine?
+ <span style="font-size: 1.2rem; color: #c9a84c; margin-left: 12px; flex-shrink:0; transition: transform 0.3s;">+</span>
+ </summary>
+ <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #888; line-height: 1.7; font-family: 'Segoe UI', Arial, sans-serif;">Yes, every Aurum Lab diamond comes with IGI or GIA certification — the world's most trusted gemological labs. Each stone has a laser inscription and full 4C grading report. Same standards as mined diamonds.</div>
+ </details>
 
-    <details style="background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.2); border-radius: 10px; overflow: hidden; transition: border-color 0.3s;">
-      <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #f0efea; font-family: 'Segoe UI', Arial, sans-serif;">
-        How much cheaper are lab-grown diamonds at Aurum Lab?
-        <span style="font-size: 1.2rem; color: #c9a84c; margin-left: 12px; flex-shrink:0; transition: transform 0.3s;">+</span>
-      </summary>
-      <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #888; line-height: 1.7; font-family: 'Segoe UI', Arial, sans-serif;">Lab-grown diamonds are 40-70% less expensive. A 1-carat VS1 E lab diamond costs ~₹1,45,000 vs ~₹4,20,000 mined. Spend the savings on a better cut, larger stone, or premium setting.</div>
-    </details>
+ <details style="background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.2); border-radius: 10px; overflow: hidden; transition: border-color 0.3s;">
+ <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #f0efea; font-family: 'Segoe UI', Arial, sans-serif;">
+ How much cheaper are lab-grown diamonds at Aurum Lab?
+ <span style="font-size: 1.2rem; color: #c9a84c; margin-left: 12px; flex-shrink:0; transition: transform 0.3s;">+</span>
+ </summary>
+ <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #888; line-height: 1.7; font-family: 'Segoe UI', Arial, sans-serif;">Lab-grown diamonds are 40-70% less expensive. A 1-carat VS1 E lab diamond costs ~1,45,000 vs ~4,20,000 mined. Spend the savings on a better cut, larger stone, or premium setting.</div>
+ </details>
 
-    <details style="background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.2); border-radius: 10px; overflow: hidden; transition: border-color 0.3s;">
-      <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #f0efea; font-family: 'Segoe UI', Arial, sans-serif;">
-        Does Aurum Lab create custom engagement rings?
-        <span style="font-size: 1.2rem; color: #c9a84c; margin-left: 12px; flex-shrink:0; transition: transform 0.3s;">+</span>
-      </summary>
-      <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #888; line-height: 1.7; font-family: 'Segoe UI', Arial, sans-serif;">Yes, we specialise in custom engagement rings. Choose your lab-grown diamond, design your setting with 3D CAD renders, and our craftsmen create your perfect ring in 7-14 working days in 18K/22K gold or platinum.</div>
-    </details>
+ <details style="background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.2); border-radius: 10px; overflow: hidden; transition: border-color 0.3s;">
+ <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #f0efea; font-family: 'Segoe UI', Arial, sans-serif;">
+ Does Aurum Lab create custom engagement rings?
+ <span style="font-size: 1.2rem; color: #c9a84c; margin-left: 12px; flex-shrink:0; transition: transform 0.3s;">+</span>
+ </summary>
+ <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #888; line-height: 1.7; font-family: 'Segoe UI', Arial, sans-serif;">Yes, we specialise in custom engagement rings. Choose your lab-grown diamond, design your setting with 3D CAD renders, and our craftsmen create your perfect ring in 7-14 working days in 18K/22K gold or platinum.</div>
+ </details>
 
-    <details style="background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.2); border-radius: 10px; overflow: hidden; transition: border-color 0.3s;">
-      <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #f0efea; font-family: 'Segoe UI', Arial, sans-serif;">
-        Where is Aurum Lab located in Pune?
-        <span style="font-size: 1.2rem; color: #c9a84c; margin-left: 12px; flex-shrink:0; transition: transform 0.3s;">+</span>
-      </summary>
-      <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #888; line-height: 1.7; font-family: 'Segoe UI', Arial, sans-serif;">Aurum Lab is at Koregaon Park Plaza, Ground Floor, Pune 411001. Also accessible from Senapati Bapat Road. Open Tuesday-Sunday 11 AM-8 PM. Free consultations and diamond education by appointment.</div>
-    </details>
-  </div>
+ <details style="background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.2); border-radius: 10px; overflow: hidden; transition: border-color 0.3s;">
+ <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #f0efea; font-family: 'Segoe UI', Arial, sans-serif;">
+ Where is Aurum Lab located in Pune?
+ <span style="font-size: 1.2rem; color: #c9a84c; margin-left: 12px; flex-shrink:0; transition: transform 0.3s;">+</span>
+ </summary>
+ <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #888; line-height: 1.7; font-family: 'Segoe UI', Arial, sans-serif;">Aurum Lab is at Koregaon Park Plaza, Ground Floor, Pune 411001. Also accessible from Senapati Bapat Road. Open Tuesday-Sunday 11 AM-8 PM. Free consultations and diamond education by appointment.</div>
+ </details>
+ </div>
 </section>
 
 <footer>
-  <div class="footer-grid">
-    <div class="footer-brand">
-      <div class="logo" style="padding:0; font-size:1.3rem;">AURUM<span>LAB</span></div>
-      <p>Pune's first dedicated lab-grown diamond boutique. Certified. Ethical. Beautiful. Every diamond IGI or GIA graded with laser inscription.</p>
-    </div>
-    <div>
-      <h4>Collections</h4>
-      <ul>
-        <li>Solitaires</li>
-        <li>Tennis Bracelets</li>
-        <li>Earrings</li>
-        <li>Pendants</li>
-        <li>Bespoke</li>
-      </ul>
-    </div>
-    <div>
-      <h4>Learn</h4>
-      <ul>
-        <li>Lab vs Mined</li>
-        <li>4C Guide</li>
-        <li>IGI Certification</li>
-        <li>Care Guide</li>
-        <li>FAQ</li>
-      </ul>
-    </div>
-    <div>
-      <h4>Visit</h4>
-      <ul>
-        <li>Koregaon Park</li>
-        <li>Book Appointment</li>
-        <li>Virtual Consult</li>
-        <li>Corporate Gifts</li>
-        <li>Returns Policy</li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <span>© 2026 Aurum Lab Jewellery. All rights reserved.</span>
-    <span>Powered by <strong>Invictus AI</strong> — AI-powered web presence for India's finest businesses</span>
-  </div>
+ <div class="footer-grid">
+ <div class="footer-brand">
+ <div class="logo" style="padding:0; font-size:1.3rem;">AURUM<span>LAB</span></div>
+ <p>Pune's first dedicated lab-grown diamond boutique. Certified. Ethical. Beautiful. Every diamond IGI or GIA graded with laser inscription.</p>
+ </div>
+ <div>
+ <h4>Collections</h4>
+ <ul>
+ <li>Solitaires</li>
+ <li>Tennis Bracelets</li>
+ <li>Earrings</li>
+ <li>Pendants</li>
+ <li>Bespoke</li>
+ </ul>
+ </div>
+ <div>
+ <h4>Learn</h4>
+ <ul>
+ <li>Lab vs Mined</li>
+ <li>4C Guide</li>
+ <li>IGI Certification</li>
+ <li>Care Guide</li>
+ <li>FAQ</li>
+ </ul>
+ </div>
+ <div>
+ <h4>Visit</h4>
+ <ul>
+ <li>Koregaon Park</li>
+ <li>Book Appointment</li>
+ <li>Virtual Consult</li>
+ <li>Corporate Gifts</li>
+ <li>Returns Policy</li>
+ </ul>
+ </div>
+ </div>
+ <div class="footer-bottom">
+ <span>© 2026 Aurum Lab Jewellery. All rights reserved.</span>
+ <span>Powered by <strong>Invictus AI</strong> — AI-powered web presence for India's finest businesses</span>
+ </div>
 </footer>
 
 </body>

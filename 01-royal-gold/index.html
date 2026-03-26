@@ -6,256 +6,256 @@
 <title>Ornate Fine Jewellery | Pune's Most Trusted Jeweller Since 1987</title>
 <meta name="description" content="Ornate Fine Jewellery — BIS Hallmarked gold, diamond & bridal jewellery in Pune. 37 years of legacy. Custom design studio. Exchange & buyback guaranteed.">
 <style>
-  :root {
-    --gold: #C9A84C;
-    --gold-light: #E8C87A;
-    --gold-dark: #9B7A2F;
-    --deep: #1A1008;
-    --dark: #0F0A05;
-    --warm: #2D1F0A;
-    --cream: #F5EDD6;
-    --text: #E8DCC8;
-    --muted: #9A8870;
-  }
-  * { margin:0; padding:0; box-sizing:border-box; }
-  body { font-family:'Georgia',serif; background:var(--dark); color:var(--text); overflow-x:hidden; }
-  
-  /* NAV */
-  nav { position:fixed; top:0; width:100%; z-index:100; background:rgba(15,10,5,0.97); border-bottom:1px solid rgba(201,168,76,0.2); padding:16px 40px; display:flex; justify-content:space-between; align-items:center; }
-  .nav-logo { font-size:1.4rem; color:var(--gold); letter-spacing:3px; text-transform:uppercase; font-weight:normal; }
-  .nav-logo span { font-size:0.7rem; display:block; letter-spacing:6px; color:var(--muted); text-transform:uppercase; }
-  .nav-links { display:flex; gap:32px; list-style:none; }
-  .nav-links a { color:var(--muted); text-decoration:none; font-size:0.85rem; letter-spacing:2px; text-transform:uppercase; font-family:Arial,sans-serif; transition:color 0.3s; }
-  .nav-links a:hover { color:var(--gold); }
-  .nav-cta { background:transparent; border:1px solid var(--gold); color:var(--gold); padding:10px 24px; font-size:0.8rem; letter-spacing:2px; text-transform:uppercase; cursor:pointer; font-family:Arial,sans-serif; transition:all 0.3s; }
-  .nav-cta:hover { background:var(--gold); color:var(--dark); }
+ :root {
+ --gold: #C9A84C;
+ --gold-light: #E8C87A;
+ --gold-dark: #9B7A2F;
+ --deep: #1A1008;
+ --dark: #0F0A05;
+ --warm: #2D1F0A;
+ --cream: #F5EDD6;
+ --text: #E8DCC8;
+ --muted: #9A8870;
+ }
+ * { margin:0; padding:0; box-sizing:border-box; }
+ body { font-family:'Georgia',serif; background:var(--dark); color:var(--text); overflow-x:hidden; }
+ 
+ /* NAV */
+ nav { position:fixed; top:0; width:100%; z-index:100; background:rgba(15,10,5,0.97); border-bottom:1px solid rgba(201,168,76,0.2); padding:16px 40px; display:flex; justify-content:space-between; align-items:center; }
+ .nav-logo { font-size:1.4rem; color:var(--gold); letter-spacing:3px; text-transform:uppercase; font-weight:normal; }
+ .nav-logo span { font-size:0.7rem; display:block; letter-spacing:6px; color:var(--muted); text-transform:uppercase; }
+ .nav-links { display:flex; gap:32px; list-style:none; }
+ .nav-links a { color:var(--muted); text-decoration:none; font-size:0.85rem; letter-spacing:2px; text-transform:uppercase; font-family:Arial,sans-serif; transition:color 0.3s; }
+ .nav-links a:hover { color:var(--gold); }
+ .nav-cta { background:transparent; border:1px solid var(--gold); color:var(--gold); padding:10px 24px; font-size:0.8rem; letter-spacing:2px; text-transform:uppercase; cursor:pointer; font-family:Arial,sans-serif; transition:all 0.3s; }
+ .nav-cta:hover { background:var(--gold); color:var(--dark); }
 
-  /* HERO */
-  .hero { min-height:100vh; display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden; background: radial-gradient(ellipse at 30% 50%, rgba(201,168,76,0.08) 0%, transparent 60%), radial-gradient(ellipse at 70% 80%, rgba(155,122,47,0.06) 0%, transparent 50%), var(--dark); }
-  .hero-particles { position:absolute; inset:0; overflow:hidden; }
-  .particle { position:absolute; width:2px; height:2px; background:var(--gold); border-radius:50%; opacity:0; animation:sparkle 4s infinite; }
-  @keyframes sparkle { 0%,100%{opacity:0;transform:scale(0)} 50%{opacity:0.8;transform:scale(1)} }
-  .hero-ornament { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:600px; height:600px; border:1px solid rgba(201,168,76,0.08); border-radius:50%; animation:rotate 30s linear infinite; }
-  .hero-ornament::before { content:''; position:absolute; inset:30px; border:1px solid rgba(201,168,76,0.05); border-radius:50%; }
-  .hero-ornament::after { content:''; position:absolute; inset:60px; border:1px solid rgba(201,168,76,0.03); border-radius:50%; }
-  @keyframes rotate { from{transform:translate(-50%,-50%) rotate(0deg)} to{transform:translate(-50%,-50%) rotate(360deg)} }
-  .hero-content { position:relative; z-index:2; text-align:center; max-width:800px; padding:120px 20px 80px; }
-  .hero-badge { display:inline-block; border:1px solid rgba(201,168,76,0.4); padding:8px 24px; font-size:0.7rem; letter-spacing:4px; text-transform:uppercase; color:var(--gold); font-family:Arial,sans-serif; margin-bottom:40px; }
-  .hero h1 { font-size:clamp(2.8rem,5vw,4.5rem); font-weight:normal; line-height:1.15; color:var(--cream); margin-bottom:8px; }
-  .hero h1 em { font-style:italic; color:var(--gold); }
-  .hero-sub { font-size:1rem; color:var(--muted); letter-spacing:3px; text-transform:uppercase; font-family:Arial,sans-serif; margin-bottom:32px; }
-  .hero p { font-size:1.1rem; color:var(--text); opacity:0.8; line-height:1.8; margin-bottom:48px; max-width:580px; margin-left:auto; margin-right:auto; }
-  .hero-actions { display:flex; gap:20px; justify-content:center; flex-wrap:wrap; }
-  .btn-primary { background:var(--gold); color:var(--dark); padding:16px 40px; font-size:0.85rem; letter-spacing:3px; text-transform:uppercase; border:none; cursor:pointer; font-family:Arial,sans-serif; font-weight:600; transition:all 0.3s; }
-  .btn-primary:hover { background:var(--gold-light); transform:translateY(-2px); }
-  .btn-outline { background:transparent; color:var(--gold); border:1px solid var(--gold); padding:16px 40px; font-size:0.85rem; letter-spacing:3px; text-transform:uppercase; cursor:pointer; font-family:Arial,sans-serif; transition:all 0.3s; }
-  .btn-outline:hover { background:rgba(201,168,76,0.1); }
+ /* HERO */
+ .hero { min-height:100vh; display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden; background: radial-gradient(ellipse at 30% 50%, rgba(201,168,76,0.08) 0%, transparent 60%), radial-gradient(ellipse at 70% 80%, rgba(155,122,47,0.06) 0%, transparent 50%), var(--dark); }
+ .hero-particles { position:absolute; inset:0; overflow:hidden; }
+ .particle { position:absolute; width:2px; height:2px; background:var(--gold); border-radius:50%; opacity:0; animation:sparkle 4s infinite; }
+ @keyframes sparkle { 0%,100%{opacity:0;transform:scale(0)} 50%{opacity:0.8;transform:scale(1)} }
+ .hero-ornament { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:600px; height:600px; border:1px solid rgba(201,168,76,0.08); border-radius:50%; animation:rotate 30s linear infinite; }
+ .hero-ornament::before { content:''; position:absolute; inset:30px; border:1px solid rgba(201,168,76,0.05); border-radius:50%; }
+ .hero-ornament::after { content:''; position:absolute; inset:60px; border:1px solid rgba(201,168,76,0.03); border-radius:50%; }
+ @keyframes rotate { from{transform:translate(-50%,-50%) rotate(0deg)} to{transform:translate(-50%,-50%) rotate(360deg)} }
+ .hero-content { position:relative; z-index:2; text-align:center; max-width:800px; padding:120px 20px 80px; }
+ .hero-badge { display:inline-block; border:1px solid rgba(201,168,76,0.4); padding:8px 24px; font-size:0.7rem; letter-spacing:4px; text-transform:uppercase; color:var(--gold); font-family:Arial,sans-serif; margin-bottom:40px; }
+ .hero h1 { font-size:clamp(2.8rem,5vw,4.5rem); font-weight:normal; line-height:1.15; color:var(--cream); margin-bottom:8px; }
+ .hero h1 em { font-style:italic; color:var(--gold); }
+ .hero-sub { font-size:1rem; color:var(--muted); letter-spacing:3px; text-transform:uppercase; font-family:Arial,sans-serif; margin-bottom:32px; }
+ .hero p { font-size:1.1rem; color:var(--text); opacity:0.8; line-height:1.8; margin-bottom:48px; max-width:580px; margin-left:auto; margin-right:auto; }
+ .hero-actions { display:flex; gap:20px; justify-content:center; flex-wrap:wrap; }
+ .btn-primary { background:var(--gold); color:var(--dark); padding:16px 40px; font-size:0.85rem; letter-spacing:3px; text-transform:uppercase; border:none; cursor:pointer; font-family:Arial,sans-serif; font-weight:600; transition:all 0.3s; }
+ .btn-primary:hover { background:var(--gold-light); transform:translateY(-2px); }
+ .btn-outline { background:transparent; color:var(--gold); border:1px solid var(--gold); padding:16px 40px; font-size:0.85rem; letter-spacing:3px; text-transform:uppercase; cursor:pointer; font-family:Arial,sans-serif; transition:all 0.3s; }
+ .btn-outline:hover { background:rgba(201,168,76,0.1); }
 
-  /* TRUST BAR */
-  .trust-bar { background:var(--warm); border-top:1px solid rgba(201,168,76,0.15); border-bottom:1px solid rgba(201,168,76,0.15); padding:24px 40px; display:flex; justify-content:center; gap:60px; flex-wrap:wrap; }
-  .trust-item { text-align:center; }
-  .trust-num { font-size:1.8rem; color:var(--gold); font-weight:normal; display:block; }
-  .trust-label { font-size:0.7rem; color:var(--muted); letter-spacing:2px; text-transform:uppercase; font-family:Arial,sans-serif; margin-top:4px; }
+ /* TRUST BAR */
+ .trust-bar { background:var(--warm); border-top:1px solid rgba(201,168,76,0.15); border-bottom:1px solid rgba(201,168,76,0.15); padding:24px 40px; display:flex; justify-content:center; gap:60px; flex-wrap:wrap; }
+ .trust-item { text-align:center; }
+ .trust-num { font-size:1.8rem; color:var(--gold); font-weight:normal; display:block; }
+ .trust-label { font-size:0.7rem; color:var(--muted); letter-spacing:2px; text-transform:uppercase; font-family:Arial,sans-serif; margin-top:4px; }
 
-  /* SECTION */
-  section { padding:100px 40px; max-width:1200px; margin:0 auto; }
-  .section-header { text-align:center; margin-bottom:70px; }
-  .section-tag { font-size:0.7rem; letter-spacing:4px; text-transform:uppercase; color:var(--gold); font-family:Arial,sans-serif; margin-bottom:16px; display:block; }
-  .section-title { font-size:clamp(2rem,3vw,2.8rem); font-weight:normal; color:var(--cream); margin-bottom:16px; }
-  .section-line { width:60px; height:1px; background:var(--gold); margin:0 auto 20px; }
-  .section-desc { font-size:1rem; color:var(--muted); line-height:1.8; max-width:560px; margin:0 auto; font-family:Arial,sans-serif; }
+ /* SECTION */
+ section { padding:100px 40px; max-width:1200px; margin:0 auto; }
+ .section-header { text-align:center; margin-bottom:70px; }
+ .section-tag { font-size:0.7rem; letter-spacing:4px; text-transform:uppercase; color:var(--gold); font-family:Arial,sans-serif; margin-bottom:16px; display:block; }
+ .section-title { font-size:clamp(2rem,3vw,2.8rem); font-weight:normal; color:var(--cream); margin-bottom:16px; }
+ .section-line { width:60px; height:1px; background:var(--gold); margin:0 auto 20px; }
+ .section-desc { font-size:1rem; color:var(--muted); line-height:1.8; max-width:560px; margin:0 auto; font-family:Arial,sans-serif; }
 
-  /* COLLECTIONS */
-  .collections-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:2px; }
-  .collection-card { position:relative; overflow:hidden; cursor:pointer; }
-  .collection-visual { height:380px; display:flex; align-items:center; justify-content:center; position:relative; transition:transform 0.6s; }
-  .collection-card:hover .collection-visual { transform:scale(1.03); }
-  .collection-icon { font-size:5rem; opacity:0.6; }
-  .collection-overlay { position:absolute; inset:0; background:linear-gradient(to top, rgba(15,10,5,0.9) 0%, transparent 50%); display:flex; flex-direction:column; justify-content:flex-end; padding:32px; }
-  .collection-name { font-size:1.4rem; color:var(--cream); margin-bottom:8px; }
-  .collection-count { font-size:0.75rem; letter-spacing:2px; text-transform:uppercase; color:var(--gold); font-family:Arial,sans-serif; }
-  .c1 { background:linear-gradient(135deg, #2D1F0A 0%, #3D2A0F 100%); }
-  .c2 { background:linear-gradient(135deg, #0A0F1A 0%, #0F1A2D 100%); }
-  .c3 { background:linear-gradient(135deg, #1A0A10 0%, #2D0F1A 100%); }
-  .c4 { background:linear-gradient(135deg, #0A1A15 0%, #0F2D22 100%); }
+ /* COLLECTIONS */
+ .collections-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:2px; }
+ .collection-card { position:relative; overflow:hidden; cursor:pointer; }
+ .collection-visual { height:380px; display:flex; align-items:center; justify-content:center; position:relative; transition:transform 0.6s; }
+ .collection-card:hover .collection-visual { transform:scale(1.03); }
+ .collection-icon { font-size:5rem; opacity:0.6; }
+ .collection-overlay { position:absolute; inset:0; background:linear-gradient(to top, rgba(15,10,5,0.9) 0%, transparent 50%); display:flex; flex-direction:column; justify-content:flex-end; padding:32px; }
+ .collection-name { font-size:1.4rem; color:var(--cream); margin-bottom:8px; }
+ .collection-count { font-size:0.75rem; letter-spacing:2px; text-transform:uppercase; color:var(--gold); font-family:Arial,sans-serif; }
+ .c1 { background:linear-gradient(135deg, #2D1F0A 0%, #3D2A0F 100%); }
+ .c2 { background:linear-gradient(135deg, #0A0F1A 0%, #0F1A2D 100%); }
+ .c3 { background:linear-gradient(135deg, #1A0A10 0%, #2D0F1A 100%); }
+ .c4 { background:linear-gradient(135deg, #0A1A15 0%, #0F2D22 100%); }
 
-  /* SERVICES */
-  .services-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:2px; }
-  .service-card { background:var(--warm); padding:48px 36px; border:1px solid rgba(201,168,76,0.1); transition:all 0.3s; position:relative; overflow:hidden; }
-  .service-card::before { content:''; position:absolute; top:0; left:0; width:100%; height:2px; background:var(--gold); transform:scaleX(0); transition:transform 0.4s; }
-  .service-card:hover { border-color:rgba(201,168,76,0.3); transform:translateY(-4px); }
-  .service-card:hover::before { transform:scaleX(1); }
-  .service-icon { font-size:2.5rem; margin-bottom:24px; display:block; }
-  .service-title { font-size:1.2rem; color:var(--cream); margin-bottom:12px; font-weight:normal; }
-  .service-desc { font-size:0.9rem; color:var(--muted); line-height:1.8; font-family:Arial,sans-serif; }
+ /* SERVICES */
+ .services-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:2px; }
+ .service-card { background:var(--warm); padding:48px 36px; border:1px solid rgba(201,168,76,0.1); transition:all 0.3s; position:relative; overflow:hidden; }
+ .service-card::before { content:''; position:absolute; top:0; left:0; width:100%; height:2px; background:var(--gold); transform:scaleX(0); transition:transform 0.4s; }
+ .service-card:hover { border-color:rgba(201,168,76,0.3); transform:translateY(-4px); }
+ .service-card:hover::before { transform:scaleX(1); }
+ .service-icon { font-size:2.5rem; margin-bottom:24px; display:block; }
+ .service-title { font-size:1.2rem; color:var(--cream); margin-bottom:12px; font-weight:normal; }
+ .service-desc { font-size:0.9rem; color:var(--muted); line-height:1.8; font-family:Arial,sans-serif; }
 
-  /* WHY US */
-  .why-grid { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; }
-  .why-visual { position:relative; }
-  .why-frame { border:1px solid rgba(201,168,76,0.2); padding:60px; text-align:center; position:relative; }
-  .why-frame::before, .why-frame::after { content:''; position:absolute; width:20px; height:20px; border-color:var(--gold); border-style:solid; }
-  .why-frame::before { top:12px; left:12px; border-width:1px 0 0 1px; }
-  .why-frame::after { bottom:12px; right:12px; border-width:0 1px 1px 0; }
-  .why-icon-large { font-size:8rem; opacity:0.4; }
-  .why-list { list-style:none; }
-  .why-item { display:flex; gap:20px; padding:24px 0; border-bottom:1px solid rgba(201,168,76,0.1); }
-  .why-item:last-child { border:none; }
-  .why-check { color:var(--gold); font-size:1.2rem; flex-shrink:0; margin-top:4px; }
-  .why-item-title { font-size:1rem; color:var(--cream); margin-bottom:6px; }
-  .why-item-text { font-size:0.85rem; color:var(--muted); line-height:1.7; font-family:Arial,sans-serif; }
+ /* WHY US */
+ .why-grid { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; }
+ .why-visual { position:relative; }
+ .why-frame { border:1px solid rgba(201,168,76,0.2); padding:60px; text-align:center; position:relative; }
+ .why-frame::before, .why-frame::after { content:''; position:absolute; width:20px; height:20px; border-color:var(--gold); border-style:solid; }
+ .why-frame::before { top:12px; left:12px; border-width:1px 0 0 1px; }
+ .why-frame::after { bottom:12px; right:12px; border-width:0 1px 1px 0; }
+ .why-icon-large { font-size:8rem; opacity:0.4; }
+ .why-list { list-style:none; }
+ .why-item { display:flex; gap:20px; padding:24px 0; border-bottom:1px solid rgba(201,168,76,0.1); }
+ .why-item:last-child { border:none; }
+ .why-check { color:var(--gold); font-size:1.2rem; flex-shrink:0; margin-top:4px; }
+ .why-item-title { font-size:1rem; color:var(--cream); margin-bottom:6px; }
+ .why-item-text { font-size:0.85rem; color:var(--muted); line-height:1.7; font-family:Arial,sans-serif; }
 
-  /* TESTIMONIALS */
-  .testimonials-full { background:var(--warm); padding:100px 40px; }
-  .testimonials-inner { max-width:1200px; margin:0 auto; }
-  .testi-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:2px; margin-top:60px; }
-  .testi-card { background:var(--dark); padding:44px 36px; position:relative; }
-  .testi-card::before { content:'"'; position:absolute; top:20px; left:28px; font-size:6rem; color:rgba(201,168,76,0.1); line-height:1; }
-  .testi-stars { color:var(--gold); font-size:1rem; margin-bottom:20px; letter-spacing:2px; }
-  .testi-text { font-size:0.95rem; color:var(--text); line-height:1.9; margin-bottom:28px; font-style:italic; }
-  .testi-author { display:flex; align-items:center; gap:16px; }
-  .testi-avatar { width:44px; height:44px; border-radius:50%; background:linear-gradient(135deg,var(--gold-dark),var(--gold)); display:flex; align-items:center; justify-content:center; font-size:1.1rem; color:var(--dark); font-weight:bold; font-family:Arial,sans-serif; flex-shrink:0; }
-  .testi-name { font-size:0.9rem; color:var(--cream); margin-bottom:2px; }
-  .testi-detail { font-size:0.75rem; color:var(--gold); font-family:Arial,sans-serif; letter-spacing:1px; }
+ /* TESTIMONIALS */
+ .testimonials-full { background:var(--warm); padding:100px 40px; }
+ .testimonials-inner { max-width:1200px; margin:0 auto; }
+ .testi-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:2px; margin-top:60px; }
+ .testi-card { background:var(--dark); padding:44px 36px; position:relative; }
+ .testi-card::before { content:'"'; position:absolute; top:20px; left:28px; font-size:6rem; color:rgba(201,168,76,0.1); line-height:1; }
+ .testi-stars { color:var(--gold); font-size:1rem; margin-bottom:20px; letter-spacing:2px; }
+ .testi-text { font-size:0.95rem; color:var(--text); line-height:1.9; margin-bottom:28px; font-style:italic; }
+ .testi-author { display:flex; align-items:center; gap:16px; }
+ .testi-avatar { width:44px; height:44px; border-radius:50%; background:linear-gradient(135deg,var(--gold-dark),var(--gold)); display:flex; align-items:center; justify-content:center; font-size:1.1rem; color:var(--dark); font-weight:bold; font-family:Arial,sans-serif; flex-shrink:0; }
+ .testi-name { font-size:0.9rem; color:var(--cream); margin-bottom:2px; }
+ .testi-detail { font-size:0.75rem; color:var(--gold); font-family:Arial,sans-serif; letter-spacing:1px; }
 
-  /* PROCESS */
-  .process-steps { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:0; position:relative; }
-  .process-steps::before { content:''; position:absolute; top:40px; left:10%; right:10%; height:1px; background:rgba(201,168,76,0.2); }
-  .step { text-align:center; padding:0 20px; position:relative; z-index:1; }
-  .step-num { width:80px; height:80px; border-radius:50%; background:var(--dark); border:1px solid var(--gold); display:flex; align-items:center; justify-content:center; margin:0 auto 24px; font-size:1.5rem; color:var(--gold); }
-  .step-title { font-size:1rem; color:var(--cream); margin-bottom:10px; }
-  .step-text { font-size:0.82rem; color:var(--muted); line-height:1.7; font-family:Arial,sans-serif; }
+ /* PROCESS */
+ .process-steps { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:0; position:relative; }
+ .process-steps::before { content:''; position:absolute; top:40px; left:10%; right:10%; height:1px; background:rgba(201,168,76,0.2); }
+ .step { text-align:center; padding:0 20px; position:relative; z-index:1; }
+ .step-num { width:80px; height:80px; border-radius:50%; background:var(--dark); border:1px solid var(--gold); display:flex; align-items:center; justify-content:center; margin:0 auto 24px; font-size:1.5rem; color:var(--gold); }
+ .step-title { font-size:1rem; color:var(--cream); margin-bottom:10px; }
+ .step-text { font-size:0.82rem; color:var(--muted); line-height:1.7; font-family:Arial,sans-serif; }
 
-  /* CTA */
-  .cta-full { background:linear-gradient(135deg, var(--warm) 0%, rgba(201,168,76,0.08) 50%, var(--warm) 100%); border-top:1px solid rgba(201,168,76,0.15); border-bottom:1px solid rgba(201,168,76,0.15); padding:100px 40px; text-align:center; }
-  .cta-title { font-size:clamp(2rem,3.5vw,3rem); color:var(--cream); margin-bottom:16px; font-weight:normal; }
-  .cta-sub { font-size:0.95rem; color:var(--muted); margin-bottom:40px; font-family:Arial,sans-serif; line-height:1.8; max-width:520px; margin-left:auto; margin-right:auto; }
-  .cta-actions { display:flex; gap:20px; justify-content:center; flex-wrap:wrap; }
+ /* CTA */
+ .cta-full { background:linear-gradient(135deg, var(--warm) 0%, rgba(201,168,76,0.08) 50%, var(--warm) 100%); border-top:1px solid rgba(201,168,76,0.15); border-bottom:1px solid rgba(201,168,76,0.15); padding:100px 40px; text-align:center; }
+ .cta-title { font-size:clamp(2rem,3.5vw,3rem); color:var(--cream); margin-bottom:16px; font-weight:normal; }
+ .cta-sub { font-size:0.95rem; color:var(--muted); margin-bottom:40px; font-family:Arial,sans-serif; line-height:1.8; max-width:520px; margin-left:auto; margin-right:auto; }
+ .cta-actions { display:flex; gap:20px; justify-content:center; flex-wrap:wrap; }
 
-  /* FOOTER */
-  footer { background:var(--deep); padding:60px 40px 30px; }
-  .footer-inner { max-width:1200px; margin:0 auto; }
-  .footer-top { display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:48px; margin-bottom:48px; }
-  .footer-brand { font-size:1.2rem; color:var(--gold); letter-spacing:3px; text-transform:uppercase; margin-bottom:16px; }
-  .footer-brand span { font-size:0.6rem; display:block; letter-spacing:4px; color:var(--muted); margin-top:2px; }
-  .footer-text { font-size:0.85rem; color:var(--muted); line-height:1.8; font-family:Arial,sans-serif; }
-  .footer-heading { font-size:0.7rem; letter-spacing:3px; text-transform:uppercase; color:var(--gold); font-family:Arial,sans-serif; margin-bottom:20px; }
-  .footer-links { list-style:none; }
-  .footer-links li { margin-bottom:10px; }
-  .footer-links a { font-size:0.85rem; color:var(--muted); text-decoration:none; font-family:Arial,sans-serif; transition:color 0.3s; }
-  .footer-links a:hover { color:var(--gold); }
-  .footer-bottom { border-top:1px solid rgba(201,168,76,0.1); padding-top:24px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; }
-  .footer-copy { font-size:0.8rem; color:var(--muted); font-family:Arial,sans-serif; }
-  .footer-cert { font-size:0.8rem; color:var(--gold); font-family:Arial,sans-serif; letter-spacing:1px; }
+ /* FOOTER */
+ footer { background:var(--deep); padding:60px 40px 30px; }
+ .footer-inner { max-width:1200px; margin:0 auto; }
+ .footer-top { display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:48px; margin-bottom:48px; }
+ .footer-brand { font-size:1.2rem; color:var(--gold); letter-spacing:3px; text-transform:uppercase; margin-bottom:16px; }
+ .footer-brand span { font-size:0.6rem; display:block; letter-spacing:4px; color:var(--muted); margin-top:2px; }
+ .footer-text { font-size:0.85rem; color:var(--muted); line-height:1.8; font-family:Arial,sans-serif; }
+ .footer-heading { font-size:0.7rem; letter-spacing:3px; text-transform:uppercase; color:var(--gold); font-family:Arial,sans-serif; margin-bottom:20px; }
+ .footer-links { list-style:none; }
+ .footer-links li { margin-bottom:10px; }
+ .footer-links a { font-size:0.85rem; color:var(--muted); text-decoration:none; font-family:Arial,sans-serif; transition:color 0.3s; }
+ .footer-links a:hover { color:var(--gold); }
+ .footer-bottom { border-top:1px solid rgba(201,168,76,0.1); padding-top:24px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; }
+ .footer-copy { font-size:0.8rem; color:var(--muted); font-family:Arial,sans-serif; }
+ .footer-cert { font-size:0.8rem; color:var(--gold); font-family:Arial,sans-serif; letter-spacing:1px; }
 
-  @media(max-width:768px) {
-    nav { padding:14px 20px; }
-    .nav-links, .nav-cta { display:none; }
-    section { padding:70px 20px; }
-    .why-grid { grid-template-columns:1fr; }
-    .footer-top { grid-template-columns:1fr 1fr; }
-    .trust-bar { gap:30px; }
-    .process-steps::before { display:none; }
-  }
+ @media(max-width:768px) {
+ nav { padding:14px 20px; }
+ .nav-links, .nav-cta { display:none; }
+ section { padding:70px 20px; }
+ .why-grid { grid-template-columns:1fr; }
+ .footer-top { grid-template-columns:1fr 1fr; }
+ .trust-bar { gap:30px; }
+ .process-steps::before { display:none; }
+ }
 </style>
 
 <link rel="canonical" href="https://ornatefinejewellery.in/">
 <meta property="og:image" content="https://images.unsplash.com/photo-1515562141589-67f0d999b7f0?w=1200&h=630&fit=crop">
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "JewelryStore",
-  "name": "Ornate Fine Jewellery",
-  "description": "Traditional Gold & Diamond Jewellery in Pune Since 1987",
-  "url": "https://ornatefinejewellery.in/",
-  "telephone": "+919876543210",
-  "email": "info@ornatejewellery.in",
-  "priceRange": "₹₹₹₹",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "JM Road, Near Sambhaji Park",
-    "addressLocality": "Shivajinagar, Pune",
-    "addressRegion": "Maharashtra",
-    "postalCode": "411005",
-    "addressCountry": "IN"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": "18.5247",
-    "longitude": "73.8414"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.7",
-    "bestRating": "5",
-    "ratingCount": "3200"
-  },
-  "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Mo-Sa"
-      ],
-      "opens": "10:00",
-      "closes": "20:30"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Su"
-      ],
-      "opens": "10:00",
-      "closes": "14:00"
-    }
-  ],
-  "image": "https://images.unsplash.com/photo-1515562141589-67f0d999b7f0?w=1200&h=630&fit=crop"
+ "@context": "https://schema.org",
+ "@type": "JewelryStore",
+ "name": "Ornate Fine Jewellery",
+ "description": "Traditional Gold & Diamond Jewellery in Pune Since 1987",
+ "url": "https://ornatefinejewellery.in/",
+ "telephone": "+919876543210",
+ "email": "info@ornatejewellery.in",
+ "priceRange": "",
+ "address": {
+ "@type": "PostalAddress",
+ "streetAddress": "JM Road, Near Sambhaji Park",
+ "addressLocality": "Shivajinagar, Pune",
+ "addressRegion": "Maharashtra",
+ "postalCode": "411005",
+ "addressCountry": "IN"
+ },
+ "geo": {
+ "@type": "GeoCoordinates",
+ "latitude": "18.5247",
+ "longitude": "73.8414"
+ },
+ "aggregateRating": {
+ "@type": "AggregateRating",
+ "ratingValue": "4.7",
+ "bestRating": "5",
+ "ratingCount": "3200"
+ },
+ "openingHoursSpecification": [
+ {
+ "@type": "OpeningHoursSpecification",
+ "dayOfWeek": [
+ "Mo-Sa"
+ ],
+ "opens": "10:00",
+ "closes": "20:30"
+ },
+ {
+ "@type": "OpeningHoursSpecification",
+ "dayOfWeek": [
+ "Su"
+ ],
+ "opens": "10:00",
+ "closes": "14:00"
+ }
+ ],
+ "image": "https://images.unsplash.com/photo-1515562141589-67f0d999b7f0?w=1200&h=630&fit=crop"
 }
 </script>
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What type of jewellery does Ornate Fine Jewellery sell in Pune?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ornate Fine Jewellery offers premium 22K & 18K gold jewellery, IGI-certified diamond collections, polki and kundan sets, bridal jewellery, platinum rings, and custom-designed pieces. Over 1,000 designs across 4 showrooms in Pune."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does Ornate offer custom jewellery design in Pune?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, Ornate has an in-house design studio with master craftsmen. We create bespoke jewellery from your sketch or idea — engagement rings, wedding sets, and heirloom recreations in 15-21 days with 3D render approval."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is all gold at Ornate Fine Jewellery BIS hallmarked?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, 100% of gold jewellery at Ornate is BIS Hallmarked (916 for 22K, 750 for 18K). Every piece comes with purity certification. Transparent making charges displayed on every tag — no hidden costs."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does Ornate offer gold exchange or buyback in Pune?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, Ornate offers lifetime exchange at current gold market rates with no time limit. We also accept old gold from other jewellers. No hidden deductions — upgrade your collection as your style evolves."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Where is Ornate Fine Jewellery located in Pune?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Our flagship showroom is on JM Road, near Sambhaji Park, Shivajinagar, Pune 411005. We have 4 showrooms: Koregaon Park, Baner, Kothrud, and Viman Nagar. Mon-Sat 10 AM-8:30 PM, Sunday 10 AM-2 PM."
-      }
-    }
-  ]
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+ {
+ "@type": "Question",
+ "name": "What type of jewellery does Ornate Fine Jewellery sell in Pune?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "Ornate Fine Jewellery offers premium 22K & 18K gold jewellery, IGI-certified diamond collections, polki and kundan sets, bridal jewellery, platinum rings, and custom-designed pieces. Over 1,000 designs across 4 showrooms in Pune."
+ }
+ },
+ {
+ "@type": "Question",
+ "name": "Does Ornate offer custom jewellery design in Pune?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "Yes, Ornate has an in-house design studio with master craftsmen. We create bespoke jewellery from your sketch or idea — engagement rings, wedding sets, and heirloom recreations in 15-21 days with 3D render approval."
+ }
+ },
+ {
+ "@type": "Question",
+ "name": "Is all gold at Ornate Fine Jewellery BIS hallmarked?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "Yes, 100% of gold jewellery at Ornate is BIS Hallmarked (916 for 22K, 750 for 18K). Every piece comes with purity certification. Transparent making charges displayed on every tag — no hidden costs."
+ }
+ },
+ {
+ "@type": "Question",
+ "name": "Does Ornate offer gold exchange or buyback in Pune?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "Yes, Ornate offers lifetime exchange at current gold market rates with no time limit. We also accept old gold from other jewellers. No hidden deductions — upgrade your collection as your style evolves."
+ }
+ },
+ {
+ "@type": "Question",
+ "name": "Where is Ornate Fine Jewellery located in Pune?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "Our flagship showroom is on JM Road, near Sambhaji Park, Shivajinagar, Pune 411005. We have 4 showrooms: Koregaon Park, Baner, Kothrud, and Viman Nagar. Mon-Sat 10 AM-8:30 PM, Sunday 10 AM-2 PM."
+ }
+ }
+ ]
 }
 </script>
 </head>
@@ -263,282 +263,282 @@
 
 <!-- NAV -->
 <nav>
-  <div class="nav-logo">
-    Ornate
-    <span>Fine Jewellery</span>
-  </div>
-  <ul class="nav-links">
-    <li><a href="#">Collections</a></li>
-    <li><a href="#">Bridal</a></li>
-    <li><a href="#">Custom Design</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
-  <button class="nav-cta">Book Appointment</button>
+ <div class="nav-logo">
+ Ornate
+ <span>Fine Jewellery</span>
+ </div>
+ <ul class="nav-links">
+ <li><a href="#">Collections</a></li>
+ <li><a href="#">Bridal</a></li>
+ <li><a href="#">Custom Design</a></li>
+ <li><a href="#">About</a></li>
+ <li><a href="#">Contact</a></li>
+ </ul>
+ <button class="nav-cta">Book Appointment</button>
 </nav>
 
 <!-- HERO -->
 <div class="hero">
-  <div class="hero-particles" id="particles"></div>
-  <div class="hero-ornament"></div>
-  <div class="hero-content">
-    <div class="hero-badge">Est. 1987 · Pune's Heritage Jeweller</div>
-    <h1>Crafting <em>Timeless</em><br>Brilliance Since 1987</h1>
-    <p class="hero-sub">BIS Hallmarked · IGI Certified Diamonds · Custom Atelier</p>
-    <p>Three generations of master craftsmanship. Every piece tells a story of love, legacy, and uncompromising quality. From bridal to everyday elegance — jewellery that endures.</p>
-    <div class="hero-actions">
-      <button class="btn-primary">Explore Collections</button>
-      <button class="btn-outline">Book Private Viewing</button>
-    </div>
-  </div>
+ <div class="hero-particles" id="particles"></div>
+ <div class="hero-ornament"></div>
+ <div class="hero-content">
+ <div class="hero-badge">Est. 1987 · Pune's Heritage Jeweller</div>
+ <h1>Crafting <em>Timeless</em><br>Brilliance Since 1987</h1>
+ <p class="hero-sub">BIS Hallmarked · IGI Certified Diamonds · Custom Atelier</p>
+ <p>Three generations of master craftsmanship. Every piece tells a story of love, legacy, and uncompromising quality. From bridal to everyday elegance — jewellery that endures.</p>
+ <div class="hero-actions">
+ <button class="btn-primary">Explore Collections</button>
+ <button class="btn-outline">Book Private Viewing</button>
+ </div>
+ </div>
 </div>
 
 <!-- TRUST BAR -->
 <div class="trust-bar">
-  <div class="trust-item"><span class="trust-num">37</span><span class="trust-label">Years of Legacy</span></div>
-  <div class="trust-item"><span class="trust-num">15,000+</span><span class="trust-label">Families Served</span></div>
-  <div class="trust-item"><span class="trust-num">100%</span><span class="trust-label">BIS Hallmarked</span></div>
-  <div class="trust-item"><span class="trust-num">4</span><span class="trust-label">Showrooms in Pune</span></div>
-  <div class="trust-item"><span class="trust-num">IGI</span><span class="trust-label">Diamond Certified</span></div>
+ <div class="trust-item"><span class="trust-num">37</span><span class="trust-label">Years of Legacy</span></div>
+ <div class="trust-item"><span class="trust-num">15,000+</span><span class="trust-label">Families Served</span></div>
+ <div class="trust-item"><span class="trust-num">100%</span><span class="trust-label">BIS Hallmarked</span></div>
+ <div class="trust-item"><span class="trust-num">4</span><span class="trust-label">Showrooms in Pune</span></div>
+ <div class="trust-item"><span class="trust-num">IGI</span><span class="trust-label">Diamond Certified</span></div>
 </div>
 
 <!-- COLLECTIONS -->
 <section>
-  <div class="section-header">
-    <span class="section-tag">Our Collections</span>
-    <h2 class="section-title">Crafted for Every Occasion</h2>
-    <div class="section-line"></div>
-    <p class="section-desc">From intimate everyday wear to grand bridal sets — each collection is a labour of love, crafted by master artisans using the finest metals and stones.</p>
-  </div>
-  <div class="collections-grid">
-    <div class="collection-card">
-      <div class="collection-visual c1">
-        <span class="collection-icon">💍</span>
-        <div class="collection-overlay">
-          <div class="collection-name">Bridal Collection</div>
-          <div class="collection-count">320+ Designs</div>
-        </div>
-      </div>
-    </div>
-    <div class="collection-card">
-      <div class="collection-visual c2">
-        <span class="collection-icon">💎</span>
-        <div class="collection-overlay">
-          <div class="collection-name">Diamond Jewellery</div>
-          <div class="collection-count">IGI Certified · 180+ Pieces</div>
-        </div>
-      </div>
-    </div>
-    <div class="collection-card">
-      <div class="collection-visual c1">
-        <span class="collection-icon">🏺</span>
-        <div class="collection-overlay">
-          <div class="collection-name">Gold Jewellery</div>
-          <div class="collection-count">BIS 916 Hallmarked · 500+ Designs</div>
-        </div>
-      </div>
-    </div>
-    <div class="collection-card">
-      <div class="collection-visual c4">
-        <span class="collection-icon">✨</span>
-        <div class="collection-overlay">
-          <div class="collection-name">Everyday Elegance</div>
-          <div class="collection-count">Light Weight · Daily Wear</div>
-        </div>
-      </div>
-    </div>
-  </div>
+ <div class="section-header">
+ <span class="section-tag">Our Collections</span>
+ <h2 class="section-title">Crafted for Every Occasion</h2>
+ <div class="section-line"></div>
+ <p class="section-desc">From intimate everyday wear to grand bridal sets — each collection is a labour of love, crafted by master artisans using the finest metals and stones.</p>
+ </div>
+ <div class="collections-grid">
+ <div class="collection-card">
+ <div class="collection-visual c1">
+ <div class="service-icon-css" style="width:56px;height:56px;border-radius:50%;background:var(--accent,#2563eb);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;letter-spacing:.5px;font-family:sans-serif;flex-shrink:0">RNG</div>
+ <div class="collection-overlay">
+ <div class="collection-name">Bridal Collection</div>
+ <div class="collection-count">320+ Designs</div>
+ </div>
+ </div>
+ </div>
+ <div class="collection-card">
+ <div class="collection-visual c2">
+ <div class="service-icon-css" style="width:56px;height:56px;border-radius:50%;background:var(--accent,#2563eb);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;letter-spacing:.5px;font-family:sans-serif;flex-shrink:0">DIA</div>
+ <div class="collection-overlay">
+ <div class="collection-name">Diamond Jewellery</div>
+ <div class="collection-count">IGI Certified · 180+ Pieces</div>
+ </div>
+ </div>
+ </div>
+ <div class="collection-card">
+ <div class="collection-visual c1">
+ <div class="service-icon-css" style="width:56px;height:56px;border-radius:50%;background:var(--accent,#2563eb);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;letter-spacing:.5px;font-family:sans-serif;flex-shrink:0">PLT</div>
+ <div class="collection-overlay">
+ <div class="collection-name">Gold Jewellery</div>
+ <div class="collection-count">BIS 916 Hallmarked · 500+ Designs</div>
+ </div>
+ </div>
+ </div>
+ <div class="collection-card">
+ <div class="collection-visual c4">
+ <span class="collection-icon">✨</span>
+ <div class="collection-overlay">
+ <div class="collection-name">Everyday Elegance</div>
+ <div class="collection-count">Light Weight · Daily Wear</div>
+ </div>
+ </div>
+ </div>
+ </div>
 </section>
 
 <!-- SERVICES -->
 <div style="background:var(--warm); padding:2px 0;">
 <section>
-  <div class="section-header">
-    <span class="section-tag">Services</span>
-    <h2 class="section-title">Beyond Beautiful Jewellery</h2>
-    <div class="section-line"></div>
-    <p class="section-desc">Complete jewellery services under one roof — from design to repair, exchange to certification.</p>
-  </div>
-  <div class="services-grid">
-    <div class="service-card">
-      <span class="service-icon">🎨</span>
-      <h3 class="service-title">Custom Design Studio</h3>
-      <p class="service-desc">Bring your vision to life. Our designers work with you to create bespoke pieces that are uniquely yours — from concept sketch to finished creation in 15–21 days.</p>
-    </div>
-    <div class="service-card">
-      <span class="service-icon">👰</span>
-      <h3 class="service-title">Bridal Stylist</h3>
-      <p class="service-desc">Dedicated bridal consultation. We understand your wedding look, outfit palette, and budget — then curate or create the perfect jewellery ensemble for your special day.</p>
-    </div>
-    <div class="service-card">
-      <span class="service-icon">🔄</span>
-      <h3 class="service-title">Exchange & Upgrade</h3>
-      <p class="service-desc">Transparent exchange rates on old gold and diamond jewellery. No hidden deductions. Upgrade to a new design at fair market value — always.</p>
-    </div>
-    <div class="service-card">
-      <span class="service-icon">🛡️</span>
-      <h3 class="service-title">Repair & Restoration</h3>
-      <p class="service-desc">Expert repair for broken clasps, resizing, rhodium plating, and full restoration of antique heirlooms. Same-day service for minor repairs.</p>
-    </div>
-    <div class="service-card">
-      <span class="service-icon">📋</span>
-      <h3 class="service-title">Free Valuation Certificate</h3>
-      <p class="service-desc">Get a certified valuation report for insurance, gifting, or resale purposes. Conducted by our in-house gemologist — complimentary for all purchases above ₹50,000.</p>
-    </div>
-    <div class="service-card">
-      <span class="service-icon">📦</span>
-      <h3 class="service-title">Gift Concierge</h3>
-      <p class="service-desc">Struggling to choose the perfect gift? Our gift concierge service helps you select, personalise, and deliver jewellery for birthdays, anniversaries, and celebrations.</p>
-    </div>
-  </div>
+ <div class="section-header">
+ <span class="section-tag">Services</span>
+ <h2 class="section-title">Beyond Beautiful Jewellery</h2>
+ <div class="section-line"></div>
+ <p class="section-desc">Complete jewellery services under one roof — from design to repair, exchange to certification.</p>
+ </div>
+ <div class="services-grid">
+ <div class="service-card">
+ <div class="service-icon-css" style="width:56px;height:56px;border-radius:50%;background:var(--accent,#2563eb);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;letter-spacing:.5px;font-family:sans-serif;flex-shrink:0">CST</div>
+ <h3 class="service-title">Custom Design Studio</h3>
+ <p class="service-desc">Bring your vision to life. Our designers work with you to create bespoke pieces that are uniquely yours — from concept sketch to finished creation in 15–21 days.</p>
+ </div>
+ <div class="service-card">
+ <div class="service-icon-css" style="width:56px;height:56px;border-radius:50%;background:var(--accent,#2563eb);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;letter-spacing:.5px;font-family:sans-serif;flex-shrink:0">BRD</div>
+ <h3 class="service-title">Bridal Stylist</h3>
+ <p class="service-desc">Dedicated bridal consultation. We understand your wedding look, outfit palette, and budget — then curate or create the perfect jewellery ensemble for your special day.</p>
+ </div>
+ <div class="service-card">
+ <div class="service-icon-css" style="width:56px;height:56px;border-radius:50%;background:var(--accent,#2563eb);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;letter-spacing:.5px;font-family:sans-serif;flex-shrink:0">XCH</div>
+ <h3 class="service-title">Exchange & Upgrade</h3>
+ <p class="service-desc">Transparent exchange rates on old gold and diamond jewellery. No hidden deductions. Upgrade to a new design at fair market value — always.</p>
+ </div>
+ <div class="service-card">
+ <div class="service-icon-css" style="width:56px;height:56px;border-radius:50%;background:var(--accent,#2563eb);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;letter-spacing:.5px;font-family:sans-serif;flex-shrink:0">GTD</div>
+ <h3 class="service-title">Repair & Restoration</h3>
+ <p class="service-desc">Expert repair for broken clasps, resizing, rhodium plating, and full restoration of antique heirlooms. Same-day service for minor repairs.</p>
+ </div>
+ <div class="service-card">
+ <div class="service-icon-css" style="width:56px;height:56px;border-radius:50%;background:var(--accent,#2563eb);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;letter-spacing:.5px;font-family:sans-serif;flex-shrink:0">SVC</div>
+ <h3 class="service-title">Free Valuation Certificate</h3>
+ <p class="service-desc">Get a certified valuation report for insurance, gifting, or resale purposes. Conducted by our in-house gemologist — complimentary for all purchases above 50,000.</p>
+ </div>
+ <div class="service-card">
+ <div class="service-icon-css" style="width:56px;height:56px;border-radius:50%;background:var(--accent,#2563eb);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;letter-spacing:.5px;font-family:sans-serif;flex-shrink:0">SVC</div>
+ <h3 class="service-title">Gift Concierge</h3>
+ <p class="service-desc">Struggling to choose the perfect gift? Our gift concierge service helps you select, personalise, and deliver jewellery for birthdays, anniversaries, and celebrations.</p>
+ </div>
+ </div>
 </section>
 </div>
 
 <!-- WHY ORNATE -->
 <section>
-  <div class="section-header">
-    <span class="section-tag">Why Choose Ornate</span>
-    <h2 class="section-title">A Legacy Built on Trust</h2>
-    <div class="section-line"></div>
-  </div>
-  <div class="why-grid">
-    <div class="why-visual">
-      <div class="why-frame">
-        <span class="why-icon-large">👑</span>
-        <p style="color:var(--gold);letter-spacing:2px;font-size:0.75rem;text-transform:uppercase;font-family:Arial,sans-serif;margin-top:24px;">37 Years · 3 Generations</p>
-        <p style="color:var(--muted);font-size:0.85rem;font-family:Arial,sans-serif;margin-top:8px;line-height:1.7;">A family business rooted in integrity, built on the trust of 15,000+ Pune families across four decades.</p>
-      </div>
-    </div>
-    <ul class="why-list">
-      <li class="why-item">
-        <span class="why-check">◆</span>
-        <div>
-          <div class="why-item-title">100% BIS Hallmarked Gold</div>
-          <div class="why-item-text">Every gold piece carries BIS Hallmark — the government's purity guarantee. 22KT (916) and 18KT certified. You always know exactly what you're buying.</div>
-        </div>
-      </li>
-      <li class="why-item">
-        <span class="why-check">◆</span>
-        <div>
-          <div class="why-item-title">IGI Certified Diamonds Only</div>
-          <div class="why-item-text">We only sell IGI-certified diamonds with full grading reports. Colour, clarity, cut, carat — all transparently disclosed. No verbal assurances.</div>
-        </div>
-      </li>
-      <li class="why-item">
-        <span class="why-check">◆</span>
-        <div>
-          <div class="why-item-title">Transparent Making Charges</div>
-          <div class="why-item-text">Fixed making charges displayed on every tag. No surprise deductions at billing. What you see is what you pay — always.</div>
-        </div>
-      </li>
-      <li class="why-item">
-        <span class="why-check">◆</span>
-        <div>
-          <div class="why-item-title">Lifetime Exchange Policy</div>
-          <div class="why-item-text">Exchange any Ornate piece at its current gold rate, any time. No time limit. Upgrade your collection as your style evolves.</div>
-        </div>
-      </li>
-      <li class="why-item">
-        <span class="why-check">◆</span>
-        <div>
-          <div class="why-item-title">In-House Gemologist</div>
-          <div class="why-item-text">GIA-trained gemologist on staff. All diamonds graded in-house before purchase. Valuation certificates issued on request.</div>
-        </div>
-      </li>
-    </ul>
-  </div>
+ <div class="section-header">
+ <span class="section-tag">Why Choose Ornate</span>
+ <h2 class="section-title">A Legacy Built on Trust</h2>
+ <div class="section-line"></div>
+ </div>
+ <div class="why-grid">
+ <div class="why-visual">
+ <div class="why-frame">
+ 
+ <p style="color:var(--gold);letter-spacing:2px;font-size:0.75rem;text-transform:uppercase;font-family:Arial,sans-serif;margin-top:24px;">37 Years · 3 Generations</p>
+ <p style="color:var(--muted);font-size:0.85rem;font-family:Arial,sans-serif;margin-top:8px;line-height:1.7;">A family business rooted in integrity, built on the trust of 15,000+ Pune families across four decades.</p>
+ </div>
+ </div>
+ <ul class="why-list">
+ <li class="why-item">
+ <span class="why-check">◆</span>
+ <div>
+ <div class="why-item-title">100% BIS Hallmarked Gold</div>
+ <div class="why-item-text">Every gold piece carries BIS Hallmark — the government's purity guarantee. 22KT (916) and 18KT certified. You always know exactly what you're buying.</div>
+ </div>
+ </li>
+ <li class="why-item">
+ <span class="why-check">◆</span>
+ <div>
+ <div class="why-item-title">IGI Certified Diamonds Only</div>
+ <div class="why-item-text">We only sell IGI-certified diamonds with full grading reports. Colour, clarity, cut, carat — all transparently disclosed. No verbal assurances.</div>
+ </div>
+ </li>
+ <li class="why-item">
+ <span class="why-check">◆</span>
+ <div>
+ <div class="why-item-title">Transparent Making Charges</div>
+ <div class="why-item-text">Fixed making charges displayed on every tag. No surprise deductions at billing. What you see is what you pay — always.</div>
+ </div>
+ </li>
+ <li class="why-item">
+ <span class="why-check">◆</span>
+ <div>
+ <div class="why-item-title">Lifetime Exchange Policy</div>
+ <div class="why-item-text">Exchange any Ornate piece at its current gold rate, any time. No time limit. Upgrade your collection as your style evolves.</div>
+ </div>
+ </li>
+ <li class="why-item">
+ <span class="why-check">◆</span>
+ <div>
+ <div class="why-item-title">In-House Gemologist</div>
+ <div class="why-item-text">GIA-trained gemologist on staff. All diamonds graded in-house before purchase. Valuation certificates issued on request.</div>
+ </div>
+ </li>
+ </ul>
+ </div>
 </section>
 
 <!-- CUSTOM DESIGN PROCESS -->
 <div style="background:var(--warm); padding:2px 0;">
 <section>
-  <div class="section-header">
-    <span class="section-tag">Custom Design Process</span>
-    <h2 class="section-title">Your Vision, Our Craftsmanship</h2>
-    <div class="section-line"></div>
-    <p class="section-desc">Creating a bespoke piece has never been simpler. Our 4-step process takes you from idea to heirloom in 15–21 days.</p>
-  </div>
-  <div class="process-steps">
-    <div class="step">
-      <div class="step-num">💭</div>
-      <div class="step-title">Consultation</div>
-      <p class="step-text">Share your vision, inspiration images, occasion, and budget. One-on-one with our senior designer at our studio.</p>
-    </div>
-    <div class="step">
-      <div class="step-num">✏️</div>
-      <div class="step-title">Design Sketch</div>
-      <p class="step-text">Our artisan creates detailed hand-sketches and 3D renders for your approval. Revisions included.</p>
-    </div>
-    <div class="step">
-      <div class="step-num">⚒️</div>
-      <div class="step-title">Crafting</div>
-      <p class="step-text">Master craftsmen handcraft your piece using the finest gold and certified stones. Hallmarked and quality checked.</p>
-    </div>
-    <div class="step">
-      <div class="step-num">🎁</div>
-      <div class="step-title">Delivery</div>
-      <p class="step-text">Your piece is presented in signature Ornate packaging with certification, care guide, and valuation report.</p>
-    </div>
-  </div>
+ <div class="section-header">
+ <span class="section-tag">Custom Design Process</span>
+ <h2 class="section-title">Your Vision, Our Craftsmanship</h2>
+ <div class="section-line"></div>
+ <p class="section-desc">Creating a bespoke piece has never been simpler. Our 4-step process takes you from idea to heirloom in 15–21 days.</p>
+ </div>
+ <div class="process-steps">
+ <div class="step">
+ <div class="step-num"></div>
+ <div class="step-title">Consultation</div>
+ <p class="step-text">Share your vision, inspiration images, occasion, and budget. One-on-one with our senior designer at our studio.</p>
+ </div>
+ <div class="step">
+ <div class="step-num">✏</div>
+ <div class="step-title">Design Sketch</div>
+ <p class="step-text">Our artisan creates detailed hand-sketches and 3D renders for your approval. Revisions included.</p>
+ </div>
+ <div class="step">
+ <div class="step-num">⚒</div>
+ <div class="step-title">Crafting</div>
+ <p class="step-text">Master craftsmen handcraft your piece using the finest gold and certified stones. Hallmarked and quality checked.</p>
+ </div>
+ <div class="step">
+ <div class="step-num"></div>
+ <div class="step-title">Delivery</div>
+ <p class="step-text">Your piece is presented in signature Ornate packaging with certification, care guide, and valuation report.</p>
+ </div>
+ </div>
 </section>
 </div>
 
 <!-- TESTIMONIALS -->
 <div class="testimonials-full">
-  <div class="testimonials-inner">
-    <div class="section-header">
-      <span class="section-tag">Testimonials</span>
-      <h2 class="section-title" style="color:var(--cream)">Stories of Trust</h2>
-      <div class="section-line"></div>
-      <p class="section-desc">From bridal moments to everyday elegance — our customers' words mean everything.</p>
-    </div>
-    <div class="testi-grid">
-      <div class="testi-card">
-        <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">My mother bought her wedding set from Ornate in 1994. Thirty years later, I bought mine from the same showroom. The quality, the honesty, the service — everything is exactly as she described. This is what a jewellery legacy looks like.</p>
-        <div class="testi-author">
-          <div class="testi-avatar">P</div>
-          <div>
-            <div class="testi-name">Priya Deshpande</div>
-            <div class="testi-detail">Bridal Customer · Koregaon Park</div>
-          </div>
-        </div>
-      </div>
-      <div class="testi-card">
-        <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">I wanted a completely custom mangalsutra — something modern but with traditional elements. The design team understood exactly what I wanted. The 3D render blew my mind, and the actual piece was even better. Worth every rupee.</p>
-        <div class="testi-author">
-          <div class="testi-avatar">N</div>
-          <div>
-            <div class="testi-name">Neha Kulkarni</div>
-            <div class="testi-detail">Custom Design · Baner</div>
-          </div>
-        </div>
-      </div>
-      <div class="testi-card">
-        <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">The exchange policy is absolutely genuine. I brought old gold that was 25 years old and they gave me the current market rate with no argument. Used it to upgrade my entire collection. Completely transparent from start to finish.</p>
-        <div class="testi-author">
-          <div class="testi-avatar">R</div>
-          <div>
-            <div class="testi-name">Rajesh Joshi</div>
-            <div class="testi-detail">Gold Exchange · Aundh</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+ <div class="testimonials-inner">
+ <div class="section-header">
+ <span class="section-tag">Testimonials</span>
+ <h2 class="section-title" style="color:var(--cream)">Stories of Trust</h2>
+ <div class="section-line"></div>
+ <p class="section-desc">From bridal moments to everyday elegance — our customers' words mean everything.</p>
+ </div>
+ <div class="testi-grid">
+ <div class="testi-card">
+ <div class="testi-stars">5 out of 5</div>
+ <p class="testi-text">My mother bought her wedding set from Ornate in 1994. Thirty years later, I bought mine from the same showroom. The quality, the honesty, the service — everything is exactly as she described. This is what a jewellery legacy looks like.</p>
+ <div class="testi-author">
+ <div class="testi-avatar">P</div>
+ <div>
+ <div class="testi-name">Priya Deshpande</div>
+ <div class="testi-detail">Bridal Customer · Koregaon Park</div>
+ </div>
+ </div>
+ </div>
+ <div class="testi-card">
+ <div class="testi-stars">5 out of 5</div>
+ <p class="testi-text">I wanted a completely custom mangalsutra — something modern but with traditional elements. The design team understood exactly what I wanted. The 3D render blew my mind, and the actual piece was even better. Worth every rupee.</p>
+ <div class="testi-author">
+ <div class="testi-avatar">N</div>
+ <div>
+ <div class="testi-name">Neha Kulkarni</div>
+ <div class="testi-detail">Custom Design · Baner</div>
+ </div>
+ </div>
+ </div>
+ <div class="testi-card">
+ <div class="testi-stars">5 out of 5</div>
+ <p class="testi-text">The exchange policy is absolutely genuine. I brought old gold that was 25 years old and they gave me the current market rate with no argument. Used it to upgrade my entire collection. Completely transparent from start to finish.</p>
+ <div class="testi-author">
+ <div class="testi-avatar">R</div>
+ <div>
+ <div class="testi-name">Rajesh Joshi</div>
+ <div class="testi-detail">Gold Exchange · Aundh</div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
 </div>
 
 <!-- CTA -->
 <div class="cta-full">
-  <h2 class="cta-title">Begin Your Jewellery Journey</h2>
-  <p class="cta-sub">Visit any of our 4 Pune showrooms, or book a private appointment with our senior designer. We bring the showroom to your home for bridal consultations.</p>
-  <div class="cta-actions">
-    <button class="btn-primary">Book Private Appointment</button>
-    <button class="btn-outline">Call: +91 98765 43210</button>
-  </div>
-  <p style="margin-top:32px;font-size:0.8rem;color:var(--muted);font-family:Arial,sans-serif;letter-spacing:1px;">4 Showrooms: Koregaon Park · Baner · Kothrud · Viman Nagar</p>
+ <h2 class="cta-title">Begin Your Jewellery Journey</h2>
+ <p class="cta-sub">Visit any of our 4 Pune showrooms, or book a private appointment with our senior designer. We bring the showroom to your home for bridal consultations.</p>
+ <div class="cta-actions">
+ <button class="btn-primary">Book Private Appointment</button>
+ <button class="btn-outline">Call: +91 98765 43210</button>
+ </div>
+ <p style="margin-top:32px;font-size:0.8rem;color:var(--muted);font-family:Arial,sans-serif;letter-spacing:1px;">4 Showrooms: Koregaon Park · Baner · Kothrud · Viman Nagar</p>
 </div>
 
 <!-- FOOTER -->
@@ -547,108 +547,108 @@
 
 <!-- FAQ SECTION — SEO Enhanced -->
 <section id="faq" style="padding: 80px 5%; max-width: 900px; margin: 0 auto;">
-  <div style="text-align:center; margin-bottom: 48px;">
-    <span style="font-size: 0.75rem; letter-spacing: 4px; text-transform: uppercase; color: #C9A84C; display: block; margin-bottom: 12px; font-family: 'Segoe UI', Arial, sans-serif;">FAQ</span>
-    <h2 style="font-size: 2rem; font-weight: 700; margin-bottom: 12px; color: #F5EDD6;">Frequently Asked Questions</h2>
-    <div style="width: 50px; height: 2px; background: #C9A84C; margin: 0 auto 16px;"></div>
-    <p style="color: #9A8870; font-size: 0.95rem; font-family: 'Segoe UI', Arial, sans-serif;">Everything you need to know about Ornate Fine Jewellery</p>
-  </div>
-  <div style="display:flex; flex-direction:column; gap: 10px;">
+ <div style="text-align:center; margin-bottom: 48px;">
+ <span style="font-size: 0.75rem; letter-spacing: 4px; text-transform: uppercase; color: #C9A84C; display: block; margin-bottom: 12px; font-family: 'Segoe UI', Arial, sans-serif;">FAQ</span>
+ <h2 style="font-size: 2rem; font-weight: 700; margin-bottom: 12px; color: #F5EDD6;">Frequently Asked Questions</h2>
+ <div style="width: 50px; height: 2px; background: #C9A84C; margin: 0 auto 16px;"></div>
+ <p style="color: #9A8870; font-size: 0.95rem; font-family: 'Segoe UI', Arial, sans-serif;">Everything you need to know about Ornate Fine Jewellery</p>
+ </div>
+ <div style="display:flex; flex-direction:column; gap: 10px;">
 
-    <details style="background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.2); border-radius: 10px; overflow: hidden; transition: border-color 0.3s;">
-      <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #F5EDD6; font-family: 'Segoe UI', Arial, sans-serif;">
-        What type of jewellery does Ornate Fine Jewellery sell in Pune?
-        <span style="font-size: 1.2rem; color: #C9A84C; margin-left: 12px; flex-shrink:0; transition: transform 0.3s;">+</span>
-      </summary>
-      <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #9A8870; line-height: 1.7; font-family: 'Segoe UI', Arial, sans-serif;">Ornate Fine Jewellery offers premium 22K & 18K gold jewellery, IGI-certified diamond collections, polki and kundan sets, bridal jewellery, platinum rings, and custom-designed pieces. Over 1,000 designs across 4 showrooms in Pune.</div>
-    </details>
+ <details style="background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.2); border-radius: 10px; overflow: hidden; transition: border-color 0.3s;">
+ <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #F5EDD6; font-family: 'Segoe UI', Arial, sans-serif;">
+ What type of jewellery does Ornate Fine Jewellery sell in Pune?
+ <span style="font-size: 1.2rem; color: #C9A84C; margin-left: 12px; flex-shrink:0; transition: transform 0.3s;">+</span>
+ </summary>
+ <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #9A8870; line-height: 1.7; font-family: 'Segoe UI', Arial, sans-serif;">Ornate Fine Jewellery offers premium 22K & 18K gold jewellery, IGI-certified diamond collections, polki and kundan sets, bridal jewellery, platinum rings, and custom-designed pieces. Over 1,000 designs across 4 showrooms in Pune.</div>
+ </details>
 
-    <details style="background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.2); border-radius: 10px; overflow: hidden; transition: border-color 0.3s;">
-      <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #F5EDD6; font-family: 'Segoe UI', Arial, sans-serif;">
-        Does Ornate offer custom jewellery design in Pune?
-        <span style="font-size: 1.2rem; color: #C9A84C; margin-left: 12px; flex-shrink:0; transition: transform 0.3s;">+</span>
-      </summary>
-      <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #9A8870; line-height: 1.7; font-family: 'Segoe UI', Arial, sans-serif;">Yes, Ornate has an in-house design studio with master craftsmen. We create bespoke jewellery from your sketch or idea — engagement rings, wedding sets, and heirloom recreations in 15-21 days with 3D render approval.</div>
-    </details>
+ <details style="background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.2); border-radius: 10px; overflow: hidden; transition: border-color 0.3s;">
+ <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #F5EDD6; font-family: 'Segoe UI', Arial, sans-serif;">
+ Does Ornate offer custom jewellery design in Pune?
+ <span style="font-size: 1.2rem; color: #C9A84C; margin-left: 12px; flex-shrink:0; transition: transform 0.3s;">+</span>
+ </summary>
+ <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #9A8870; line-height: 1.7; font-family: 'Segoe UI', Arial, sans-serif;">Yes, Ornate has an in-house design studio with master craftsmen. We create bespoke jewellery from your sketch or idea — engagement rings, wedding sets, and heirloom recreations in 15-21 days with 3D render approval.</div>
+ </details>
 
-    <details style="background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.2); border-radius: 10px; overflow: hidden; transition: border-color 0.3s;">
-      <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #F5EDD6; font-family: 'Segoe UI', Arial, sans-serif;">
-        Is all gold at Ornate Fine Jewellery BIS hallmarked?
-        <span style="font-size: 1.2rem; color: #C9A84C; margin-left: 12px; flex-shrink:0; transition: transform 0.3s;">+</span>
-      </summary>
-      <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #9A8870; line-height: 1.7; font-family: 'Segoe UI', Arial, sans-serif;">Yes, 100% of gold jewellery at Ornate is BIS Hallmarked (916 for 22K, 750 for 18K). Every piece comes with purity certification. Transparent making charges displayed on every tag — no hidden costs.</div>
-    </details>
+ <details style="background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.2); border-radius: 10px; overflow: hidden; transition: border-color 0.3s;">
+ <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #F5EDD6; font-family: 'Segoe UI', Arial, sans-serif;">
+ Is all gold at Ornate Fine Jewellery BIS hallmarked?
+ <span style="font-size: 1.2rem; color: #C9A84C; margin-left: 12px; flex-shrink:0; transition: transform 0.3s;">+</span>
+ </summary>
+ <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #9A8870; line-height: 1.7; font-family: 'Segoe UI', Arial, sans-serif;">Yes, 100% of gold jewellery at Ornate is BIS Hallmarked (916 for 22K, 750 for 18K). Every piece comes with purity certification. Transparent making charges displayed on every tag — no hidden costs.</div>
+ </details>
 
-    <details style="background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.2); border-radius: 10px; overflow: hidden; transition: border-color 0.3s;">
-      <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #F5EDD6; font-family: 'Segoe UI', Arial, sans-serif;">
-        Does Ornate offer gold exchange or buyback in Pune?
-        <span style="font-size: 1.2rem; color: #C9A84C; margin-left: 12px; flex-shrink:0; transition: transform 0.3s;">+</span>
-      </summary>
-      <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #9A8870; line-height: 1.7; font-family: 'Segoe UI', Arial, sans-serif;">Yes, Ornate offers lifetime exchange at current gold market rates with no time limit. We also accept old gold from other jewellers. No hidden deductions — upgrade your collection as your style evolves.</div>
-    </details>
+ <details style="background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.2); border-radius: 10px; overflow: hidden; transition: border-color 0.3s;">
+ <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #F5EDD6; font-family: 'Segoe UI', Arial, sans-serif;">
+ Does Ornate offer gold exchange or buyback in Pune?
+ <span style="font-size: 1.2rem; color: #C9A84C; margin-left: 12px; flex-shrink:0; transition: transform 0.3s;">+</span>
+ </summary>
+ <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #9A8870; line-height: 1.7; font-family: 'Segoe UI', Arial, sans-serif;">Yes, Ornate offers lifetime exchange at current gold market rates with no time limit. We also accept old gold from other jewellers. No hidden deductions — upgrade your collection as your style evolves.</div>
+ </details>
 
-    <details style="background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.2); border-radius: 10px; overflow: hidden; transition: border-color 0.3s;">
-      <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #F5EDD6; font-family: 'Segoe UI', Arial, sans-serif;">
-        Where is Ornate Fine Jewellery located in Pune?
-        <span style="font-size: 1.2rem; color: #C9A84C; margin-left: 12px; flex-shrink:0; transition: transform 0.3s;">+</span>
-      </summary>
-      <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #9A8870; line-height: 1.7; font-family: 'Segoe UI', Arial, sans-serif;">Our flagship showroom is on JM Road, near Sambhaji Park, Shivajinagar, Pune 411005. We have 4 showrooms: Koregaon Park, Baner, Kothrud, and Viman Nagar. Mon-Sat 10 AM-8:30 PM, Sunday 10 AM-2 PM.</div>
-    </details>
-  </div>
+ <details style="background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.2); border-radius: 10px; overflow: hidden; transition: border-color 0.3s;">
+ <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #F5EDD6; font-family: 'Segoe UI', Arial, sans-serif;">
+ Where is Ornate Fine Jewellery located in Pune?
+ <span style="font-size: 1.2rem; color: #C9A84C; margin-left: 12px; flex-shrink:0; transition: transform 0.3s;">+</span>
+ </summary>
+ <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #9A8870; line-height: 1.7; font-family: 'Segoe UI', Arial, sans-serif;">Our flagship showroom is on JM Road, near Sambhaji Park, Shivajinagar, Pune 411005. We have 4 showrooms: Koregaon Park, Baner, Kothrud, and Viman Nagar. Mon-Sat 10 AM-8:30 PM, Sunday 10 AM-2 PM.</div>
+ </details>
+ </div>
 </section>
 
 <footer>
-  <div class="footer-inner">
-    <div class="footer-top">
-      <div>
-        <div class="footer-brand">Ornate <span>Fine Jewellery</span></div>
-        <p class="footer-text">37 years of master craftsmanship and unwavering integrity. BIS Hallmarked gold. IGI Certified diamonds. A legacy built on the trust of 15,000+ Pune families.</p>
-      </div>
-      <div>
-        <div class="footer-heading">Collections</div>
-        <ul class="footer-links">
-          <li><a href="#">Bridal Sets</a></li>
-          <li><a href="#">Diamond Rings</a></li>
-          <li><a href="#">Gold Necklaces</a></li>
-          <li><a href="#">Earrings</a></li>
-          <li><a href="#">Bangles & Kadas</a></li>
-        </ul>
-      </div>
-      <div>
-        <div class="footer-heading">Services</div>
-        <ul class="footer-links">
-          <li><a href="#">Custom Design</a></li>
-          <li><a href="#">Bridal Styling</a></li>
-          <li><a href="#">Gold Exchange</a></li>
-          <li><a href="#">Repairs</a></li>
-          <li><a href="#">Valuation</a></li>
-        </ul>
-      </div>
-      <div>
-        <div class="footer-heading">Contact</div>
-        <ul class="footer-links">
-          <li><a href="#">+91 98765 43210</a></li>
-          <li><a href="#">info@ornatejewellery.in</a></li>
-          <li><a href="#">Koregaon Park</a></li>
-          <li><a href="#">Mon–Sun: 10am–9pm</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span class="footer-copy">© 2026 Ornate Fine Jewellery. All rights reserved.</span>
-      <span class="footer-cert">BIS HALLMARKED · IGI CERTIFIED · SINCE 1987</span>
-    </div>
-  </div>
+ <div class="footer-inner">
+ <div class="footer-top">
+ <div>
+ <div class="footer-brand">Ornate <span>Fine Jewellery</span></div>
+ <p class="footer-text">37 years of master craftsmanship and unwavering integrity. BIS Hallmarked gold. IGI Certified diamonds. A legacy built on the trust of 15,000+ Pune families.</p>
+ </div>
+ <div>
+ <div class="footer-heading">Collections</div>
+ <ul class="footer-links">
+ <li><a href="#">Bridal Sets</a></li>
+ <li><a href="#">Diamond Rings</a></li>
+ <li><a href="#">Gold Necklaces</a></li>
+ <li><a href="#">Earrings</a></li>
+ <li><a href="#">Bangles & Kadas</a></li>
+ </ul>
+ </div>
+ <div>
+ <div class="footer-heading">Services</div>
+ <ul class="footer-links">
+ <li><a href="#">Custom Design</a></li>
+ <li><a href="#">Bridal Styling</a></li>
+ <li><a href="#">Gold Exchange</a></li>
+ <li><a href="#">Repairs</a></li>
+ <li><a href="#">Valuation</a></li>
+ </ul>
+ </div>
+ <div>
+ <div class="footer-heading">Contact</div>
+ <ul class="footer-links">
+ <li><a href="#">+91 98765 43210</a></li>
+ <li><a href="#">info@ornatejewellery.in</a></li>
+ <li><a href="#">Koregaon Park</a></li>
+ <li><a href="#">Mon–Sun: 10am–9pm</a></li>
+ </ul>
+ </div>
+ </div>
+ <div class="footer-bottom">
+ <span class="footer-copy">© 2026 Ornate Fine Jewellery. All rights reserved.</span>
+ <span class="footer-cert">BIS HALLMARKED · IGI CERTIFIED · SINCE 1987</span>
+ </div>
+ </div>
 </footer>
 
 <script>
 // Generate sparkle particles
 const container = document.getElementById('particles');
 for(let i=0;i<40;i++){
-  const p=document.createElement('div');
-  p.className='particle';
-  p.style.cssText=`left:${Math.random()*100}%;top:${Math.random()*100}%;animation-delay:${Math.random()*4}s;animation-duration:${3+Math.random()*3}s;`;
-  container.appendChild(p);
+ const p=document.createElement('div');
+ p.className='particle';
+ p.style.cssText=`left:${Math.random()*100}%;top:${Math.random()*100}%;animation-delay:${Math.random()*4}s;animation-duration:${3+Math.random()*3}s;`;
+ container.appendChild(p);
 }
 </script>
 </body>
