@@ -1,745 +1,1800 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aurum Lab | Lab-Grown Diamond Jewellery Pune</title>
-<meta name="description" content="Aurum Lab – Pune's pioneer in certified lab-grown diamonds and sustainable fine jewellery. Same brilliance, better value, ethical sourcing.">
-<style>
- :root {
- --bg: #0a0a0f;
- --surface: #12121a;
- --card: #1a1a26;
- --accent: #c9a84c;
- --accent2: #7b68ee;
- --text: #f0efea;
- --muted: #888;
- --green: #4ade80;
- --border: rgba(201,168,76,0.2);
- }
- * { margin:0; padding:0; box-sizing:border-box; }
- body { font-family: 'Georgia', serif; background: var(--bg); color: var(--text); }
- a { color: inherit; text-decoration: none; }
- 
- /* NAV */
- nav {
- position: fixed; top: 0; width: 100%; z-index: 100;
- background: rgba(10,10,15,0.95); backdrop-filter: blur(12px);
- border-bottom: 1px solid var(--border);
- display: flex; align-items: center; justify-content: space-between;
- padding: 0 5%;
- }
- .logo { font-size: 1.5rem; letter-spacing: 0.12em; color: var(--accent); padding: 20px 0; }
- .logo span { color: var(--accent2); }
- .nav-links { display: flex; gap: 2rem; font-size: 0.85rem; letter-spacing: 0.05em; font-family: sans-serif; }
- .nav-links a:hover { color: var(--accent); }
- .nav-cta {
- background: var(--accent); color: #000; font-family: sans-serif;
- padding: 10px 24px; font-size: 0.82rem; letter-spacing: 0.08em;
- border: none; cursor: pointer; font-weight: 600;
- }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Durgamba Jewels — Temple Jewellery Specialists | Tulsi Baug, Pune</title>
+    <meta name="description" content="Sri Durgamba Jewels — Pune's trusted temple jewellery specialists since 1989. Deity ornaments, bridal temple sets, Ganesha shringar, Lakshmi collections. 22K/24K BIS Hallmarked gold. Near Tulsi Baug.">
+    <meta name="keywords" content="temple jewellery Pune, deity ornaments, bridal temple sets, Ganesha ornaments, Lakshmi sets, 22K gold jewellery, Tulsi Baug jeweller, South Indian temple jewellery">
 
- /* HERO */
- .hero {
- min-height: 100vh; display: flex; align-items: center;
- padding: 120px 5% 80px;
- background: radial-gradient(ellipse 80% 60% at 60% 40%, rgba(123,104,238,0.12) 0%, transparent 70%),
- radial-gradient(ellipse 60% 40% at 20% 70%, rgba(201,168,76,0.08) 0%, transparent 60%),
- var(--bg);
- position: relative; overflow: hidden;
- }
- .hero::before {
- content: '';
- position: absolute; top: -100px; right: -100px;
- width: 600px; height: 600px;
- background: conic-gradient(from 0deg, transparent, rgba(201,168,76,0.06), transparent, rgba(123,104,238,0.06), transparent);
- border-radius: 50%; animation: spin 20s linear infinite;
- }
- @keyframes spin { to { transform: rotate(360deg); } }
- 
- .hero-content { max-width: 600px; position: relative; z-index: 1; }
- .hero-badge {
- display: inline-block; background: rgba(74,222,128,0.1);
- border: 1px solid rgba(74,222,128,0.3); color: var(--green);
- font-family: sans-serif; font-size: 0.75rem; letter-spacing: 0.1em;
- padding: 6px 16px; margin-bottom: 1.5rem;
- }
- .hero h1 { font-size: clamp(2.8rem, 6vw, 4.5rem); line-height: 1.1; margin-bottom: 1.5rem; font-weight: 400; }
- .hero h1 em { font-style: normal; color: var(--accent); }
- .hero h1 span { color: var(--accent2); }
- .hero-sub { font-family: sans-serif; font-size: 1.1rem; color: #bbb; line-height: 1.7; margin-bottom: 2.5rem; max-width: 480px; }
- .hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; }
- .btn-primary {
- background: var(--accent); color: #000;
- padding: 14px 32px; font-family: sans-serif; font-size: 0.9rem;
- letter-spacing: 0.06em; font-weight: 700; border: none; cursor: pointer; transition: opacity 0.2s;
- }
- .btn-primary:hover { opacity: 0.85; }
- .btn-outline {
- background: transparent; color: var(--text);
- padding: 14px 32px; font-family: sans-serif; font-size: 0.9rem;
- letter-spacing: 0.06em; border: 1px solid rgba(255,255,255,0.2); cursor: pointer; transition: border-color 0.2s;
- }
- .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+    <!-- Open Graph -->
+    <meta property="og:title" content="Sri Durgamba Jewels — Temple Jewellery Specialists, Pune">
+    <meta property="og:description" content="Adorn the Divine. Adorn Yourself. Pune's finest temple jewellery — deity ornaments, bridal sets & religious gold since 1989. BIS Hallmarked 22K/24K.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.sridurgambajewels.com">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=1200&q=80">
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:site_name" content="Sri Durgamba Jewels">
 
- .stats-bar {
- display: flex; gap: 2.5rem; margin-top: 3rem; flex-wrap: wrap;
- }
- .stat-item { font-family: sans-serif; }
- .stat-item .num { font-size: 1.8rem; font-weight: 700; color: var(--accent); display: block; }
- .stat-item .lbl { font-size: 0.75rem; color: var(--muted); letter-spacing: 0.06em; text-transform: uppercase; }
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sri Durgamba Jewels — Temple Jewellery Specialists">
+    <meta name="twitter:description" content="Deity ornaments, bridal temple sets & religious gold. BIS Hallmarked. Since 1989, Tulsi Baug, Pune.">
 
- .hero-visual {
- flex: 1; display: flex; justify-content: center; align-items: center;
- position: relative; z-index: 1; min-width: 300px;
- }
- .diamond-visual {
- width: 280px; height: 280px; position: relative;
- }
- .diamond-svg { width: 100%; height: 100%; }
+    <!-- JSON-LD LocalBusiness Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "JewelryStore",
+        "name": "Sri Durgamba Jewels",
+        "description": "Temple jewellery specialists — deity ornaments, religious gold pieces, traditional South Indian temple sets for brides and puja. Serving Pune since 1989.",
+        "url": "https://www.sridurgambajewels.com",
+        "telephone": "+91-20-2445-8899",
+        "email": "orders@sridurgambajewels.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Shop No. 14, Ground Floor, Near Tulsi Baug",
+            "addressLocality": "Pune",
+            "addressRegion": "Maharashtra",
+            "postalCode": "411002",
+            "addressCountry": "IN"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "18.5150",
+            "longitude": "73.8550"
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+                "opens": "10:00",
+                "closes": "20:30"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Sunday",
+                "opens": "10:00",
+                "closes": "14:00"
+            }
+        ],
+        "priceRange": "₹₹₹",
+        "image": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=1200&q=80",
+        "sameAs": [
+            "https://www.instagram.com/sridurgambajewels",
+            "https://www.facebook.com/sridurgambajewels"
+        ],
+        "foundingDate": "1989",
+        "areaServed": {
+            "@type": "City",
+            "name": "Pune"
+        }
+    }
+    </script>
 
- /* SECTIONS */
- section { padding: 100px 5%; }
- .section-label {
- font-family: sans-serif; font-size: 0.72rem; letter-spacing: 0.15em;
- text-transform: uppercase; color: var(--accent); margin-bottom: 0.8rem;
- }
- h2 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 400; margin-bottom: 1rem; }
- h2 span { color: var(--accent); }
- .section-sub { font-family: sans-serif; color: var(--muted); line-height: 1.7; max-width: 560px; margin-bottom: 3rem; }
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 
- /* WHY LAB-GROWN */
- .why-section { background: var(--surface); }
- .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
- .why-card {
- background: var(--card); border: 1px solid var(--border);
- padding: 2rem; position: relative; overflow: hidden;
- }
- .why-card::before {
- content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
- background: linear-gradient(90deg, var(--accent2), var(--accent));
- }
- .why-icon { font-size: 2.5rem; margin-bottom: 1rem; }
- .why-card h3 { font-size: 1.15rem; margin-bottom: 0.6rem; color: var(--accent); }
- .why-card p { font-family: sans-serif; font-size: 0.9rem; color: var(--muted); line-height: 1.6; }
- .vs-box {
- background: rgba(123,104,238,0.08); border: 1px solid rgba(123,104,238,0.3);
- padding: 2rem; grid-column: 1/-1;
- }
- .vs-grid { display: grid; grid-template-columns: 1fr 60px 1fr; gap: 1rem; align-items: center; font-family: sans-serif; }
- .vs-col h4 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 1rem; color: var(--muted); }
- .vs-col.lab h4 { color: var(--green); }
- .vs-row { display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.05); font-size: 0.88rem; }
- .vs-row:last-child { border-bottom: none; }
- .vs-row .check { color: var(--green); font-weight: 700; }
- .vs-row .cross { color: #ef4444; }
- .vs-divider { text-align: center; font-size: 1.4rem; font-weight: 700; color: var(--muted); }
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Noto+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
- /* COLLECTIONS */
- .collections-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
- .collection-card {
- background: var(--card); border: 1px solid var(--border);
- padding: 2rem; cursor: pointer; transition: transform 0.2s, border-color 0.2s;
- }
- .collection-card:hover { transform: translateY(-4px); border-color: var(--accent); }
- .coll-emoji { font-size: 3rem; margin-bottom: 1.2rem; display: block; }
- .collection-card h3 { font-size: 1.2rem; margin-bottom: 0.5rem; }
- .collection-card p { font-family: sans-serif; font-size: 0.85rem; color: var(--muted); line-height: 1.6; margin-bottom: 1rem; }
- .price-range { font-family: sans-serif; font-size: 0.82rem; color: var(--accent); letter-spacing: 0.05em; }
+    <style>
+        /* ═══════════════════════════════════════════════════════════
+           CSS VARIABLES & RESET
+           ═══════════════════════════════════════════════════════════ */
+        :root {
+            --saffron: #FF6B00;
+            --saffron-light: #FF8C33;
+            --saffron-dark: #CC5500;
+            --maroon: #5C0A0A;
+            --maroon-light: #7A1A1A;
+            --gold: #FFD700;
+            --gold-dark: #B8960F;
+            --ivory: #FFFBF0;
+            --ivory-warm: #FFF5E1;
+            --charcoal: #2D2D2D;
+            --text-dark: #1A0A0A;
+            --text-body: #3D2B2B;
+            --font-heading: 'Crimson Text', Georgia, serif;
+            --font-body: 'Noto Sans', 'Segoe UI', sans-serif;
+        }
 
- /* PROCESS */
- .process-section { background: var(--surface); }
- .steps { display: flex; flex-direction: column; gap: 0; max-width: 700px; }
- .step { display: flex; gap: 2rem; padding: 2rem 0; border-bottom: 1px solid var(--border); }
- .step:last-child { border-bottom: none; }
- .step-num { 
- min-width: 48px; height: 48px; border: 2px solid var(--accent);
- display: flex; align-items: center; justify-content: center;
- font-size: 1.2rem; font-weight: 700; color: var(--accent);
- flex-shrink: 0;
- }
- .step-text h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
- .step-text p { font-family: sans-serif; font-size: 0.9rem; color: var(--muted); line-height: 1.6; }
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
- /* CERTIFICATIONS */
- .certs { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-top: 2rem; }
- .cert-badge {
- background: var(--card); border: 1px solid var(--border);
- padding: 1rem 1.5rem; font-family: sans-serif; text-align: center;
- }
- .cert-badge .cert-logo { font-size: 1.8rem; display: block; margin-bottom: 0.4rem; }
- .cert-badge .cert-name { font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
 
- /* PRICING COMPARE */
- .price-table { width: 100%; border-collapse: collapse; font-family: sans-serif; }
- .price-table th, .price-table td { padding: 1rem 1.5rem; text-align: left; border-bottom: 1px solid var(--border); }
- .price-table th { font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
- .price-table td { font-size: 0.9rem; }
- .price-table .lab-price { color: var(--green); font-weight: 700; }
- .price-table .mined-price { color: #ef4444; text-decoration: line-through; color: var(--muted); }
- .price-table .savings { color: var(--accent); font-weight: 700; }
- .price-table tr:hover td { background: var(--card); }
+        body {
+            font-family: var(--font-body);
+            color: var(--text-body);
+            background: var(--ivory);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
 
- /* TESTIMONIALS */
- .testi-section { background: var(--surface); }
- .testi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
- .testi-card { background: var(--card); border: 1px solid var(--border); padding: 2rem; }
- .stars { color: var(--accent); font-size: 1rem; margin-bottom: 1rem; letter-spacing: 2px; }
- .testi-card blockquote { font-size: 0.92rem; color: #ccc; line-height: 1.7; margin-bottom: 1.5rem; font-style: italic; }
- .testi-card cite { font-family: sans-serif; font-size: 0.8rem; color: var(--muted); font-style: normal; }
- .testi-card cite strong { color: var(--text); display: block; }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
 
- /* CTA */
- .cta-section {
- text-align: center; padding: 120px 5%;
- background: radial-gradient(ellipse 70% 60% at 50% 50%, rgba(201,168,76,0.08) 0%, transparent 70%), var(--bg);
- }
- .cta-section h2 { font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 1rem; }
- .cta-section p { font-family: sans-serif; color: var(--muted); margin-bottom: 2.5rem; font-size: 1.05rem; }
- .cta-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+        a {
+            color: var(--saffron-dark);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
 
- /* FOOTER */
- footer { background: var(--surface); border-top: 1px solid var(--border); padding: 3rem 5%; }
- .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 2rem; }
- .footer-brand p { font-family: sans-serif; font-size: 0.85rem; color: var(--muted); line-height: 1.7; margin-top: 1rem; max-width: 260px; }
- footer h4 { font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 1rem; font-family: sans-serif; }
- footer ul { list-style: none; }
- footer ul li { font-family: sans-serif; font-size: 0.85rem; color: #888; margin-bottom: 0.6rem; }
- .footer-bottom { border-top: 1px solid var(--border); padding-top: 1.5rem; display: flex; justify-content: space-between; font-family: sans-serif; font-size: 0.78rem; color: var(--muted); flex-wrap: wrap; gap: 1rem; }
+        a:hover {
+            color: var(--maroon);
+        }
 
- @media (max-width: 768px) {
- .hero { flex-direction: column; }
- .hero-visual { display: none; }
- .footer-grid { grid-template-columns: 1fr 1fr; }
- .vs-grid { grid-template-columns: 1fr; }
- .vs-divider { display: none; }
- nav .nav-links { display: none; }
- }
+        /* ═══════════════════════════════════════════════════════════
+           DECORATIVE INDIAN MOTIF BORDERS
+           ═══════════════════════════════════════════════════════════ */
+        .motif-divider {
+            text-align: center;
+            padding: 1.5rem 0;
+            font-size: 1.5rem;
+            color: var(--gold-dark);
+            letter-spacing: 0.5rem;
+            user-select: none;
+        }
 
-  @media(max-width:768px){
-    .nav-links, .nav-cta { display:none!important; }
-    #mob-links-05luxuryexclusive { display:none; }
-    #mob-links-05luxuryexclusive.show { display:flex!important; flex-direction:column; position:absolute; top:70px; left:0; right:0; background:white; padding:1rem; box-shadow:0 4px 12px rgba(0,0,0,0.15); z-index:50; }
-    #mob-links-05luxuryexclusive.show a { margin:0!important; padding:10px 0; border-bottom:1px solid #eee; color:#333!important; display:block; }
-    #mob-btn-05luxuryexclusive { display:block!important; }
-  }
-</style>
+        .motif-divider::before {
+            content: "⸙ ❋ ✦ ◆ ✦ ❋ ⸙";
+        }
 
-<link rel="canonical" href="https://aurumlab.in/">
-<meta property="og:image" content="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=1200&h=630&fit=crop">
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "JewelryStore",
- "name": "Aurum Lab",
- "description": "Lab-Grown Diamond Jewellery Boutique in Pune",
- "url": "https://aurumlab.in/",
- "telephone": "+919876543210",
- "email": "hello@aurumlab.in",
- "priceRange": "",
- "address": {
- "@type": "PostalAddress",
- "streetAddress": "Koregaon Park Plaza, Ground Floor",
- "addressLocality": "Koregaon Park, Pune",
- "addressRegion": "Maharashtra",
- "postalCode": "411001",
- "addressCountry": "IN"
- },
- "geo": {
- "@type": "GeoCoordinates",
- "latitude": "18.5355",
- "longitude": "73.8935"
- },
- "aggregateRating": {
- "@type": "AggregateRating",
- "ratingValue": "4.8",
- "bestRating": "5",
- "ratingCount": "520"
- },
- "openingHoursSpecification": [
- {
- "@type": "OpeningHoursSpecification",
- "dayOfWeek": [
- "Tu-Su"
- ],
- "opens": "11:00",
- "closes": "20:00"
- }
- ],
- "image": "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=1200&h=630&fit=crop"
-}
-</script>
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "FAQPage",
- "mainEntity": [
- {
- "@type": "Question",
- "name": "What are lab-grown diamonds at Aurum Lab Pune?",
- "acceptedAnswer": {
- "@type": "Answer",
- "text": "Lab-grown diamonds are real diamonds created using CVD/HPHT technology with identical chemical, physical, and optical properties to mined diamonds. 40-70% more affordable and 100% conflict-free. All IGI/GIA certified."
- }
- },
- {
- "@type": "Question",
- "name": "Are Aurum Lab diamonds certified and genuine?",
- "acceptedAnswer": {
- "@type": "Answer",
- "text": "Yes, every Aurum Lab diamond comes with IGI or GIA certification — the world's most trusted gemological labs. Each stone has a laser inscription and full 4C grading report. Same standards as mined diamonds."
- }
- },
- {
- "@type": "Question",
- "name": "How much cheaper are lab-grown diamonds at Aurum Lab?",
- "acceptedAnswer": {
- "@type": "Answer",
- "text": "Lab-grown diamonds are 40-70% less expensive. A 1-carat VS1 E lab diamond costs ~1,45,000 vs ~4,20,000 mined. Spend the savings on a better cut, larger stone, or premium setting."
- }
- },
- {
- "@type": "Question",
- "name": "Does Aurum Lab create custom engagement rings?",
- "acceptedAnswer": {
- "@type": "Answer",
- "text": "Yes, we specialise in custom engagement rings. Choose your lab-grown diamond, design your setting with 3D CAD renders, and our craftsmen create your perfect ring in 7-14 working days in 18K/22K gold or platinum."
- }
- },
- {
- "@type": "Question",
- "name": "Where is Aurum Lab located in Pune?",
- "acceptedAnswer": {
- "@type": "Answer",
- "text": "Aurum Lab is at Koregaon Park Plaza, Ground Floor, Pune 411001. Also accessible from Senapati Bapat Road. Open Tuesday-Sunday 11 AM-8 PM. Free consultations and diamond education by appointment."
- }
- }
- ]
-}
-</script>
+        .motif-divider-small {
+            text-align: center;
+            padding: 0.8rem 0;
+            font-size: 1rem;
+            color: var(--gold-dark);
+            letter-spacing: 0.4rem;
+            user-select: none;
+        }
+
+        .motif-divider-small::before {
+            content: "✦ ◈ ✦";
+        }
+
+        .temple-border-top {
+            border-top: 3px solid var(--gold);
+            position: relative;
+        }
+
+        .temple-border-top::before {
+            content: "꩜";
+            position: absolute;
+            top: -14px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--ivory);
+            padding: 0 1rem;
+            color: var(--gold-dark);
+            font-size: 1.5rem;
+        }
+
+        .decorative-line {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin: 2rem auto;
+            max-width: 400px;
+        }
+
+        .decorative-line::before,
+        .decorative-line::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(to right, transparent, var(--gold), transparent);
+        }
+
+        .decorative-line span {
+            color: var(--gold-dark);
+            font-size: 1.2rem;
+        }
+
+        /* Repeating Indian pattern border */
+        .indian-pattern-border {
+            background-image: repeating-linear-gradient(
+                90deg,
+                var(--gold) 0px, var(--gold) 8px,
+                transparent 8px, transparent 12px,
+                var(--saffron) 12px, var(--saffron) 20px,
+                transparent 20px, transparent 24px
+            );
+            height: 4px;
+            width: 100%;
+        }
+
+        /* ═══════════════════════════════════════════════════════════
+           NAVIGATION
+           ═══════════════════════════════════════════════════════════ */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(92, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 0.8rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+            transition: all 0.3s;
+        }
+
+        .navbar.scrolled {
+            padding: 0.5rem 2rem;
+            background: rgba(92, 10, 10, 0.98);
+        }
+
+        .nav-logo {
+            font-family: var(--font-heading);
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--gold);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav-logo .om-symbol {
+            font-size: 1.6rem;
+            color: var(--saffron-light);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--ivory);
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: "";
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gold);
+            transition: width 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+
+        .nav-toggle span {
+            width: 25px;
+            height: 2px;
+            background: var(--gold);
+            transition: 0.3s;
+        }
+
+        /* ═══════════════════════════════════════════════════════════
+           SECTION COMMON
+           ═══════════════════════════════════════════════════════════ */
+        .section {
+            padding: 5rem 2rem;
+        }
+
+        .section-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-family: var(--font-heading);
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: var(--maroon);
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-subtitle {
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+            font-style: italic;
+            color: var(--saffron-dark);
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        /* ═══════════════════════════════════════════════════════════
+           HERO SECTION
+           ═══════════════════════════════════════════════════════════ */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+            background: var(--maroon);
+        }
+
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            background-image: url('https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            filter: brightness(0.5);
+        }
+
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                135deg,
+                rgba(255, 107, 0, 0.6) 0%,
+                rgba(92, 10, 10, 0.75) 50%,
+                rgba(92, 10, 10, 0.85) 100%
+            );
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            padding: 2rem;
+            max-width: 850px;
+        }
+
+        .hero-om {
+            font-size: 4rem;
+            color: var(--gold);
+            margin-bottom: 1rem;
+            text-shadow: 0 0 40px rgba(255, 215, 0, 0.5);
+            animation: pulse-glow 3s ease-in-out infinite;
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% { text-shadow: 0 0 20px rgba(255, 215, 0, 0.3); }
+            50% { text-shadow: 0 0 50px rgba(255, 215, 0, 0.7), 0 0 80px rgba(255, 107, 0, 0.3); }
+        }
+
+        .hero h1 {
+            font-family: var(--font-heading);
+            font-size: 3.8rem;
+            font-weight: 700;
+            color: #fff;
+            line-height: 1.2;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+        }
+
+        .hero h1 .gold-accent {
+            color: var(--gold);
+            display: block;
+        }
+
+        .hero-tagline {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-style: italic;
+            color: var(--ivory-warm);
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255, 215, 0, 0.15);
+            border: 1px solid var(--gold);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            color: var(--gold);
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+        }
+
+        .hero-cta-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.9rem 2rem;
+            border-radius: 4px;
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s;
+        }
+
+        .btn-gold {
+            background: var(--gold);
+            color: var(--maroon);
+        }
+
+        .btn-gold:hover {
+            background: #ffe44d;
+            color: var(--maroon);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--ivory);
+            border: 2px solid var(--gold);
+        }
+
+        .btn-outline:hover {
+            background: var(--gold);
+            color: var(--maroon);
+            transform: translateY(-2px);
+        }
+
+        .btn-saffron {
+            background: var(--saffron);
+            color: #fff;
+        }
+
+        .btn-saffron:hover {
+            background: var(--saffron-dark);
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 107, 0, 0.3);
+        }
+
+        .btn-whatsapp {
+            background: #25D366;
+            color: #fff;
+        }
+
+        .btn-whatsapp:hover {
+            background: #1da851;
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        /* ═══════════════════════════════════════════════════════════
+           COLLECTIONS GRID
+           ═══════════════════════════════════════════════════════════ */
+        .collections-section {
+            background: var(--ivory);
+        }
+
+        .collections-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .collection-card {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            aspect-ratio: 4/5;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(92, 10, 10, 0.1);
+            transition: transform 0.4s, box-shadow 0.4s;
+        }
+
+        .collection-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(92, 10, 10, 0.2);
+        }
+
+        .collection-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s;
+        }
+
+        .collection-card:hover img {
+            transform: scale(1.08);
+        }
+
+        .collection-card-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(92, 10, 10, 0.85) 0%, rgba(92, 10, 10, 0.2) 40%, transparent 70%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 1.5rem;
+        }
+
+        .collection-card h3 {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: 0.3rem;
+        }
+
+        .collection-card p {
+            color: var(--ivory-warm);
+            font-size: 0.85rem;
+            line-height: 1.5;
+            opacity: 0.9;
+        }
+
+        .collection-card .card-motif {
+            color: var(--gold);
+            font-size: 0.75rem;
+            letter-spacing: 0.3rem;
+            margin-top: 0.5rem;
+            opacity: 0.7;
+        }
+
+        /* ═══════════════════════════════════════════════════════════
+           BRIDAL TEMPLE COLLECTION
+           ═══════════════════════════════════════════════════════════ */
+        .bridal-section {
+            background: linear-gradient(135deg, var(--maroon) 0%, #3D0505 100%);
+            color: var(--ivory);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bridal-section::before {
+            content: "";
+            position: absolute;
+            top: -100px;
+            right: -100px;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255, 215, 0, 0.05) 0%, transparent 70%);
+        }
+
+        .bridal-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-top: 3rem;
+        }
+
+        .bridal-image-wrapper {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .bridal-image-wrapper img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+        }
+
+        .bridal-image-wrapper .gold-frame {
+            position: absolute;
+            inset: 8px;
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            border-radius: 6px;
+            pointer-events: none;
+        }
+
+        .bridal-details h3 {
+            font-family: var(--font-heading);
+            font-size: 2rem;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+
+        .bridal-details p {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: rgba(255, 251, 240, 0.85);
+            margin-bottom: 1.5rem;
+        }
+
+        .bridal-price {
+            display: inline-block;
+            background: rgba(255, 215, 0, 0.1);
+            border: 1px solid var(--gold);
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+        }
+
+        .bridal-price .label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--gold);
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+
+        .bridal-price .range {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--gold);
+        }
+
+        .bridal-includes {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .bridal-includes li {
+            padding: 0.4rem 0;
+            font-size: 0.95rem;
+            color: rgba(255, 251, 240, 0.8);
+        }
+
+        .bridal-includes li::before {
+            content: "✦ ";
+            color: var(--gold);
+            margin-right: 0.5rem;
+        }
+
+        /* ═══════════════════════════════════════════════════════════
+           PURITY PROMISE
+           ═══════════════════════════════════════════════════════════ */
+        .purity-section {
+            background: var(--ivory-warm);
+        }
+
+        .purity-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+
+        .purity-card {
+            text-align: center;
+            padding: 2.5rem 2rem;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(92, 10, 10, 0.06);
+            border-top: 4px solid var(--gold);
+            transition: transform 0.3s;
+        }
+
+        .purity-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .purity-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .purity-card h3 {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            color: var(--maroon);
+            margin-bottom: 0.8rem;
+        }
+
+        .purity-card p {
+            font-size: 0.95rem;
+            color: var(--text-body);
+            line-height: 1.7;
+        }
+
+        .purity-badge {
+            display: inline-block;
+            background: var(--maroon);
+            color: var(--gold);
+            padding: 0.3rem 1rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            margin-top: 1rem;
+        }
+
+        /* ═══════════════════════════════════════════════════════════
+           ARTISAN HERITAGE
+           ═══════════════════════════════════════════════════════════ */
+        .heritage-section {
+            background: var(--ivory);
+            position: relative;
+        }
+
+        .heritage-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-top: 3rem;
+        }
+
+        .heritage-image {
+            position: relative;
+        }
+
+        .heritage-image img {
+            border-radius: 8px;
+            box-shadow: 0 10px 40px rgba(92, 10, 10, 0.15);
+        }
+
+        .heritage-image .year-badge {
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            background: var(--saffron);
+            color: #fff;
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-heading);
+            box-shadow: 0 4px 15px rgba(255, 107, 0, 0.4);
+        }
+
+        .heritage-image .year-badge .since {
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .heritage-image .year-badge .year {
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        .heritage-text h3 {
+            font-family: var(--font-heading);
+            font-size: 2.2rem;
+            color: var(--maroon);
+            margin-bottom: 1rem;
+        }
+
+        .heritage-text p {
+            font-size: 1rem;
+            line-height: 1.9;
+            color: var(--text-body);
+            margin-bottom: 1.2rem;
+        }
+
+        .heritage-text .highlight {
+            color: var(--saffron-dark);
+            font-weight: 600;
+        }
+
+        .heritage-stats {
+            display: flex;
+            gap: 2rem;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .heritage-stat {
+            text-align: center;
+        }
+
+        .heritage-stat .number {
+            font-family: var(--font-heading);
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--saffron);
+            line-height: 1;
+        }
+
+        .heritage-stat .label {
+            font-size: 0.8rem;
+            color: var(--text-body);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-top: 0.3rem;
+        }
+
+        /* ═══════════════════════════════════════════════════════════
+           TESTIMONIALS
+           ═══════════════════════════════════════════════════════════ */
+        .testimonials-section {
+            background: linear-gradient(180deg, var(--ivory-warm) 0%, var(--ivory) 100%);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .testimonial-card {
+            background: #fff;
+            padding: 2.5rem 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(92, 10, 10, 0.06);
+            position: relative;
+            border-left: 4px solid var(--gold);
+        }
+
+        .testimonial-card::before {
+            content: "❝";
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 3rem;
+            color: rgba(255, 215, 0, 0.2);
+            font-family: var(--font-heading);
+            line-height: 1;
+        }
+
+        .testimonial-stars {
+            color: var(--gold);
+            font-size: 0.9rem;
+            letter-spacing: 0.15rem;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-text {
+            font-family: var(--font-heading);
+            font-size: 1.05rem;
+            font-style: italic;
+            color: var(--text-body);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .testimonial-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: var(--saffron);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        .testimonial-name {
+            font-weight: 600;
+            color: var(--maroon);
+            font-size: 0.95rem;
+        }
+
+        .testimonial-occasion {
+            font-size: 0.8rem;
+            color: var(--text-body);
+            opacity: 0.7;
+        }
+
+        /* ═══════════════════════════════════════════════════════════
+           VISIT US / ORDER
+           ═══════════════════════════════════════════════════════════ */
+        .contact-section {
+            background: var(--ivory);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-top: 3rem;
+        }
+
+        .contact-info h3 {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            color: var(--maroon);
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-detail {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            align-items: flex-start;
+        }
+
+        .contact-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: var(--saffron);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        .contact-detail-text strong {
+            display: block;
+            color: var(--maroon);
+            font-size: 0.95rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .contact-detail-text span {
+            font-size: 0.9rem;
+            color: var(--text-body);
+            line-height: 1.6;
+        }
+
+        .whatsapp-order {
+            background: #fff;
+            border: 2px solid #25D366;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .whatsapp-order p {
+            font-size: 0.9rem;
+            color: var(--text-body);
+            margin-bottom: 1rem;
+        }
+
+        .contact-form {
+            background: #fff;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(92, 10, 10, 0.08);
+        }
+
+        .contact-form h3 {
+            font-family: var(--font-heading);
+            font-size: 1.6rem;
+            color: var(--maroon);
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--maroon);
+            margin-bottom: 0.4rem;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border: 1px solid rgba(92, 10, 10, 0.15);
+            border-radius: 6px;
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            color: var(--text-dark);
+            background: var(--ivory);
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--saffron);
+            box-shadow: 0 0 0 3px rgba(255, 107, 0, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        /* ═══════════════════════════════════════════════════════════
+           FOOTER
+           ═══════════════════════════════════════════════════════════ */
+        .footer {
+            background: var(--maroon);
+            color: var(--ivory);
+            position: relative;
+        }
+
+        .footer-pattern {
+            height: 6px;
+            background: repeating-linear-gradient(
+                90deg,
+                var(--gold) 0px,
+                var(--gold) 20px,
+                var(--saffron) 20px,
+                var(--saffron) 40px,
+                var(--maroon-light) 40px,
+                var(--maroon-light) 60px
+            );
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem 2rem;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .footer-brand h3 {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+
+        .footer-brand p {
+            font-size: 0.9rem;
+            line-height: 1.7;
+            opacity: 0.8;
+            margin-bottom: 1rem;
+        }
+
+        .footer-col h4 {
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            padding: 0.3rem 0;
+        }
+
+        .footer-col ul li a {
+            color: rgba(255, 251, 240, 0.7);
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--gold);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 1.5rem 2rem;
+            border-top: 1px solid rgba(255, 215, 0, 0.15);
+            font-size: 0.8rem;
+            opacity: 0.6;
+        }
+
+        .footer-temple-motif {
+            text-align: center;
+            padding: 1rem 0 0;
+            font-size: 1.2rem;
+            color: rgba(255, 215, 0, 0.3);
+            letter-spacing: 0.8rem;
+        }
+
+        /* ═══════════════════════════════════════════════════════════
+           RESPONSIVE
+           ═══════════════════════════════════════════════════════════ */
+        @media (max-width: 1024px) {
+            .collections-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .bridal-grid {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+            .heritage-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--maroon);
+                flex-direction: column;
+                padding: 1rem 2rem 2rem;
+                gap: 1rem;
+                border-top: 1px solid rgba(255, 215, 0, 0.2);
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .nav-toggle {
+                display: flex;
+            }
+            .hero h1 {
+                font-size: 2.4rem;
+            }
+            .hero-tagline {
+                font-size: 1.1rem;
+            }
+            .section-title {
+                font-size: 2rem;
+            }
+            .collections-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            .collection-card {
+                aspect-ratio: 16/10;
+            }
+            .purity-grid {
+                grid-template-columns: 1fr;
+            }
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            .heritage-stats {
+                flex-wrap: wrap;
+            }
+            .bridal-price .range {
+                font-size: 1.4rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .hero-om {
+                font-size: 3rem;
+            }
+            .section {
+                padding: 3.5rem 1.2rem;
+            }
+            .btn {
+                padding: 0.8rem 1.5rem;
+                font-size: 0.85rem;
+            }
+        }
+
+        /* Smooth scroll offset for fixed nav */
+        section[id] {
+            scroll-margin-top: 80px;
+        }
+    </style>
 </head>
 <body>
 
-<nav>
- <div class="logo">AURUM<span>LAB</span></div>
- <div class="nav-links">
- <a href="#">Collections</a>
- <a href="#">Why Lab-Grown</a>
- <a href="#">Certifications</a>
- <a href="#">Bespoke</a>
- <a href="https://wa.me/919876543210">Visit</a>
- </div>
- <button class="nav-cta">Book Appointment</button>
-<button id="mob-btn-05luxuryexclusive" style="display:none;padding:8px;cursor:pointer;background:none;border:none;" onclick="document.getElementById('mob-links-05luxuryexclusive').classList.toggle('show')" aria-label="Menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
-<div id="mob-links-05luxuryexclusive"><a href="#">Collections</a>
-<a href="#">Why Lab-Grown</a>
-<a href="#">Certifications</a>
-<a href="#">Bespoke</a>
-<a href="https://wa.me/919876543210">Visit</a></div>
-</nav>
+    <!-- ═══════════════════════════════════════════════════════════
+         NAVIGATION
+         ═══════════════════════════════════════════════════════════ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-logo">
+            <span class="om-symbol">🙏</span>
+            Sri Durgamba Jewels
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#collections">Collections</a></li>
+            <li><a href="#bridal">Bridal</a></li>
+            <li><a href="#purity">Purity</a></li>
+            <li><a href="#heritage">Heritage</a></li>
+            <li><a href="#testimonials">Voices</a></li>
+            <li><a href="#contact">Visit Us</a></li>
+        </ul>
+        <div class="nav-toggle" id="navToggle" onclick="document.getElementById('navLinks').classList.toggle('active')">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
 
-<!-- HERO -->
-<section class="hero" style="display:flex; gap:4rem;">
- <div class="hero-content">
- <div class="hero-badge"> IGI & GIA Certified Lab-Grown Diamonds</div>
- <h1>Diamonds.<br><em>Reimagined.</em><br><span>Responsibly.</span></h1>
- <p class="hero-sub">Pune's first dedicated lab-grown diamond boutique. Same optical, chemical, and physical properties as mined diamonds — at 40–70% lower cost, with zero mining impact.</p>
- <div class="hero-ctas">
- <button class="btn-primary">Explore Collections</button>
- <button class="btn-outline">Compare Lab vs Mined</button>
- </div>
- <div class="stats-bar">
- <div class="stat-item"><span class="num">40-70%</span><span class="lbl">Cost Savings vs Mined</span></div>
- <div class="stat-item"><span class="num">100%</span><span class="lbl">Certified Diamonds</span></div>
- <div class="stat-item"><span class="num">0</span><span class="lbl">Mining Impact</span></div>
- </div>
- </div>
- <div class="hero-visual">
- <svg class="diamond-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
- <defs>
- <linearGradient id="dg1" x1="0%" y1="0%" x2="100%" y2="100%">
- <stop offset="0%" style="stop-color:#c9a84c;stop-opacity:1"/>
- <stop offset="50%" style="stop-color:#e8d5a3;stop-opacity:1"/>
- <stop offset="100%" style="stop-color:#7b68ee;stop-opacity:1"/>
- </linearGradient>
- <linearGradient id="dg2" x1="100%" y1="0%" x2="0%" y2="100%">
- <stop offset="0%" style="stop-color:#7b68ee;stop-opacity:0.6"/>
- <stop offset="100%" style="stop-color:#c9a84c;stop-opacity:0.4"/>
- </linearGradient>
- </defs>
- <!-- Diamond shape -->
- <polygon points="100,20 160,75 100,180 40,75" fill="url(#dg1)" opacity="0.9"/>
- <polygon points="100,20 160,75 100,75" fill="url(#dg2)" opacity="0.5"/>
- <polygon points="100,20 40,75 100,75" fill="white" opacity="0.15"/>
- <polygon points="100,75 160,75 100,180" fill="url(#dg2)" opacity="0.7"/>
- <polygon points="100,75 40,75 100,180" fill="url(#dg1)" opacity="0.5"/>
- <!-- Sparkle lines -->
- <line x1="100" y1="5" x2="100" y2="15" stroke="#c9a84c" stroke-width="2" opacity="0.8"/>
- <line x1="175" y1="75" x2="165" y2="75" stroke="#c9a84c" stroke-width="2" opacity="0.8"/>
- <line x1="25" y1="75" x2="35" y2="75" stroke="#c9a84c" stroke-width="2" opacity="0.8"/>
- <line x1="150" y1="35" x2="143" y2="42" stroke="#7b68ee" stroke-width="1.5" opacity="0.7"/>
- <line x1="50" y1="35" x2="57" y2="42" stroke="#7b68ee" stroke-width="1.5" opacity="0.7"/>
- </svg>
- </div>
-</section>
+    <!-- ═══════════════════════════════════════════════════════════
+         SECTION 1: HERO
+         ═══════════════════════════════════════════════════════════ -->
+    <section class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-om" data-aos="fade-down" data-aos-duration="1000">🙏</div>
+            <div class="hero-badge" data-aos="fade-up" data-aos-delay="200">Temple Jewellery Specialists · Since 1989</div>
+            <h1 data-aos="fade-up" data-aos-delay="400">
+                Adorn the Divine.
+                <span class="gold-accent">Adorn Yourself.</span>
+            </h1>
+            <p class="hero-tagline" data-aos="fade-up" data-aos-delay="600">
+                Sacred gold for temples, brides & devotees — handcrafted in the tradition of Nagercoil & Thrissur
+            </p>
+            <div class="hero-cta-group" data-aos="fade-up" data-aos-delay="800">
+                <a href="#collections" class="btn btn-gold">Explore Collections</a>
+                <a href="#contact" class="btn btn-outline">Book Appointment</a>
+            </div>
+        </div>
+    </section>
 
-<!-- WHY LAB-GROWN -->
-<section class="why-section">
- <div class="section-label">The Science</div>
- <h2>Real Diamonds. <span>Better Origin.</span></h2>
- <p class="section-sub">Lab-grown diamonds are not simulants. They are real diamonds — created in controlled environments that replicate natural geological processes in weeks, not millions of years.</p>
- 
- <div class="why-grid">
- <div class="why-card">
- <div class="why-icon"></div>
- <h3>Chemically Identical</h3>
- <p>Pure carbon crystal structure, identical optical properties, hardness (10 on Mohs), and sparkle. A gemologist cannot distinguish without lab equipment.</p>
- </div>
- <div class="why-card">
- <div class="why-icon"></div>
- <h3>Ethical & Sustainable</h3>
- <p>No open-pit mining, no habitat destruction, no conflict zones. Lab-grown production uses 90% less water and leaves no permanent land scarring.</p>
- </div>
- <div class="why-card">
- <div class="why-icon"></div>
- <h3>40–70% Better Value</h3>
- <p>The same 1-carat diamond that costs 4,00,000 mined, costs 1,40,000 lab-grown. Spend the difference on a better cut, clarity, or setting.</p>
- </div>
- <div class="why-card">
- <div class="why-icon"></div>
- <h3>IGI / GIA Certified</h3>
- <p>Every diamond comes with an internationally recognised grading report. Same 4C standards: Cut, Colour, Clarity, Carat — no compromise.</p>
- </div>
- 
- <!-- VS comparison -->
- <div class="vs-box">
- <h3 style="font-family:sans-serif; font-size:0.9rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--muted); margin-bottom:1.5rem;">Lab-Grown vs Mined — At a Glance</h3>
- <div class="vs-grid">
- <div class="vs-col">
- <h4>Natural Mined</h4>
- <div class="vs-row"><span>Carbon crystal </span></div>
- <div class="vs-row"><span>Same hardness </span></div>
- <div class="vs-row"><span class="cross">High cost </span></div>
- <div class="vs-row"><span class="cross">Mining damage </span></div>
- <div class="vs-row"><span class="cross">Conflict risk </span></div>
- </div>
- <div class="vs-divider">VS</div>
- <div class="vs-col lab">
- <h4>Aurum Lab-Grown</h4>
- <div class="vs-row"><span>Carbon crystal </span></div>
- <div class="vs-row"><span>Same hardness </span></div>
- <div class="vs-row"><span class="check">40-70% lower cost </span></div>
- <div class="vs-row"><span class="check">Zero mining </span></div>
- <div class="vs-row"><span class="check">100% conflict-free </span></div>
- </div>
- </div>
- </div>
- </div>
-</section>
+    <div class="indian-pattern-border"></div>
 
-<!-- COLLECTIONS -->
-<section>
- <div class="section-label">Our Collections</div>
- <h2>Jewellery That <span>Means Something</span></h2>
- <p class="section-sub">From solitaire engagements to daily-wear pieces, every collection designed for the modern Indian woman who values both beauty and conscience.</p>
- 
- <div class="collections-grid">
- <div class="collection-card">
- 
- <h3>Solitaire Engagement</h3>
- <p>Round brilliant, princess, and oval cuts in 18k gold settings. Accompanied by full IGI certification with unique laser inscription.</p>
- <div class="price-range">Starting 75,000 — 0.30 Ct, VS1, F</div>
- </div>
- <div class="collection-card">
- <span class="coll-emoji"></span>
- <h3>Tennis & Line Bracelets</h3>
- <p>Classic 4-prong diamond tennis bracelets, channel-set eternity bands, and mixed-metal contemporary pieces.</p>
- <div class="price-range">Starting 42,000 — 3 Ct total</div>
- </div>
- <div class="collection-card">
- 
- <h3>Stud & Drop Earrings</h3>
- <p>From 0.15 Ct everyday studs to 3 Ct chandelier drops. Princess, cushion, and marquise options in white, rose, and yellow gold.</p>
- <div class="price-range">Starting 18,000 — 0.15 Ct pair</div>
- </div>
- <div class="collection-card">
- 
- <h3>Pendants & Necklaces</h3>
- <p>Station necklaces, single-stone pendants, and layered designs. Perfect for gifting or celebrating milestones.</p>
- <div class="price-range">Starting 24,000 — 0.25 Ct pendant</div>
- </div>
- <div class="collection-card">
- 
- <h3>Bespoke Designs</h3>
- <p>Your vision, our craft. Bring a sketch, a photo, or just an idea — we'll CAD-render it and create your dream piece within 3 weeks.</p>
- <div class="price-range">Custom quote — typically 20–30% less than ready pieces</div>
- </div>
- <div class="collection-card">
- 
- <h3>Anniversary & Gifts</h3>
- <p>Curated gift sets, engraving service, and luxury packaging. Corporate gifting program available for bulk orders.</p>
- <div class="price-range">Gift sets from 15,000</div>
- </div>
- </div>
-</section>
+    <!-- ═══════════════════════════════════════════════════════════
+         SECTION 2: COLLECTIONS
+         ═══════════════════════════════════════════════════════════ -->
+    <section class="section collections-section" id="collections">
+        <div class="section-inner">
+            <p class="section-subtitle" data-aos="fade-up">Sacred Adornments for Every Occasion</p>
+            <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Our Temple Collections</h2>
+            <div class="decorative-line" data-aos="fade-up" data-aos-delay="200"><span>◆</span></div>
 
-<!-- PRICE COMPARISON -->
-<section class="why-section">
- <div class="section-label">Value Calculator</div>
- <h2>See the <span>Difference</span></h2>
- <p class="section-sub">Real price comparisons for identical 4C specifications. Every Aurum Lab diamond has the same certificate grades as its mined equivalent.</p>
- 
- <table class="price-table">
- <thead>
- <tr>
- <th>Diamond Spec</th>
- <th>Mined Price</th>
- <th>Aurum Lab Price</th>
- <th>Your Savings</th>
- </tr>
- </thead>
- <tbody>
- <tr>
- <td>0.30 Ct, VS1, F, Excellent Cut</td>
- <td class="mined-price">55,000</td>
- <td class="lab-price">22,000</td>
- <td class="savings">Save 33,000 (60%)</td>
- </tr>
- <tr>
- <td>0.50 Ct, VS2, G, Excellent Cut</td>
- <td class="mined-price">1,10,000</td>
- <td class="lab-price">42,000</td>
- <td class="savings">Save 68,000 (62%)</td>
- </tr>
- <tr>
- <td>1.00 Ct, VS1, E, Excellent Cut</td>
- <td class="mined-price">4,20,000</td>
- <td class="lab-price">1,45,000</td>
- <td class="savings">Save 2,75,000 (65%)</td>
- </tr>
- <tr>
- <td>1.50 Ct, VVS2, F, Ideal Cut</td>
- <td class="mined-price">9,00,000</td>
- <td class="lab-price">2,80,000</td>
- <td class="savings">Save 6,20,000 (69%)</td>
- </tr>
- <tr>
- <td>2.00 Ct, VS1, D, Excellent Cut</td>
- <td class="mined-price">18,50,000</td>
- <td class="lab-price">5,60,000</td>
- <td class="savings">Save 12,90,000 (70%)</td>
- </tr>
- </tbody>
- </table>
- <p style="font-family:sans-serif; font-size:0.8rem; color:var(--muted); margin-top:1rem;">*Prices indicative. Final pricing depends on current market rates and setting choice. All lab-grown prices include IGI certification.</p>
-</section>
+            <div class="collections-grid">
 
-<!-- OUR PROCESS -->
-<section>
- <div class="section-label">How It Works</div>
- <h2>From Consultation <span>to Creation</span></h2>
- <div class="steps">
- <div class="step">
- <div class="step-num">01</div>
- <div class="step-text">
- <h3>Free Consultation</h3>
- <p>Visit our Koregaon Park boutique or book a video consultation. We understand your occasion, budget, and style preferences. No pressure, no commission-based sales.</p>
- </div>
- </div>
- <div class="step">
- <div class="step-num">02</div>
- <div class="step-text">
- <h3>Diamond Selection</h3>
- <p>Browse our certified inventory or let us source a specific diamond to your exact specs — cut, colour, clarity, carat. All loose diamonds arrive with full IGI/GIA reports.</p>
- </div>
- </div>
- <div class="step">
- <div class="step-num">03</div>
- <div class="step-text">
- <h3>Setting Design</h3>
- <p>Choose from our ready settings or go bespoke. Bespoke orders include a 3D CAD render for your approval before production begins. No surprises.</p>
- </div>
- </div>
- <div class="step">
- <div class="step-num">04</div>
- <div class="step-text">
- <h3>Handcrafted Completion</h3>
- <p>Master craftsmen set your diamond in 18k/22k gold or platinum. Ready-to-buy pieces in 3–7 days; bespoke in 14–21 days. Hallmarked and certified on delivery.</p>
- </div>
- </div>
- <div class="step">
- <div class="step-num">05</div>
- <div class="step-text">
- <h3>Lifetime Aftercare</h3>
- <p>Free cleaning and rhodium re-plating every year. Lifetime prong tightening. Complimentary re-sizing once. Your jewellery, forever protected.</p>
- </div>
- </div>
- </div>
-</section>
+                <!-- Card 1: Ganesha Ornaments -->
+                <div class="collection-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1583089892943-e02e5b017b6a?w=600&q=80" alt="Ganesha Ornaments — gold deity jewellery" loading="lazy"
+                         onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg, var(--saffron), var(--maroon))'">
+                    <div class="collection-card-overlay">
+                        <h3>Ganesha Ornaments</h3>
+                        <p>Mukuts, necklaces & shringar sets for Bappa. Crafted for Ganesh Chaturthi & daily puja.</p>
+                        <div class="card-motif">✦ ✦ ✦</div>
+                    </div>
+                </div>
 
-<!-- CERTIFICATIONS -->
-<section class="why-section">
- <div class="section-label">Trust & Verification</div>
- <h2>Every Diamond <span>Certified</span></h2>
- <p class="section-sub">We never sell uncertified diamonds. Each stone carries a grading report from the world's most trusted gemological laboratories, with a unique laser inscription invisible to the naked eye.</p>
- <div class="certs">
- <div class="cert-badge">
- 
- <div class="cert-name">IGI Certified</div>
- </div>
- <div class="cert-badge">
- 
- <div class="cert-name">GIA Certified</div>
- </div>
- <div class="cert-badge">
- 
- <div class="cert-name">BIS Hallmark 916</div>
- </div>
- <div class="cert-badge">
- 
- <div class="cert-name">Laser Inscribed</div>
- </div>
- <div class="cert-badge">
- 
- <div class="cert-name">QR Verify</div>
- </div>
- </div>
-</section>
+                <!-- Card 2: Lakshmi Sets -->
+                <div class="collection-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=600&q=80" alt="Lakshmi Temple Jewellery Sets" loading="lazy"
+                         onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg, var(--gold-dark), var(--maroon))'">
+                    <div class="collection-card-overlay">
+                        <h3>Lakshmi Sets</h3>
+                        <p>Iconic coin necklaces, Kasu Malai & Lakshmi pendants. The soul of South Indian temple jewellery.</p>
+                        <div class="card-motif">✦ ✦ ✦</div>
+                    </div>
+                </div>
 
-<!-- TESTIMONIALS -->
-<section class="testi-section">
- <div class="section-label">Client Stories</div>
- <h2>Real People. <span>Real Choices.</span></h2>
- <div class="testi-grid">
- <div class="testi-card">
- <div class="stars">5 out of 5</div>
- <blockquote>"We were planning a 4 lakh solitaire. Aurum Lab showed us an identical diamond for 1.4 lakh — same IGI certificate. We used the difference to book our honeymoon. Best decision ever."</blockquote>
- <cite><strong>Priya & Rohan Joshi</strong>Engagement Ring, January 2026</cite>
- </div>
- <div class="testi-card">
- <div class="stars">5 out of 5</div>
- <blockquote>"I was sceptical — is it a 'real' diamond? Aurum's team spent an hour explaining the science. After seeing the IGI report and comparing under a loupe, I was convinced. My 1.5 Ct solitaire is stunning."</blockquote>
- <cite><strong>Neha Kulkarni</strong>Solitaire Pendant, November 2025</cite>
- </div>
- <div class="testi-card">
- <div class="stars">5 out of 5</div>
- <blockquote>"Corporate gifting for 25 employees — diamond stud sets within budget, beautifully packaged, on time. The team was incredibly professional. We'll be back for our next milestone."</blockquote>
- <cite><strong>Aditya Sharma</strong>Director, Corporate Gifts, December 2025</cite>
- </div>
- </div>
-</section>
+                <!-- Card 3: Durga Shringar -->
+                <div class="collection-card" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=600&q=80" alt="Durga Shringar — goddess ornaments" loading="lazy"
+                         onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg, var(--saffron-dark), #2D0505)'">
+                    <div class="collection-card-overlay">
+                        <h3>Durga Shringar</h3>
+                        <p>Complete adornment sets for Durga Mata — from nose rings to armlets. For Navratri & daily seva.</p>
+                        <div class="card-motif">✦ ✦ ✦</div>
+                    </div>
+                </div>
 
-<!-- CTA -->
-<section class="cta-section">
- <div class="section-label">Visit Us</div>
- <h2>Start Your <em style="font-style:normal; color:var(--accent)">Diamond Journey</em></h2>
- <p>Free consultation. No obligation. Just honest conversations about diamonds.<br>Walk in or book your private appointment today.</p>
- <div class="cta-btns">
- <button class="btn-primary">Book Free Consultation</button>
- <button class="btn-outline">WhatsApp Us</button>
- </div>
- <p style="font-family:sans-serif; font-size:0.85rem; color:var(--muted); margin-top:2rem;">
- Aurum Lab, Ground Floor, Koregaon Park Plaza, Pune 411001 &nbsp;|&nbsp; +91 98765 43210 &nbsp;|&nbsp; Open Tue–Sun, 11 AM – 8 PM
- </p>
-</section>
+                <!-- Card 4: Bridal Temple Sets -->
+                <div class="collection-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=600&q=80" alt="Bridal Temple Jewellery Sets" loading="lazy"
+                         onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg, #B8960F, var(--maroon))'">
+                    <div class="collection-card-overlay">
+                        <h3>Bridal Temple Sets</h3>
+                        <p>Complete Mangalsutra to Matha Patti. Traditional bridal sets that honour centuries of temple artistry.</p>
+                        <div class="card-motif">✦ ✦ ✦</div>
+                    </div>
+                </div>
 
+                <!-- Card 5: Deity Crowns (Mukuts) -->
+                <div class="collection-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1604004555489-723a93d6ce74?w=600&q=80" alt="Deity Crowns Mukuts — temple gold crowns" loading="lazy"
+                         onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg, var(--gold), var(--saffron-dark))'">
+                    <div class="collection-card-overlay">
+                        <h3>Deity Crowns (Mukuts)</h3>
+                        <p>Hand-hammered gold mukuts for Krishna, Vitthal, Ram Lalla & more. Sized for home mandirs to grand temples.</p>
+                        <div class="card-motif">✦ ✦ ✦</div>
+                    </div>
+                </div>
 
+                <!-- Card 6: Kavach Sets -->
+                <div class="collection-card" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600&q=80" alt="Kavach Sets — protective gold ornaments" loading="lazy"
+                         onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg, var(--maroon-light), var(--gold-dark))'">
+                    <div class="collection-card-overlay">
+                        <h3>Kavach Sets</h3>
+                        <p>Sacred protective kavach in 22K gold — Hanuman, Durga & Navgraha designs for personal wear & deity offering.</p>
+                        <div class="card-motif">✦ ✦ ✦</div>
+                    </div>
+                </div>
 
+            </div>
+        </div>
+    </section>
 
-<!-- FAQ SECTION — SEO Enhanced -->
-<section id="faq" style="padding: 80px 5%; max-width: 900px; margin: 0 auto;">
- <div style="text-align:center; margin-bottom: 48px;">
- <span style="font-size: 0.75rem; letter-spacing: 4px; text-transform: uppercase; color: #c9a84c; display: block; margin-bottom: 12px; font-family: 'Segoe UI', Arial, sans-serif;">FAQ</span>
- <h2 style="font-size: 2rem; font-weight: 700; margin-bottom: 12px; color: #f0efea;">Frequently Asked Questions</h2>
- <div style="width: 50px; height: 2px; background: #c9a84c; margin: 0 auto 16px;"></div>
- <p style="color: #888; font-size: 0.95rem; font-family: 'Segoe UI', Arial, sans-serif;">Everything you need to know about Aurum Lab</p>
- </div>
- <div style="display:flex; flex-direction:column; gap: 10px;">
+    <div class="motif-divider"></div>
 
- <details style="background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.2); border-radius: 10px; overflow: hidden; transition: border-color 0.3s;">
- <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #f0efea; font-family: 'Segoe UI', Arial, sans-serif;">
- What are lab-grown diamonds at Aurum Lab Pune?
- <span style="font-size: 1.2rem; color: #c9a84c; margin-left: 12px; flex-shrink:0; transition: transform 0.3s;">+</span>
- </summary>
- <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #888; line-height: 1.7; font-family: 'Segoe UI', Arial, sans-serif;">Lab-grown diamonds are real diamonds created using CVD/HPHT technology with identical chemical, physical, and optical properties to mined diamonds. 40-70% more affordable and 100% conflict-free. All IGI/GIA certified.</div>
- </details>
+    <!-- ═══════════════════════════════════════════════════════════
+         SECTION 3: BRIDAL TEMPLE COLLECTION
+         ═══════════════════════════════════════════════════════════ -->
+    <section class="section bridal-section" id="bridal">
+        <div class="section-inner">
+            <p class="section-subtitle" style="color: rgba(255,215,0,0.8);" data-aos="fade-up">For the Bride Who Honours Tradition</p>
+            <h2 class="section-title" style="color: var(--gold);" data-aos="fade-up" data-aos-delay="100">Bridal Temple Collection</h2>
+            <div class="decorative-line" data-aos="fade-up" data-aos-delay="200"><span style="color: var(--gold);">◆</span></div>
 
- <details style="background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.2); border-radius: 10px; overflow: hidden; transition: border-color 0.3s;">
- <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #f0efea; font-family: 'Segoe UI', Arial, sans-serif;">
- Are Aurum Lab diamonds certified and genuine?
- <span style="font-size: 1.2rem; color: #c9a84c; margin-left: 12px; flex-shrink:0; transition: transform 0.3s;">+</span>
- </summary>
- <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #888; line-height: 1.7; font-family: 'Segoe UI', Arial, sans-serif;">Yes, every Aurum Lab diamond comes with IGI or GIA certification — the world's most trusted gemological labs. Each stone has a laser inscription and full 4C grading report. Same standards as mined diamonds.</div>
- </details>
+            <div class="bridal-grid">
+                <div class="bridal-image-wrapper" data-aos="fade-right" data-aos-duration="800">
+                    <img src="https://images.unsplash.com/photo-1611042553484-d61f9d367575?w=800&q=80" alt="Complete bridal temple jewellery set" loading="lazy"
+                         onerror="this.src='https://images.pexels.com/photos/1395306/pexels-photo-1395306.jpeg?auto=compress&w=800'">
+                    <div class="gold-frame"></div>
+                </div>
 
- <details style="background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.2); border-radius: 10px; overflow: hidden; transition: border-color 0.3s;">
- <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #f0efea; font-family: 'Segoe UI', Arial, sans-serif;">
- How much cheaper are lab-grown diamonds at Aurum Lab?
- <span style="font-size: 1.2rem; color: #c9a84c; margin-left: 12px; flex-shrink:0; transition: transform 0.3s;">+</span>
- </summary>
- <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #888; line-height: 1.7; font-family: 'Segoe UI', Arial, sans-serif;">Lab-grown diamonds are 40-70% less expensive. A 1-carat VS1 E lab diamond costs ~1,45,000 vs ~4,20,000 mined. Spend the savings on a better cut, larger stone, or premium setting.</div>
- </details>
+                <div class="bridal-details" data-aos="fade-left" data-aos-duration="800">
+                    <h3>Complete Temple Bridal Set</h3>
+                    <p>
+                        Every piece in our bridal temple collection is designed to transform a bride into a living embodiment of Goddess Lakshmi. 
+                        Our master karigars hand-craft each set using the Nakashi repoussé technique — the same method used to adorn deities 
+                        in the great temples of Thanjavur and Padmanabhaswamy.
+                    </p>
+                    <p>
+                        From the Lakshmi Kasu Haram that drapes across the collarbone to the delicate Jada Billa that crowns the braid — 
+                        every element carries sacred intent and generations of artistry.
+                    </p>
 
- <details style="background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.2); border-radius: 10px; overflow: hidden; transition: border-color 0.3s;">
- <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #f0efea; font-family: 'Segoe UI', Arial, sans-serif;">
- Does Aurum Lab create custom engagement rings?
- <span style="font-size: 1.2rem; color: #c9a84c; margin-left: 12px; flex-shrink:0; transition: transform 0.3s;">+</span>
- </summary>
- <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #888; line-height: 1.7; font-family: 'Segoe UI', Arial, sans-serif;">Yes, we specialise in custom engagement rings. Choose your lab-grown diamond, design your setting with 3D CAD renders, and our craftsmen create your perfect ring in 7-14 working days in 18K/22K gold or platinum.</div>
- </details>
+                    <div class="bridal-price">
+                        <span class="label">Complete Set Range</span>
+                        <span class="range">₹15,000 – ₹2,50,000</span>
+                    </div>
 
- <details style="background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.2); border-radius: 10px; overflow: hidden; transition: border-color 0.3s;">
- <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #f0efea; font-family: 'Segoe UI', Arial, sans-serif;">
- Where is Aurum Lab located in Pune?
- <span style="font-size: 1.2rem; color: #c9a84c; margin-left: 12px; flex-shrink:0; transition: transform 0.3s;">+</span>
- </summary>
- <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #888; line-height: 1.7; font-family: 'Segoe UI', Arial, sans-serif;">Aurum Lab is at Koregaon Park Plaza, Ground Floor, Pune 411001. Also accessible from Senapati Bapat Road. Open Tuesday-Sunday 11 AM-8 PM. Free consultations and diamond education by appointment.</div>
- </details>
- </div>
-</section>
+                    <ul class="bridal-includes">
+                        <li>Lakshmi Kasu Haram (long necklace)</li>
+                        <li>Temple Choker with ruby & emerald accents</li>
+                        <li>Chandbali or Jhumka earrings</li>
+                        <li>Matha Patti (forehead ornament)</li>
+                        <li>Vanki (armlet) with deity motif</li>
+                        <li>Jada Billa & hair chain</li>
+                        <li>Vaddanam (waist belt) — optional add-on</li>
+                    </ul>
 
-<footer>
- <div class="footer-grid">
- <div class="footer-brand">
- <div class="logo" style="padding:0; font-size:1.3rem;">AURUM<span>LAB</span></div>
- <p>Pune's first dedicated lab-grown diamond boutique. Certified. Ethical. Beautiful. Every diamond IGI or GIA graded with laser inscription.</p>
- </div>
- <div>
- <h4>Collections</h4>
- <ul>
- <li>Solitaires</li>
- <li>Tennis Bracelets</li>
- <li>Earrings</li>
- <li>Pendants</li>
- <li>Bespoke</li>
- </ul>
- </div>
- <div>
- <h4>Learn</h4>
- <ul>
- <li>Lab vs Mined</li>
- <li>4C Guide</li>
- <li>IGI Certification</li>
- <li>Care Guide</li>
- <li>FAQ</li>
- </ul>
- </div>
- <div>
- <h4>Visit</h4>
- <ul>
- <li>Koregaon Park</li>
- <li>Book Appointment</li>
- <li>Virtual Consult</li>
- <li>Corporate Gifts</li>
- <li>Returns Policy</li>
- </ul>
- </div>
- </div>
- <div class="footer-bottom">
- <span>© 2026 Aurum Lab Jewellery. All rights reserved.</span>
- <span>Powered by <strong>Invictus AI</strong> — AI-powered web presence for India's finest businesses</span>
- </div>
-</footer>
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <a href="#contact" class="btn btn-gold">Book Bridal Consultation</a>
+                        <a href="https://wa.me/912024458899?text=I'm%20interested%20in%20the%20Bridal%20Temple%20Set" class="btn btn-whatsapp" target="_blank" rel="noopener">💬 WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="indian-pattern-border"></div>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         SECTION 4: PURITY PROMISE
+         ═══════════════════════════════════════════════════════════ -->
+    <section class="section purity-section" id="purity">
+        <div class="section-inner">
+            <p class="section-subtitle" data-aos="fade-up">Our Sacred Commitment to You</p>
+            <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">The Purity Promise</h2>
+            <div class="decorative-line" data-aos="fade-up" data-aos-delay="200"><span>◆</span></div>
+
+            <div class="purity-grid">
+                <div class="purity-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="purity-icon">🏅</div>
+                    <h3>BIS Hallmarked</h3>
+                    <p>
+                        Every piece carries the Bureau of Indian Standards hallmark. Our 22K temple jewellery 
+                        is certified at 916 purity, and our 24K deity ornaments at 999 purity. No exceptions — 
+                        because what adorns the divine must be pure.
+                    </p>
+                    <span class="purity-badge">22K · 916 Certified</span>
+                </div>
+
+                <div class="purity-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="purity-icon">🔨</div>
+                    <h3>Traditional Techniques</h3>
+                    <p>
+                        We use Nakashi (repoussé), hand-engraving, and temple wax-casting — the same techniques 
+                        that created the ornaments in Meenakshi Temple and Tirupati. No machine stamping. 
+                        No electroforming. Just gold, fire, and the karigar's hands.
+                    </p>
+                    <span class="purity-badge">Handcrafted Heritage</span>
+                </div>
+
+                <div class="purity-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="purity-icon">✨</div>
+                    <h3>No Artificial Plating</h3>
+                    <p>
+                        Many sellers coat base metals with gold plating and call it "temple jewellery." 
+                        Not us. At Sri Durgamba, what you see is what you get — solid gold, through and through. 
+                        Your ornament will glow the same way fifty years from now.
+                    </p>
+                    <span class="purity-badge">100% Solid Gold</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="motif-divider-small"></div>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         SECTION 5: ARTISAN HERITAGE
+         ═══════════════════════════════════════════════════════════ -->
+    <section class="section heritage-section" id="heritage">
+        <div class="section-inner">
+            <p class="section-subtitle" data-aos="fade-up">Three Decades of Devotion</p>
+            <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Our Artisan Heritage</h2>
+            <div class="decorative-line" data-aos="fade-up" data-aos-delay="200"><span>◆</span></div>
+
+            <div class="heritage-grid">
+                <div class="heritage-image" data-aos="fade-right" data-aos-duration="800">
+                    <img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=700&q=80" alt="Goldsmith artisan crafting temple jewellery" loading="lazy"
+                         onerror="this.src='https://images.pexels.com/photos/3825586/pexels-photo-3825586.jpeg?auto=compress&w=700'">
+                    <div class="year-badge">
+                        <span class="since">Since</span>
+                        <span class="year">1989</span>
+                    </div>
+                </div>
+
+                <div class="heritage-text" data-aos="fade-left" data-aos-duration="800">
+                    <h3>From Nagercoil & Thrissur to Tulsi Baug</h3>
+                    <p>
+                        In 1989, <span class="highlight">Shri Venkatesh Iyer</span> opened a modest workshop near Tulsi Baug with a single 
+                        vision: to bring the sacred gold traditions of South India to Maharashtra's devotees. His karigars — master goldsmiths 
+                        trained in the temple workshops of <span class="highlight">Nagercoil, Tamil Nadu</span> and <span class="highlight">Thrissur, Kerala</span> — 
+                        carried with them techniques passed down through five generations.
+                    </p>
+                    <p>
+                        What started as a small counter serving the Tulsi Baug mandirs has grown into Pune's most trusted name for deity ornaments 
+                        and bridal temple sets. Today, temples across Maharashtra — from Siddhivinayak trusts to family mandirs — trust 
+                        Sri Durgamba for their deity shringar.
+                    </p>
+                    <p>
+                        Our workshop still operates the way it did in 1989: no assembly lines, no mass production. Each piece begins with a 
+                        prayer and ends with a hallmark — because we believe the goldsmith's devotion lives in the gold.
+                    </p>
+
+                    <div class="heritage-stats">
+                        <div class="heritage-stat">
+                            <div class="number">36+</div>
+                            <div class="label">Years in Pune</div>
+                        </div>
+                        <div class="heritage-stat">
+                            <div class="number">12</div>
+                            <div class="label">Master Karigars</div>
+                        </div>
+                        <div class="heritage-stat">
+                            <div class="number">800+</div>
+                            <div class="label">Temples Served</div>
+                        </div>
+                        <div class="heritage-stat">
+                            <div class="number">5K+</div>
+                            <div class="label">Brides Adorned</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="motif-divider"></div>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         SECTION 6: TESTIMONIALS
+         ═══════════════════════════════════════════════════════════ -->
+    <section class="section testimonials-section" id="testimonials">
+        <div class="section-inner">
+            <p class="section-subtitle" data-aos="fade-up">Words from Our Temple Family</p>
+            <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Devotees & Brides Speak</h2>
+            <div class="decorative-line" data-aos="fade-up" data-aos-delay="200"><span>◆</span></div>
+
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "We ordered a complete Ganesha shringar set for our family's Gauri Puja — the mukut, the haar, 
+                        and the kamarband. When we placed it on Bappa, even the pandit said it looked like it came 
+                        straight from Ashtavinayak. Venkatesh uncle personally ensured every measurement fit our murti perfectly."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">SK</div>
+                        <div>
+                            <div class="testimonial-name">Smt. Kavita Deshmukh</div>
+                            <div class="testimonial-occasion">Gauri Puja, Sadashiv Peth · 2024</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "My daughter wanted a traditional South Indian bridal set for her wedding — not the machine-made 
+                        kind, but real temple jewellery with Lakshmi coins. Sri Durgamba crafted her complete set 
+                        in three weeks. The Chandbali earrings and Kasu Haram were exactly what we imagined. She looked like a goddess."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">RP</div>
+                        <div>
+                            <div class="testimonial-name">Shri Rajesh Patwardhan</div>
+                            <div class="testimonial-occasion">Daughter's Wedding, Deccan · 2023</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Our Devasthan committee needed a new Durga Kavach and matching shringar for our temple's 
+                        annual Navratri utsav. Sri Durgamba understood our specifications perfectly — they even 
+                        sent a karigar to take measurements of the murti in person. The 24K kavach they delivered is magnificent. 
+                        We've been ordering from them for 8 years now."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">AM</div>
+                        <div>
+                            <div class="testimonial-name">Pandit Anand Marathe</div>
+                            <div class="testimonial-occasion">Navratri Utsav, Bhavani Mandir Trust · 2024</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="indian-pattern-border"></div>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         SECTION 7: VISIT US / ORDER
+         ═══════════════════════════════════════════════════════════ -->
+    <section class="section contact-section" id="contact">
+        <div class="section-inner">
+            <p class="section-subtitle" data-aos="fade-up">Begin Your Sacred Journey</p>
+            <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Visit Us or Order</h2>
+            <div class="decorative-line" data-aos="fade-up" data-aos-delay="200"><span>◆</span></div>
+
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right" data-aos-duration="700">
+                    <h3>Find Us Near Tulsi Baug</h3>
+
+                    <div class="contact-detail">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-detail-text">
+                            <strong>Our Showroom</strong>
+                            <span>Shop No. 14, Ground Floor,<br>Laxmi Narayan Complex, Near Tulsi Baug,<br>Budhwar Peth, Pune 411002</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-detail-text">
+                            <strong>Call Us</strong>
+                            <span>+91 20 2445 8899<br>+91 98221 34567 (Venkatesh Iyer)</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail">
+                        <div class="contact-icon">🕐</div>
+                        <div class="contact-detail-text">
+                            <strong>Showroom Hours</strong>
+                            <span>Mon–Sat: 10:00 AM – 8:30 PM<br>Sunday: 10:00 AM – 2:00 PM<br>Closed on major Hindu festivals (we're at the temple!)</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-detail-text">
+                            <strong>Email</strong>
+                            <span>orders@sridurgambajewels.com</span>
+                        </div>
+                    </div>
+
+                    <div class="whatsapp-order">
+                        <p><strong>Prefer WhatsApp?</strong> Send us photos of the deity or describe your requirement — we'll share designs & quotes within 24 hours.</p>
+                        <a href="https://wa.me/919822134567?text=Namaskar!%20I'd%20like%20to%20inquire%20about%20temple%20jewellery%20from%20Sri%20Durgamba%20Jewels." class="btn btn-whatsapp" target="_blank" rel="noopener">
+                            💬 Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form" data-aos="fade-left" data-aos-duration="700">
+                    <h3>Custom Order Inquiry</h3>
+                    <form onsubmit="event.preventDefault(); alert('🙏 Dhanyavaad! Your inquiry has been received. We will contact you within 24 hours.'); this.reset();">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name *</label>
+                                <input type="text" id="name" name="name" placeholder="e.g. Smt. Kavita Joshi" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone / WhatsApp *</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+91 98XXX XXXXX" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email (optional)</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="category">Category *</label>
+                            <select id="category" name="category" required>
+                                <option value="">Select a category...</option>
+                                <option value="deity-ornaments">Deity Ornaments (Ganesha, Lakshmi, Durga, etc.)</option>
+                                <option value="bridal-temple">Bridal Temple Set</option>
+                                <option value="mukuts">Deity Crowns / Mukuts</option>
+                                <option value="kavach">Kavach Sets</option>
+                                <option value="custom-temple">Custom Temple Commission</option>
+                                <option value="personal">Personal Temple Jewellery</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="budget">Budget Range</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Select range...</option>
+                                    <option value="15k-50k">₹15,000 – ₹50,000</option>
+                                    <option value="50k-1l">₹50,000 – ₹1,00,000</option>
+                                    <option value="1l-2.5l">₹1,00,000 – ₹2,50,000</option>
+                                    <option value="2.5l+">Above ₹2,50,000</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="occasion">Occasion / Festival</label>
+                                <input type="text" id="occasion" name="occasion" placeholder="e.g. Ganesh Chaturthi, Wedding">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Describe Your Requirement</label>
+                            <textarea id="message" name="message" placeholder="Tell us about the deity, murti size, preferred design style, or any reference images you'd like to share..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-saffron" style="width: 100%; justify-content: center;">
+                            🙏 Submit Inquiry
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         SECTION 8: FOOTER
+         ═══════════════════════════════════════════════════════════ -->
+    <footer class="footer" id="footer">
+        <div class="footer-pattern"></div>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>🙏 Sri Durgamba Jewels</h3>
+                <p>
+                    Temple jewellery specialists serving Pune since 1989. Deity ornaments, bridal temple sets, and 
+                    sacred gold crafted by master artisans trained in Nagercoil and Thrissur. Every piece BIS Hallmarked.
+                </p>
+                <p style="color: var(--gold); font-family: var(--font-heading); font-style: italic;">
+                    "Where devotion meets gold, divinity is born."
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Collections</h4>
+                <ul>
+                    <li><a href="#collections">Ganesha Ornaments</a></li>
+                    <li><a href="#collections">Lakshmi Sets</a></li>
+                    <li><a href="#collections">Durga Shringar</a></li>
+                    <li><a href="#bridal">Bridal Temple Sets</a></li>
+                    <li><a href="#collections">Deity Crowns</a></li>
+                    <li><a href="#collections">Kavach Sets</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#purity">Purity Promise</a></li>
+                    <li><a href="#heritage">Our Heritage</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Visit Showroom</a></li>
+                    <li><a href="https://wa.me/919822134567" target="_blank" rel="noopener">WhatsApp Order</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-temple-motif">꩜ ✦ ◆ ꩜ ◆ ✦ ꩜</div>
+
+        <div class="motif-divider-small" style="color: rgba(255,215,0,0.2);"></div>
+
+        <div class="footer-bottom">
+            <p>
+                Shop No. 14, Laxmi Narayan Complex, Near Tulsi Baug, Budhwar Peth, Pune 411002 &nbsp;|&nbsp; 
+                +91 20 2445 8899 &nbsp;|&nbsp; orders@sridurgambajewels.com
+            </p>
+            <p style="margin-top: 0.5rem;">
+                © 2024 Sri Durgamba Jewels. All rights reserved. &nbsp;|&nbsp; Prices subject to prevailing gold rates.
+            </p>
+        </div>
+    </footer>
+
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 700,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 80
+        });
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 80) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scroll for nav links (close mobile menu too)
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navLinks').classList.remove('active');
+            });
+        });
+    </script>
 
 </body>
 </html>

@@ -1,388 +1,1568 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mangal Jewellers | Temple & Traditional Jewellery Pune</title>
-<meta name="description" content="Mangal Jewellers — Pune's most trusted traditional jeweller. Goddess jewellery, Kolhapuri saaj, temple sets, wedding mangalsutra. Family-owned since 1972.">
-<style>
- :root{--saffron:#E07B20;--deep-red:#8B1A1A;--maroon:#6B1010;--cream:#FFF8F0;--warm-bg:#1A0800;--card-bg:#221005;--text:#F0E8D0;--muted:#A09078;--gold:#C8882A;}
- *{margin:0;padding:0;box-sizing:border-box;}
- body{font-family:Georgia,serif;background:var(--warm-bg);color:var(--text);overflow-x:hidden;}
- nav{position:fixed;top:0;width:100%;z-index:100;background:rgba(26,8,0,0.98);border-bottom:2px solid var(--saffron);padding:14px 40px;display:flex;justify-content:space-between;align-items:center;}
- .logo{display:flex;align-items:center;gap:16px;}
- .logo-om{font-size:1.8rem;color:var(--saffron);}
- .logo-text{font-size:1.3rem;color:var(--cream);letter-spacing:2px;}
- .logo-sub{font-size:0.65rem;color:var(--muted);letter-spacing:3px;text-transform:uppercase;display:block;}
- .nav-links{display:flex;gap:28px;list-style:none;}
- .nav-links a{color:var(--muted);text-decoration:none;font-size:0.82rem;letter-spacing:1px;text-transform:uppercase;font-family:Arial,sans-serif;transition:color 0.3s;}
- .nav-links a:hover{color:var(--saffron);}
- .nav-btn{background:var(--saffron);color:var(--warm-bg);border:none;padding:10px 24px;font-size:0.8rem;letter-spacing:1px;cursor:pointer;font-family:Arial,sans-serif;font-weight:700;text-transform:uppercase;transition:all 0.3s;}
- .nav-btn:hover{background:var(--gold);}
- .hero{min-height:100vh;background:radial-gradient(ellipse at 50% 30%,rgba(224,123,32,0.1),transparent 60%),var(--warm-bg);display:flex;align-items:center;justify-content:center;text-align:center;padding:120px 20px 80px;position:relative;overflow:hidden;}
- .hero-pattern{position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23E07B20' fill-opacity='0.03'%3E%3Cpath d='M20 20l10-10-10 10-10-10z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");}
- .hero-content{position:relative;z-index:2;max-width:780px;}
- .hero-tag{display:inline-block;background:rgba(224,123,32,0.15);border:1px solid rgba(224,123,32,0.4);color:var(--saffron);padding:8px 28px;font-size:0.7rem;letter-spacing:4px;text-transform:uppercase;font-family:Arial,sans-serif;margin-bottom:32px;}
- .hero h1{font-size:clamp(2.5rem,5vw,4rem);font-weight:normal;color:var(--cream);line-height:1.2;margin-bottom:8px;}
- .hero h1 span{color:var(--saffron);}
- .hero-sub{font-size:0.9rem;color:var(--muted);letter-spacing:3px;text-transform:uppercase;font-family:Arial,sans-serif;margin-bottom:28px;}
- .hero p{font-size:1rem;color:var(--text);opacity:0.85;line-height:1.9;margin-bottom:44px;max-width:560px;margin-left:auto;margin-right:auto;}
- .hero-divider{display:flex;align-items:center;gap:20px;justify-content:center;margin-bottom:44px;}
- .hero-divider span{font-size:1.5rem;}
- .hero-divider::before,.hero-divider::after{content:'';flex:1;height:1px;background:rgba(224,123,32,0.3);max-width:120px;}
- .btn-s{background:var(--saffron);color:var(--warm-bg);border:none;padding:16px 40px;font-size:0.85rem;letter-spacing:2px;text-transform:uppercase;cursor:pointer;font-family:Arial,sans-serif;font-weight:700;transition:all 0.3s;margin:0 8px;}
- .btn-s:hover{background:var(--gold);transform:translateY(-2px);}
- .btn-s2{background:transparent;color:var(--saffron);border:2px solid var(--saffron);padding:14px 38px;font-size:0.85rem;letter-spacing:2px;text-transform:uppercase;cursor:pointer;font-family:Arial,sans-serif;transition:all 0.3s;margin:0 8px;}
- .btn-s2:hover{background:rgba(224,123,32,0.1);}
- .trust-strip{background:var(--deep-red);padding:20px 40px;display:flex;justify-content:center;gap:48px;flex-wrap:wrap;}
- .trust-i{text-align:center;}
- .trust-n{font-size:1.6rem;color:var(--cream);display:block;}
- .trust-l{font-size:0.68rem;color:rgba(255,248,240,0.7);letter-spacing:2px;text-transform:uppercase;font-family:Arial,sans-serif;}
- section{padding:90px 40px;max-width:1200px;margin:0 auto;}
- .sh{text-align:center;margin-bottom:60px;}
- .st{font-size:0.68rem;color:var(--saffron);letter-spacing:4px;text-transform:uppercase;font-family:Arial,sans-serif;margin-bottom:12px;display:block;}
- .sh h2{font-size:clamp(1.8rem,3vw,2.6rem);color:var(--cream);font-weight:normal;margin-bottom:12px;}
- .sh-div{display:flex;align-items:center;gap:12px;justify-content:center;margin-bottom:16px;}
- .sh-div::before,.sh-div::after{content:'';width:40px;height:1px;background:var(--saffron);}
- .sh-div span{color:var(--saffron);font-size:1rem;}
- .sh p{font-size:0.88rem;color:var(--muted);line-height:1.8;max-width:500px;margin:0 auto;font-family:Arial,sans-serif;}
- .cat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:3px;}
- .cat-card{background:var(--card-bg);border:1px solid rgba(224,123,32,0.12);padding:44px 28px;text-align:center;cursor:pointer;transition:all 0.3s;position:relative;overflow:hidden;}
- .cat-card::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:3px;background:var(--saffron);transform:scaleX(0);transition:transform 0.4s;}
- .cat-card:hover{border-color:rgba(224,123,32,0.4);transform:translateY(-4px);}
- .cat-card:hover::after{transform:scaleX(1);}
- .cat-icon{font-size:3rem;margin-bottom:16px;display:block;}
- .cat-name{font-size:1rem;color:var(--cream);margin-bottom:8px;}
- .cat-desc{font-size:0.8rem;color:var(--muted);line-height:1.6;font-family:Arial,sans-serif;}
- .occasion-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;}
- .occ-card{background:var(--card-bg);border:1px solid rgba(224,123,32,0.1);padding:36px 28px;transition:all 0.3s;}
- .occ-card:hover{border-color:rgba(224,123,32,0.3);}
- .occ-icon{font-size:2.5rem;margin-bottom:16px;display:block;}
- .occ-title{font-size:1rem;color:var(--cream);margin-bottom:10px;}
- .occ-text{font-size:0.83rem;color:var(--muted);line-height:1.7;font-family:Arial,sans-serif;}
- .traditions-bg{background:var(--maroon);padding:2px 0;}
- .trad-row{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
- .trad-story p{font-size:0.95rem;color:var(--text);line-height:1.95;margin-bottom:20px;font-family:Arial,sans-serif;}
- .trad-quote{border-left:3px solid var(--saffron);padding-left:24px;font-size:1.1rem;color:var(--cream);font-style:italic;margin:32px 0;}
- .trad-visual{background:var(--card-bg);border:2px solid rgba(224,123,32,0.2);padding:60px;text-align:center;}
- .trad-visual .big-icon{font-size:7rem;display:block;margin-bottom:20px;}
- .trad-visual p{font-size:0.85rem;color:var(--muted);line-height:1.7;font-family:Arial,sans-serif;}
- .reviews-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;}
- .review{background:var(--card-bg);border:1px solid rgba(224,123,32,0.1);padding:36px 28px;}
- .r-stars{color:var(--saffron);font-size:0.9rem;margin-bottom:12px;}
- .r-text{font-size:0.88rem;color:var(--text);line-height:1.8;font-style:italic;margin-bottom:20px;}
- .r-author{font-size:0.8rem;color:var(--saffron);font-family:Arial,sans-serif;letter-spacing:1px;}
- .cta-sect{background:linear-gradient(135deg,var(--deep-red),var(--maroon));padding:80px 60px;text-align:center;margin:0 40px 80px;}
- .cta-sect h2{font-size:clamp(1.8rem,3vw,2.8rem);color:var(--cream);font-weight:normal;margin-bottom:16px;}
- .cta-sect p{color:rgba(255,248,240,0.8);font-family:Arial,sans-serif;line-height:1.8;max-width:480px;margin:0 auto 36px;}
- footer{background:#0D0400;padding:60px 40px 28px;border-top:2px solid rgba(224,123,32,0.2);}
- .fg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;max-width:1200px;margin:0 auto 48px;}
- .fb-logo{font-size:1.1rem;color:var(--cream);margin-bottom:12px;letter-spacing:2px;}
- .fb-text{font-size:0.82rem;color:var(--muted);line-height:1.8;font-family:Arial,sans-serif;}
- .fh{font-size:0.65rem;letter-spacing:3px;color:var(--saffron);text-transform:uppercase;font-family:Arial,sans-serif;margin-bottom:16px;}
- .fl{list-style:none;}
- .fl li{margin-bottom:8px;}
- .fl a{font-size:0.82rem;color:var(--muted);text-decoration:none;font-family:Arial,sans-serif;transition:color 0.3s;}
- .fl a:hover{color:var(--saffron);}
- .fb{max-width:1200px;margin:0 auto;border-top:1px solid rgba(224,123,32,0.1);padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;}
- .fc{font-size:0.78rem;color:var(--muted);font-family:Arial,sans-serif;}
- @media(max-width:768px){nav{padding:14px 20px;} .nav-links,.nav-btn{display:none;} section{padding:60px 20px;} .trad-row{grid-template-columns:1fr;} .fg{grid-template-columns:1fr 1fr;} .cta-sect{padding:60px 24px;margin:0 20px 60px;}}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shree Laxmi Jewellers — Traditional Maharashtrian Gold Jewellery | Narayan Peth, Pune</title>
+  <meta name="description" content="Shree Laxmi Jewellers — Pune's trusted name for authentic Maharashtrian gold jewellery since 1965. Nath, tanmani, vajratik, kolhapuri thushi, mangalsutra & wedding sets. Visit us at Narayan Peth.">
+  <meta name="keywords" content="Maharashtrian jewellery, gold nath, tanmani, vajratik, kolhapuri thushi, mangalsutra, Pune jewellers, Narayan Peth, traditional gold, wedding jewellery">
 
-  @media(max-width:768px){
-    .nav-links, .nav-cta { display:none!important; }
-    #mob-links-03heritagecraft { display:none; }
-    #mob-links-03heritagecraft.show { display:flex!important; flex-direction:column; position:absolute; top:70px; left:0; right:0; background:white; padding:1rem; box-shadow:0 4px 12px rgba(0,0,0,0.15); z-index:50; }
-    #mob-links-03heritagecraft.show a { margin:0!important; padding:10px 0; border-bottom:1px solid #eee; color:#333!important; display:block; }
-    #mob-btn-03heritagecraft { display:block!important; }
+  <!-- OG Meta Tags -->
+  <meta property="og:title" content="Shree Laxmi Jewellers — Traditional Maharashtrian Gold Jewellery">
+  <meta property="og:description" content="Pune's most trusted destination for authentic Maharashtrian gold jewellery since 1965. Handcrafted nath, tanmani, vajratik, thushi & bridal sets.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=1200&h=630&fit=crop">
+  <meta property="og:url" content="https://www.shreelaxmijewellers.com">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:site_name" content="Shree Laxmi Jewellers">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Shree Laxmi Jewellers — Traditional Maharashtrian Gold Jewellery">
+  <meta name="twitter:description" content="Authentic handcrafted Maharashtrian gold jewellery since 1965. Narayan Peth, Pune.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=1200&h=630&fit=crop">
+
+  <!-- JSON-LD LocalBusiness Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Jeweler",
+    "name": "Shree Laxmi Jewellers",
+    "image": "https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=600",
+    "url": "https://www.shreelaxmijewellers.com",
+    "telephone": "+912024441234",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop No. 12, Narayan Peth",
+      "addressLocality": "Pune",
+      "addressRegion": "Maharashtra",
+      "postalCode": "411030",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 18.5158,
+      "longitude": 73.8553
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "10:00",
+        "closes": "20:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Sunday",
+        "opens": "10:00",
+        "closes": "14:00"
+      }
+    ],
+    "priceRange": "₹₹₹",
+    "servesCuisine": "",
+    "description": "Pune's trusted name for authentic Maharashtrian gold jewellery since 1965. Specializing in nath, tanmani, vajratik, kolhapuri thushi, mangalsutra, and bridal sets.",
+    "foundingDate": "1965",
+    "sameAs": [
+      "https://www.facebook.com/shreelaxmijewellers",
+      "https://www.instagram.com/shreelaxmijewellers"
+    ]
   }
-</style>
+  </script>
 
-<link rel="canonical" href="https://mangaljewellerspune.in/">
-<meta property="og:image" content="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=1200&h=630&fit=crop">
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "JewelryStore",
- "name": "Mangal Jewellers",
- "description": "Traditional Maharashtrian Temple & Wedding Jewellery in Pune Since 1972",
- "url": "https://mangaljewellerspune.in/",
- "telephone": "+919876543212",
- "email": "info@mangaljewellers.in",
- "priceRange": "",
- "address": {
- "@type": "PostalAddress",
- "streetAddress": "Laxmi Road, Near Dagdusheth Temple",
- "addressLocality": "Budhwar Peth, Pune",
- "addressRegion": "Maharashtra",
- "postalCode": "411002",
- "addressCountry": "IN"
- },
- "geo": {
- "@type": "GeoCoordinates",
- "latitude": "18.5138",
- "longitude": "73.8553"
- },
- "aggregateRating": {
- "@type": "AggregateRating",
- "ratingValue": "4.6",
- "bestRating": "5",
- "ratingCount": "4800"
- },
- "openingHoursSpecification": [
- {
- "@type": "OpeningHoursSpecification",
- "dayOfWeek": [
- "Mo-Sa"
- ],
- "opens": "10:00",
- "closes": "21:00"
- },
- {
- "@type": "OpeningHoursSpecification",
- "dayOfWeek": [
- "Su"
- ],
- "opens": "10:00",
- "closes": "15:00"
- }
- ],
- "image": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=1200&h=630&fit=crop"
-}
-</script>
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "FAQPage",
- "mainEntity": [
- {
- "@type": "Question",
- "name": "What is Mangal Jewellers known for in Pune?",
- "acceptedAnswer": {
- "@type": "Answer",
- "text": "Mangal Jewellers is Pune's most trusted name for traditional Maharashtrian gold jewellery — Kolhapuri saaj, thushi, nath, tanmani, temple sets, and complete bridal collections. Family-owned since 1972, serving 20,000+ families."
- }
- },
- {
- "@type": "Question",
- "name": "Does Mangal Jewellers make Maharashtrian bridal jewellery sets?",
- "acceptedAnswer": {
- "@type": "Answer",
- "text": "Yes, we are one of Pune's leading specialists in Maharashtrian bridal jewellery — complete wedding sets including Nath, Thushi, Tanmani, Bangdi, Kolhapuri Saaj, and Jodvi. All in certified BIS 916 (22K) gold."
- }
- },
- {
- "@type": "Question",
- "name": "Does Mangal Jewellers sell gold coins for investment?",
- "acceptedAnswer": {
- "@type": "Answer",
- "text": "Yes, we offer BIS hallmarked gold coins (999 purity) in 1g, 2g, 5g, 8g, 10g, and 50g denominations. Perfect for investment, gifting on Dhanteras, Akshaya Tritiya, and auspicious occasions. Buyback guaranteed."
- }
- },
- {
- "@type": "Question",
- "name": "Does Mangal Jewellers offer gold exchange in Pune?",
- "acceptedAnswer": {
- "@type": "Answer",
- "text": "Yes, we accept old gold from any jeweller at current market rates. Transparent weighing and valuation — exchange for new jewellery or receive cash buyback. No hidden deductions."
- }
- },
- {
- "@type": "Question",
- "name": "Where is Mangal Jewellers located in Pune?",
- "acceptedAnswer": {
- "@type": "Answer",
- "text": "Our showrooms are on Laxmi Road (near Dagdusheth Temple) and Kasba Peth, Pune. Mon-Sat 10 AM-9 PM, Sunday 10 AM-3 PM. Bridal consultations available by appointment. Serving Pune since 1972."
- }
- }
- ]
-}
-</script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+  <!-- AOS Animations -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    /* ===== CSS Custom Properties ===== */
+    :root {
+      --saffron: #CC5500;
+      --saffron-light: #e06b1a;
+      --gold: #D4AF37;
+      --gold-light: #e8c94a;
+      --gold-dark: #b8962e;
+      --cream: #FFF8F0;
+      --cream-dark: #f5edd8;
+      --maroon: #4A0E0E;
+      --maroon-light: #6b1a1a;
+      --white: #ffffff;
+      --text-dark: #2a1a0a;
+      --text-body: #4a3520;
+      --text-light: #7a6550;
+      --shadow-soft: 0 4px 20px rgba(74, 14, 14, 0.08);
+      --shadow-medium: 0 8px 32px rgba(74, 14, 14, 0.12);
+      --shadow-gold: 0 4px 24px rgba(212, 175, 55, 0.25);
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      --border-radius: 12px;
+    }
+
+    /* ===== Reset & Base ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+    body {
+      font-family: 'EB Garamond', Georgia, serif;
+      color: var(--text-body);
+      background: var(--cream);
+      line-height: 1.7;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Playfair Display', Georgia, serif;
+      color: var(--maroon);
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    }
+
+    img { max-width: 100%; height: auto; display: block; }
+    a { text-decoration: none; color: inherit; transition: var(--transition); }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ===== Decorative Paisley Divider ===== */
+    .section-divider {
+      text-align: center;
+      padding: 12px 0;
+      color: var(--gold);
+      font-size: 1.6rem;
+      letter-spacing: 12px;
+      opacity: 0.6;
+    }
+
+    .section-subtitle {
+      font-family: 'EB Garamond', serif;
+      font-size: 1.05rem;
+      color: var(--text-light);
+      font-style: italic;
+      text-align: center;
+      margin-top: 8px;
+      letter-spacing: 0.03em;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      margin-bottom: 6px;
+      position: relative;
+    }
+
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--gold), var(--saffron));
+      margin: 14px auto 0;
+      border-radius: 2px;
+    }
+
+    /* ===== Sticky Navigation ===== */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(74, 14, 14, 0.95);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 2px solid var(--gold);
+      transition: var(--transition);
+    }
+
+    .navbar.scrolled {
+      background: rgba(74, 14, 14, 0.98);
+      box-shadow: 0 4px 30px rgba(0,0,0,0.3);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+      height: 72px;
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .nav-brand-icon {
+      width: 42px;
+      height: 42px;
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+    }
+
+    .nav-brand h1 {
+      font-size: 1.35rem;
+      color: var(--gold);
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .nav-brand span {
+      display: block;
+      font-family: 'EB Garamond', serif;
+      font-size: 0.7rem;
+      color: rgba(255,248,240,0.6);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-top: -2px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--cream);
+      font-family: 'EB Garamond', serif;
+      font-size: 0.95rem;
+      letter-spacing: 0.5px;
+      position: relative;
+      padding: 4px 0;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--gold);
+      transition: var(--transition);
+    }
+
+    .nav-links a:hover::after { width: 100%; }
+    .nav-links a:hover { color: var(--gold); }
+
+    .nav-cta {
+      background: linear-gradient(135deg, var(--saffron), var(--saffron-light));
+      color: var(--white) !important;
+      padding: 10px 22px !important;
+      border-radius: 8px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+
+    .nav-cta::after { display: none !important; }
+    .nav-cta:hover { transform: translateY(-1px); box-shadow: var(--shadow-gold); }
+
+    .nav-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 8px;
+    }
+
+    .nav-toggle span {
+      width: 26px;
+      height: 2.5px;
+      background: var(--gold);
+      border-radius: 2px;
+      transition: var(--transition);
+    }
+
+    /* ===== Hero Section ===== */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      background: var(--maroon);
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(135deg, rgba(74,14,14,0.85) 0%, rgba(74,14,14,0.5) 50%, rgba(204,85,0,0.4) 100%),
+        url('https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=1920&q=80') center/cover no-repeat;
+    }
+
+    .hero-pattern {
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23D4AF37' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      opacity: 0.4;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 720px;
+      padding: 120px 24px 80px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(212,175,55,0.15);
+      border: 1px solid rgba(212,175,55,0.3);
+      padding: 8px 18px;
+      border-radius: 50px;
+      font-family: 'EB Garamond', serif;
+      font-size: 0.85rem;
+      color: var(--gold-light);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+    }
+
+    .hero h2 {
+      font-size: clamp(2.4rem, 6vw, 4rem);
+      color: var(--cream);
+      font-weight: 700;
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+
+    .hero h2 em {
+      color: var(--gold);
+      font-style: italic;
+      display: inline-block;
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      color: rgba(255,248,240,0.8);
+      line-height: 1.75;
+      margin-bottom: 36px;
+      max-width: 560px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 30px;
+      border-radius: 10px;
+      font-family: 'EB Garamond', serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      transition: var(--transition);
+      letter-spacing: 0.3px;
+    }
+
+    .btn-gold {
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      color: var(--maroon);
+      box-shadow: var(--shadow-gold);
+    }
+
+    .btn-gold:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(212,175,55,0.4);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--cream);
+      border: 2px solid rgba(212,175,55,0.5);
+    }
+
+    .btn-outline:hover {
+      background: rgba(212,175,55,0.1);
+      border-color: var(--gold);
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 48px;
+      margin-top: 56px;
+      padding-top: 32px;
+      border-top: 1px solid rgba(212,175,55,0.2);
+    }
+
+    .hero-stat h3 {
+      font-size: 2rem;
+      color: var(--gold);
+      font-weight: 700;
+    }
+
+    .hero-stat p {
+      font-size: 0.85rem;
+      color: rgba(255,248,240,0.5);
+      margin-bottom: 0;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* ===== Collections Grid ===== */
+    .collections {
+      padding: 100px 0;
+      background: var(--cream);
+    }
+
+    .collections-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      margin-top: 56px;
+    }
+
+    .collection-card {
+      position: relative;
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      background: var(--white);
+      box-shadow: var(--shadow-soft);
+      transition: var(--transition);
+      cursor: pointer;
+      group: true;
+    }
+
+    .collection-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-medium);
+    }
+
+    .collection-card-img {
+      position: relative;
+      height: 280px;
+      overflow: hidden;
+    }
+
+    .collection-card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .collection-card:hover .collection-card-img img {
+      transform: scale(1.08);
+    }
+
+    .collection-card-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 40%, rgba(74,14,14,0.7) 100%);
+      opacity: 0;
+      transition: var(--transition);
+    }
+
+    .collection-card:hover .collection-card-overlay { opacity: 1; }
+
+    .collection-tag {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      color: var(--maroon);
+      padding: 4px 14px;
+      border-radius: 50px;
+      font-family: 'EB Garamond', serif;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .collection-card-body {
+      padding: 22px 24px;
+    }
+
+    .collection-card-body h3 {
+      font-size: 1.25rem;
+      margin-bottom: 6px;
+      color: var(--maroon);
+    }
+
+    .collection-card-body p {
+      font-size: 0.92rem;
+      color: var(--text-light);
+      line-height: 1.55;
+    }
+
+    .collection-card-body .price-hint {
+      display: inline-block;
+      margin-top: 10px;
+      font-family: 'EB Garamond', serif;
+      font-size: 0.85rem;
+      color: var(--saffron);
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+
+    /* ===== About / Legacy Section ===== */
+    .about {
+      padding: 100px 0;
+      background: var(--maroon);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about::before {
+      content: '';
+      position: absolute;
+      top: -80px;
+      right: -80px;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      border: 1px solid rgba(212,175,55,0.08);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .about-image {
+      position: relative;
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-medium);
+    }
+
+    .about-image img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+    }
+
+    .about-image-badge {
+      position: absolute;
+      bottom: 24px;
+      right: 24px;
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      color: var(--maroon);
+      padding: 14px 22px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: var(--shadow-gold);
+    }
+
+    .about-image-badge h3 {
+      font-size: 1.8rem;
+      color: var(--maroon);
+      line-height: 1;
+    }
+
+    .about-image-badge span {
+      font-family: 'EB Garamond', serif;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    .about-content h2 {
+      font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+      color: var(--cream);
+      margin-bottom: 24px;
+    }
+
+    .about-content h2 em { color: var(--gold); font-style: italic; }
+
+    .about-content p {
+      color: rgba(255,248,240,0.75);
+      margin-bottom: 18px;
+      font-size: 1.05rem;
+    }
+
+    .about-values {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-top: 32px;
+    }
+
+    .about-value {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .about-value-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: rgba(212,175,55,0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold);
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+
+    .about-value h4 {
+      font-family: 'EB Garamond', serif;
+      color: var(--cream);
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .about-value p {
+      font-size: 0.82rem !important;
+      color: rgba(255,248,240,0.5) !important;
+      margin-bottom: 0 !important;
+    }
+
+    /* ===== Testimonials ===== */
+    .testimonials {
+      padding: 100px 0;
+      background: linear-gradient(180deg, var(--cream) 0%, var(--cream-dark) 100%);
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      margin-top: 56px;
+    }
+
+    .testimonial-card {
+      background: var(--white);
+      border-radius: var(--border-radius);
+      padding: 36px 30px;
+      box-shadow: var(--shadow-soft);
+      position: relative;
+      transition: var(--transition);
+      border: 1px solid rgba(212,175,55,0.08);
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-medium);
+      border-color: rgba(212,175,55,0.2);
+    }
+
+    .testimonial-quote {
+      font-size: 2.5rem;
+      color: var(--gold);
+      opacity: 0.3;
+      font-family: 'Playfair Display', serif;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .testimonial-card p {
+      font-size: 1rem;
+      color: var(--text-body);
+      font-style: italic;
+      line-height: 1.7;
+      margin-bottom: 24px;
+    }
+
+    .testimonial-stars {
+      color: var(--gold);
+      font-size: 0.85rem;
+      margin-bottom: 16px;
+      letter-spacing: 2px;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .testimonial-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--saffron), var(--gold));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    .testimonial-author h4 {
+      font-family: 'EB Garamond', serif;
+      font-size: 1rem;
+      color: var(--maroon);
+      font-weight: 600;
+    }
+
+    .testimonial-author span {
+      font-size: 0.8rem;
+      color: var(--text-light);
+    }
+
+    /* ===== Offers Banner ===== */
+    .offers {
+      padding: 80px 0;
+      background:
+        linear-gradient(135deg, var(--saffron) 0%, var(--saffron-light) 50%, var(--gold-dark) 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .offers::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.06'%3E%3Cpath d='M40 40c0-11.046-8.954-20-20-20S0 28.954 0 40s8.954 20 20 20 20-8.954 20-20zm40 0c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20 20-8.954 20-20z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    .offers-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      color: var(--white);
+    }
+
+    .offers-content h2 {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+
+    .offers-content p {
+      font-size: 1.15rem;
+      opacity: 0.9;
+      margin-bottom: 8px;
+    }
+
+    .offers-content .offer-detail {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 32px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .offers-features {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-bottom: 36px;
+      flex-wrap: wrap;
+    }
+
+    .offers-feature {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: 'EB Garamond', serif;
+      font-size: 1rem;
+    }
+
+    .offers-feature i {
+      color: var(--cream);
+      font-size: 1.1rem;
+    }
+
+    .btn-white {
+      background: var(--white);
+      color: var(--saffron);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    }
+
+    .btn-white:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    }
+
+    /* ===== Contact Section ===== */
+    .contact {
+      padding: 100px 0;
+      background: var(--cream);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      margin-top: 56px;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    .contact-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+      background: var(--white);
+      padding: 24px;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow-soft);
+      transition: var(--transition);
+      border: 1px solid rgba(212,175,55,0.06);
+    }
+
+    .contact-card:hover {
+      box-shadow: var(--shadow-medium);
+      border-color: rgba(212,175,55,0.15);
+    }
+
+    .contact-card-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, rgba(204,85,0,0.1), rgba(212,175,55,0.1));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--saffron);
+      font-size: 1.15rem;
+      flex-shrink: 0;
+    }
+
+    .contact-card h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      color: var(--maroon);
+      margin-bottom: 4px;
+    }
+
+    .contact-card p {
+      font-size: 0.92rem;
+      color: var(--text-light);
+      line-height: 1.5;
+    }
+
+    .contact-card a {
+      color: var(--saffron);
+      font-weight: 500;
+    }
+
+    .contact-card a:hover { color: var(--maroon); }
+
+    .contact-map {
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-medium);
+      height: 100%;
+      min-height: 380px;
+    }
+
+    .contact-map iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* ===== Footer ===== */
+    .footer {
+      background: var(--maroon);
+      padding: 64px 0 0;
+      color: rgba(255,248,240,0.7);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1.5fr;
+      gap: 48px;
+      margin-bottom: 48px;
+    }
+
+    .footer-brand h3 {
+      font-size: 1.5rem;
+      color: var(--gold);
+      margin-bottom: 14px;
+    }
+
+    .footer-brand p {
+      font-size: 0.92rem;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 12px;
+    }
+
+    .footer-social a {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: rgba(212,175,55,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold);
+      font-size: 0.95rem;
+      transition: var(--transition);
+    }
+
+    .footer-social a:hover {
+      background: var(--gold);
+      color: var(--maroon);
+    }
+
+    .footer h4 {
+      font-family: 'Playfair Display', serif;
+      color: var(--cream);
+      font-size: 1.05rem;
+      margin-bottom: 18px;
+    }
+
+    .footer ul { list-style: none; }
+
+    .footer ul li { margin-bottom: 10px; }
+
+    .footer ul a {
+      font-size: 0.9rem;
+      color: rgba(255,248,240,0.6);
+      transition: var(--transition);
+    }
+
+    .footer ul a:hover { color: var(--gold); padding-left: 4px; }
+
+    .footer-newsletter p {
+      font-size: 0.9rem;
+      margin-bottom: 16px;
+    }
+
+    .footer-newsletter-form {
+      display: flex;
+      gap: 8px;
+    }
+
+    .footer-newsletter-form input {
+      flex: 1;
+      padding: 12px 16px;
+      border: 1px solid rgba(212,175,55,0.2);
+      border-radius: 8px;
+      background: rgba(255,248,240,0.05);
+      color: var(--cream);
+      font-family: 'EB Garamond', serif;
+      font-size: 0.9rem;
+    }
+
+    .footer-newsletter-form input::placeholder { color: rgba(255,248,240,0.3); }
+
+    .footer-newsletter-form button {
+      padding: 12px 20px;
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      color: var(--maroon);
+      border: none;
+      border-radius: 8px;
+      font-family: 'EB Garamond', serif;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .footer-newsletter-form button:hover { transform: translateY(-1px); }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(212,175,55,0.12);
+      padding: 20px 0;
+      text-align: center;
+      font-size: 0.82rem;
+      color: rgba(255,248,240,0.4);
+    }
+
+    /* ===== WhatsApp Floating Button ===== */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #25D366;
+      color: white;
+      padding: 14px 24px;
+      border-radius: 50px;
+      box-shadow: 0 6px 28px rgba(37,211,102,0.4);
+      font-family: 'EB Garamond', serif;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: var(--transition);
+      animation: pulse-whatsapp 2s ease-in-out infinite;
+    }
+
+    .whatsapp-float:hover {
+      transform: translateY(-3px) scale(1.03);
+      box-shadow: 0 10px 40px rgba(37,211,102,0.5);
+      color: white;
+    }
+
+    .whatsapp-float i { font-size: 1.3rem; }
+
+    @keyframes pulse-whatsapp {
+      0%, 100% { box-shadow: 0 6px 28px rgba(37,211,102,0.4); }
+      50% { box-shadow: 0 6px 28px rgba(37,211,102,0.6), 0 0 0 8px rgba(37,211,102,0.1); }
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 1024px) {
+      .collections-grid { grid-template-columns: repeat(2, 1fr); }
+      .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .nav-toggle { display: flex; }
+      .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        right: 0;
+        background: rgba(74,14,14,0.98);
+        padding: 24px;
+        gap: 16px;
+        border-bottom: 2px solid var(--gold);
+      }
+
+      .hero-content { padding: 100px 20px 60px; }
+      .hero-stats { gap: 28px; flex-wrap: wrap; }
+
+      .collections-grid { grid-template-columns: 1fr; }
+      .testimonials-grid { grid-template-columns: 1fr; }
+
+      .about-grid { grid-template-columns: 1fr; gap: 36px; }
+      .about-image img { height: 320px; }
+      .about-values { grid-template-columns: 1fr; }
+
+      .contact-grid { grid-template-columns: 1fr; }
+      .contact-map { min-height: 280px; }
+
+      .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+
+      .offers-features { gap: 20px; }
+
+      .whatsapp-float span { display: none; }
+      .whatsapp-float {
+        padding: 16px;
+        border-radius: 50%;
+      }
+    }
+
+    /* ===== Smooth Scroll Reveal Classes ===== */
+    .reveal { opacity: 0; transform: translateY(30px); transition: all 0.7s ease; }
+    .reveal.active { opacity: 1; transform: translateY(0); }
+  </style>
 </head>
 <body>
-<nav>
- <div class="logo">
- 
- <div>
- <div class="logo-text">Mangal Jewellers</div>
- <span class="logo-sub">Traditional · Temple · Bridal</span>
- </div>
- </div>
- <ul class="nav-links">
- <li><a href="#">Temple Jewellery</a></li><li><a href="#">Bridal</a></li><li><a href="#">Kolhapuri</a></li><li><a href="#">About</a></li>
- </ul>
- <button class="nav-btn">Visit Showroom</button>
-<button id="mob-btn-03heritagecraft" style="display:none;padding:8px;cursor:pointer;background:none;border:none;" onclick="document.getElementById('mob-links-03heritagecraft').classList.toggle('show')" aria-label="Menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
-<div id="mob-links-03heritagecraft"><a href="#">Temple Jewellery</a>
-<a href="#">Bridal</a>
-<a href="#">Kolhapuri</a>
-<a href="#">About</a></div>
-</nav>
-<div class="hero">
- <div class="hero-pattern"></div>
- <div class="hero-content">
- <div class="hero-tag"> Rooted in Tradition · Pune · Est. 1972</div>
- <h1>Where <span>Sacred Tradition</span><br>Meets Timeless Gold</h1>
- <p class="hero-sub">Kolhapuri Saaj · Temple Sets · Mangalsutra · Nath</p>
- <p>54 years of serving Pune's families with jewellery rooted in Maharashtrian tradition. From Kolhapuri saaj to Lakshmi temple sets — crafted with devotion, worn with pride.</p>
- <div class="hero-divider"></div>
- <div>
- <button class="btn-s">Explore Collection</button>
- <button class="btn-s2">Bridal Consultation</button>
- </div>
- </div>
-</div>
-<div class="trust-strip">
- <div class="trust-i"><span class="trust-n">54</span><span class="trust-l">Years of Trust</span></div>
- <div class="trust-i"><span class="trust-n">20,000+</span><span class="trust-l">Happy Families</span></div>
- <div class="trust-i"><span class="trust-n">3</span><span class="trust-l">Generations</span></div>
- <div class="trust-i"><span class="trust-n">916</span><span class="trust-l">BIS Hallmark</span></div>
-</div>
-<section>
- <div class="sh">
- <span class="st">Our Collections</span>
- <h2>The Soul of Maharashtra</h2>
- <div class="sh-div"><span></span></div>
- <p>Jewellery that carries the spirit of our culture — from temple devotion to wedding celebrations.</p>
- </div>
- <div class="cat-grid">
- <div class="cat-card"><div class="service-icon-css" style="width:56px;height:56px;border-radius:50%;background:var(--accent,#2563eb);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;letter-spacing:.5px;font-family:sans-serif;flex-shrink:0">FLR</div><div class="cat-name">Kolhapuri Saaj</div><p class="cat-desc">Authentic multi-strand Kolhapuri gold saaj. The signature Maharashtrian wedding necklace — traditional designs, 100% BIS 916.</p></div>
- <div class="cat-card"><div class="service-icon-css" style="width:56px;height:56px;border-radius:50%;background:var(--accent,#2563eb);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;letter-spacing:.5px;font-family:sans-serif;flex-shrink:0">SVC</div><div class="cat-name">Temple Jewellery</div><p class="cat-desc">Lakshmi, Ganapati, and Saraswati motifs in antique gold finish. Worn at pujas, ceremonies, and festivals.</p></div>
- <div class="cat-card"><div class="service-icon-css" style="width:56px;height:56px;border-radius:50%;background:var(--accent,#2563eb);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;letter-spacing:.5px;font-family:sans-serif;flex-shrink:0">SVC</div><div class="cat-name">Mangalsutra</div><p class="cat-desc">Traditional Maharashtra black-bead mangalsutra and contemporary everyday styles. Personalised length options.</p></div>
- <div class="cat-card"><div class="service-icon-css" style="width:56px;height:56px;border-radius:50%;background:var(--accent,#2563eb);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;letter-spacing:.5px;font-family:sans-serif;flex-shrink:0">SVC</div><div class="cat-name">Nath (Nose Rings)</div><p class="cat-desc">Maharashtrian nath — simple studs to elaborate bridal rings. Clip and pierced options available.</p></div>
- <div class="cat-card"><div class="service-icon-css" style="width:56px;height:56px;border-radius:50%;background:var(--accent,#2563eb);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;letter-spacing:.5px;font-family:sans-serif;flex-shrink:0">SVC</div><div class="cat-name">Bangles & Patlya</div><p class="cat-desc">Traditional Maharashtra gold patlya and modern bangles. Plain, textured, stone-set — from 8,000.</p></div>
- <div class="cat-card"><div class="service-icon-css" style="width:56px;height:56px;border-radius:50%;background:var(--accent,#2563eb);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;letter-spacing:.5px;font-family:sans-serif;flex-shrink:0">CRN</div><div class="cat-name">Bridal Sets</div><p class="cat-desc">Complete Maharashtrian bridal jewellery sets — Nath, Mangalsutra, Saaj, Earrings, Bangles. One destination.</p></div>
- </div>
-</section>
-<div class="traditions-bg">
-<section>
- <div class="trad-row">
- <div class="trad-story">
- <span class="st">Our Story</span>
- <h2 style="font-size:clamp(1.6rem,3vw,2.2rem);color:var(--cream);font-weight:normal;margin-bottom:24px;">54 Years Rooted in<br>Maharashtra's Heart</h2>
- <p>In 1972, Dattatray Mangale opened a small jewellery shop in Pune's old city with a simple promise — pure gold, honest prices, and jewellery that honours tradition. Over five decades, that promise has never changed.</p>
- <p>Today, Mangal Jewellers is a name trusted by three generations of Pune families. Our pieces are worn at every auspicious occasion — from a daughter's first ear piercing to a grandmother's 50th anniversary.</p>
- <div class="trad-quote">"Gold is not just metal — it is blessings passed from mother to daughter, from generation to generation."</div>
- <p>We specialise in jewellery that carries Maharashtra's soul — Kolhapuri saaj, temple motifs, traditional nath. Crafted by artisans who learned from their fathers, who learned from their fathers.</p>
- </div>
- <div class="trad-visual">
- 
- <p style="color:var(--cream);font-size:1rem;margin-bottom:12px;">Est. 1972</p>
- <p>Three generations of the Mangale family — serving Pune with devotion, craftsmanship, and honesty since the first day we opened our doors.</p>
- </div>
- </div>
-</section>
-</div>
-<section>
- <div class="sh">
- <span class="st">Occasion Guide</span>
- <h2>Jewellery for Every Celebration</h2>
- <div class="sh-div"><span></span></div>
- </div>
- <div class="occasion-grid">
- <div class="occ-card"><h3 class="occ-title">Wedding</h3><p class="occ-text">Complete Maharashtrian bridal set — Kolhapuri Saaj, Nath, Mangalsutra, Bangles, Bajuband. Curated with your wedding look by our bridal stylist.</p></div>
- <div class="occ-card"><h3 class="occ-title">Puja & Festival</h3><p class="occ-text">Temple jewellery for Navratri, Diwali, Ganesh Chaturthi — Lakshmi, Ganapati motifs in antique gold finish that radiates devotion.</p></div>
- <div class="occ-card"><h3 class="occ-title">Baby Ceremonies</h3><p class="occ-text">Ear piercing sets, naming ceremony gifts, gold bangles for newborns. Lightweight, safe, and auspicious.</p></div>
- <div class="occ-card"><h3 class="occ-title">Coming of Age</h3><p class="occ-text">First gold for daughter's 16th, first nath for engagement, first mangalsutra. Milestone jewellery that marks life's chapters.</p></div>
- <div class="occ-card"><span class="occ-icon"></span><h3 class="occ-title">Anniversary</h3><p class="occ-text">Renewed love in gold. Anniversary gifts from 5,000 — simple bands to complete diamond sets. We help you find the right one.</p></div>
- <div class="occ-card"><h3 class="occ-title">Investment Gold</h3><p class="occ-text">Gold coins and bars for systematic gold saving. BIS Hallmarked 999 pure gold. Buyback guaranteed at market rate.</p></div>
- </div>
-</section>
-<section>
- <div class="sh">
- <span class="st">Customer Stories</span>
- <h2>Trust Built Over Generations</h2>
- <div class="sh-div"><span></span></div>
- </div>
- <div class="reviews-grid">
- <div class="review"><div class="r-stars">5 out of 5</div><p class="r-text">My Kolhapuri saaj from Mangal Jewellers is the most compliment-worthy piece at every wedding I attend. People always ask where I got it. The craftsmanship is unmatchable.</p><div class="r-author">Sujata Pawar · Peth, Pune</div></div>
- <div class="review"><div class="r-stars">5 out of 5</div><p class="r-text">Three generations of my family have bought jewellery here. My nana, my amma, and now me. The Mangale family treats every customer like their own family. That's rare today.</p><div class="r-author">Vishakha Bhosale · Kasba Peth</div></div>
- <div class="review"><div class="r-stars">5 out of 5</div><p class="r-text">I wanted a temple Lakshmi set for my daughter's wedding. They custom-made it to exactly the design my mother remembered from 40 years ago. I cried when I saw it.</p><div class="r-author">Tarabai Kulkarni · Sadashiv Peth</div></div>
- </div>
-</section>
-<div class="cta-sect">
- <h2>Come Home to Tradition</h2>
- <p>Visit our showroom in Kasba Peth or Laxmi Road. Bridal consultations available by appointment. We serve with devotion.</p>
- <button class="btn-s">Visit Showroom</button>
- <button class="btn-s2" style="margin-left:12px;">Call: +91 98765 43212</button>
-</div>
 
+  <!-- ===== Sticky Navigation ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-brand">
+        <div class="nav-brand-icon">🪷</div>
+        <div>
+          <h1>Shree Laxmi Jewellers</h1>
+          <span>Est. 1965 &bull; Narayan Peth, Pune</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#collections">Collections</a></li>
+        <li><a href="#about">Our Legacy</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#offers">Offers</a></li>
+        <li><a href="#contact">Visit Us</a></li>
+        <li><a href="https://wa.me/919845001234" class="nav-cta" target="_blank">Book Appointment</a></li>
+      </ul>
+      <div class="nav-toggle" id="navToggle" onclick="document.getElementById('navLinks').classList.toggle('active')">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
 
+  <!-- ===== Hero Section ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-pattern"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge" data-aos="fade-down" data-aos-delay="100">
+          ✦ Trusted by 50,000+ Families Since 1965
+        </div>
+        <h2 data-aos="fade-up" data-aos-delay="200">
+          Where Tradition Meets <em>Timeless Gold</em>
+        </h2>
+        <p data-aos="fade-up" data-aos-delay="350">
+          Three generations of master artisans crafting authentic Maharashtrian jewellery — from the iconic Kolhapuri nath to intricate tanmani sets. Every piece carries the warmth of Pune's heritage and the glow of 22-karat trust.
+        </p>
+        <div class="hero-actions" data-aos="fade-up" data-aos-delay="500">
+          <a href="#collections" class="btn btn-gold">
+            <i class="fas fa-gem"></i> Explore Collections
+          </a>
+          <a href="https://wa.me/919845001234?text=Namaskar!%20I%20would%20like%20to%20know%20about%20your%20jewellery%20collections." class="btn btn-outline" target="_blank">
+            <i class="fab fa-whatsapp"></i> Chat With Us
+          </a>
+        </div>
+        <div class="hero-stats" data-aos="fade-up" data-aos-delay="650">
+          <div class="hero-stat">
+            <h3>59+</h3>
+            <p>Years of Trust</p>
+          </div>
+          <div class="hero-stat">
+            <h3>50K+</h3>
+            <p>Happy Brides</p>
+          </div>
+          <div class="hero-stat">
+            <h3>100%</h3>
+            <p>BIS Hallmarked</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- FAQ SECTION — SEO Enhanced -->
-<section id="faq" style="padding: 80px 5%; max-width: 900px; margin: 0 auto;">
- <div style="text-align:center; margin-bottom: 48px;">
- <span style="font-size: 0.75rem; letter-spacing: 4px; text-transform: uppercase; color: #E07B20; display: block; margin-bottom: 12px; font-family: 'Segoe UI', Arial, sans-serif;">FAQ</span>
- <h2 style="font-size: 2rem; font-weight: 700; margin-bottom: 12px; color: #F0E8D0;">Frequently Asked Questions</h2>
- <div style="width: 50px; height: 2px; background: #E07B20; margin: 0 auto 16px;"></div>
- <p style="color: #A09078; font-size: 0.95rem; font-family: 'Segoe UI', Arial, sans-serif;">Everything you need to know about Mangal Jewellers</p>
- </div>
- <div style="display:flex; flex-direction:column; gap: 10px;">
+  <!-- ===== Featured Collections ===== -->
+  <section class="collections" id="collections">
+    <div class="container">
+      <div class="section-divider">❈ ❈ ❈</div>
+      <h2 class="section-title" data-aos="fade-up">Our Treasured Collections</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Handcrafted masterpieces rooted in Maharashtra's rich jewellery tradition</p>
 
- <details style="background: rgba(224,123,32,0.06); border: 1px solid rgba(224,123,32,0.2); border-radius: 10px; overflow: hidden; transition: border-color 0.3s;">
- <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #F0E8D0; font-family: 'Segoe UI', Arial, sans-serif;">
- What is Mangal Jewellers known for in Pune?
- <span style="font-size: 1.2rem; color: #E07B20; margin-left: 12px; flex-shrink:0; transition: transform 0.3s;">+</span>
- </summary>
- <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #A09078; line-height: 1.7; font-family: 'Segoe UI', Arial, sans-serif;">Mangal Jewellers is Pune's most trusted name for traditional Maharashtrian gold jewellery — Kolhapuri saaj, thushi, nath, tanmani, temple sets, and complete bridal collections. Family-owned since 1972, serving 20,000+ families.</div>
- </details>
+      <div class="collections-grid">
 
- <details style="background: rgba(224,123,32,0.06); border: 1px solid rgba(224,123,32,0.2); border-radius: 10px; overflow: hidden; transition: border-color 0.3s;">
- <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #F0E8D0; font-family: 'Segoe UI', Arial, sans-serif;">
- Does Mangal Jewellers make Maharashtrian bridal jewellery sets?
- <span style="font-size: 1.2rem; color: #E07B20; margin-left: 12px; flex-shrink:0; transition: transform 0.3s;">+</span>
- </summary>
- <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #A09078; line-height: 1.7; font-family: 'Segoe UI', Arial, sans-serif;">Yes, we are one of Pune's leading specialists in Maharashtrian bridal jewellery — complete wedding sets including Nath, Thushi, Tanmani, Bangdi, Kolhapuri Saaj, and Jodvi. All in certified BIS 916 (22K) gold.</div>
- </details>
+        <!-- Card 1: Nath -->
+        <div class="collection-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="collection-card-img">
+            <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=600&h=400&fit=crop" alt="Traditional Maharashtrian Nath — nose ring in gold" loading="lazy">
+            <div class="collection-card-overlay"></div>
+            <span class="collection-tag">Bestseller</span>
+          </div>
+          <div class="collection-card-body">
+            <h3>Maharashtrian Nath</h3>
+            <p>The iconic bridal nose ring — pearls, rubies, and 22K gold woven into heritage you can wear.</p>
+            <span class="price-hint">Starting ₹18,000</span>
+          </div>
+        </div>
 
- <details style="background: rgba(224,123,32,0.06); border: 1px solid rgba(224,123,32,0.2); border-radius: 10px; overflow: hidden; transition: border-color 0.3s;">
- <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #F0E8D0; font-family: 'Segoe UI', Arial, sans-serif;">
- Does Mangal Jewellers sell gold coins for investment?
- <span style="font-size: 1.2rem; color: #E07B20; margin-left: 12px; flex-shrink:0; transition: transform 0.3s;">+</span>
- </summary>
- <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #A09078; line-height: 1.7; font-family: 'Segoe UI', Arial, sans-serif;">Yes, we offer BIS hallmarked gold coins (999 purity) in 1g, 2g, 5g, 8g, 10g, and 50g denominations. Perfect for investment, gifting on Dhanteras, Akshaya Tritiya, and auspicious occasions. Buyback guaranteed.</div>
- </details>
+        <!-- Card 2: Tanmani -->
+        <div class="collection-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="collection-card-img">
+            <img src="https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?w=600&h=400&fit=crop" alt="Gold Tanmani necklace with pendant" loading="lazy">
+            <div class="collection-card-overlay"></div>
+            <span class="collection-tag">Heritage</span>
+          </div>
+          <div class="collection-card-body">
+            <h3>Tanmani Sets</h3>
+            <p>Delicate gold chains with single precious pendants — the quintessential Maharashtrian necklace.</p>
+            <span class="price-hint">Starting ₹42,000</span>
+          </div>
+        </div>
 
- <details style="background: rgba(224,123,32,0.06); border: 1px solid rgba(224,123,32,0.2); border-radius: 10px; overflow: hidden; transition: border-color 0.3s;">
- <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #F0E8D0; font-family: 'Segoe UI', Arial, sans-serif;">
- Does Mangal Jewellers offer gold exchange in Pune?
- <span style="font-size: 1.2rem; color: #E07B20; margin-left: 12px; flex-shrink:0; transition: transform 0.3s;">+</span>
- </summary>
- <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #A09078; line-height: 1.7; font-family: 'Segoe UI', Arial, sans-serif;">Yes, we accept old gold from any jeweller at current market rates. Transparent weighing and valuation — exchange for new jewellery or receive cash buyback. No hidden deductions.</div>
- </details>
+        <!-- Card 3: Kolhapuri Thushi -->
+        <div class="collection-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="collection-card-img">
+            <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600&h=400&fit=crop" alt="Kolhapuri Thushi choker necklace in gold" loading="lazy">
+            <div class="collection-card-overlay"></div>
+            <span class="collection-tag">Traditional</span>
+          </div>
+          <div class="collection-card-body">
+            <h3>Kolhapuri Thushi</h3>
+            <p>Choker-style gold necklaces with intricate bead work — a pride of Western Maharashtra.</p>
+            <span class="price-hint">Starting ₹55,000</span>
+          </div>
+        </div>
 
- <details style="background: rgba(224,123,32,0.06); border: 1px solid rgba(224,123,32,0.2); border-radius: 10px; overflow: hidden; transition: border-color 0.3s;">
- <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #F0E8D0; font-family: 'Segoe UI', Arial, sans-serif;">
- Where is Mangal Jewellers located in Pune?
- <span style="font-size: 1.2rem; color: #E07B20; margin-left: 12px; flex-shrink:0; transition: transform 0.3s;">+</span>
- </summary>
- <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #A09078; line-height: 1.7; font-family: 'Segoe UI', Arial, sans-serif;">Our showrooms are on Laxmi Road (near Dagdusheth Temple) and Kasba Peth, Pune. Mon-Sat 10 AM-9 PM, Sunday 10 AM-3 PM. Bridal consultations available by appointment. Serving Pune since 1972.</div>
- </details>
- </div>
-</section>
+        <!-- Card 4: Vajratik -->
+        <div class="collection-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="collection-card-img">
+            <img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=600&h=400&fit=crop" alt="Vajratik diamond-studded gold necklace" loading="lazy">
+            <div class="collection-card-overlay"></div>
+            <span class="collection-tag">Premium</span>
+          </div>
+          <div class="collection-card-body">
+            <h3>Vajratik</h3>
+            <p>Diamond-studded gold masterpieces that blend Deccan royalty with contemporary brilliance.</p>
+            <span class="price-hint">Starting ₹1,25,000</span>
+          </div>
+        </div>
 
-<footer>
- <div class="fg">
- <div>
- <div class="fb-logo"> Mangal Jewellers</div>
- <p class="fb-text">Serving Pune's families since 1972. Traditional Maharashtrian jewellery — Kolhapuri Saaj, Temple Sets, Mangalsutra. BIS 916 Hallmarked gold. Trust passed through generations.</p>
- </div>
- <div>
- <div class="fh">Collections</div>
- <ul class="fl"><li><a href="#">Kolhapuri Saaj</a></li><li><a href="#">Temple Sets</a></li><li><a href="#">Mangalsutra</a></li><li><a href="#">Nath</a></li><li><a href="#">Gold Coins</a></li></ul>
- </div>
- <div>
- <div class="fh">Services</div>
- <ul class="fl"><li><a href="#">Bridal Styling</a></li><li><a href="#">Custom Design</a></li><li><a href="#">Gold Exchange</a></li><li><a href="#">Repairs</a></li></ul>
- </div>
- <div>
- <div class="fh">Visit</div>
- <ul class="fl"><li><a href="#">Kasba Peth Showroom</a></li><li><a href="#">Laxmi Road Showroom</a></li><li><a href="#">+91 98765 43212</a></li><li><a href="#">Mon–Sat 9am–9pm</a></li></ul>
- </div>
- </div>
- <div class="fb">
- <span class="fc">© 2026 Mangal Jewellers. All rights reserved.</span>
- <span class="fc" style="color:var(--saffron);">BIS 916 · EST. 1972 · TRADITIONAL MAHARASHTRIAN JEWELLERY</span>
- </div>
-</footer>
+        <!-- Card 5: Mangalsutra -->
+        <div class="collection-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="collection-card-img">
+            <img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=600&h=400&fit=crop" alt="Gold mangalsutra with black beads" loading="lazy">
+            <div class="collection-card-overlay"></div>
+            <span class="collection-tag">Bridal</span>
+          </div>
+          <div class="collection-card-body">
+            <h3>Mangalsutra</h3>
+            <p>Sacred black-bead chains with ornate gold pendants — from classic two-vati to modern designs.</p>
+            <span class="price-hint">Starting ₹28,000</span>
+          </div>
+        </div>
+
+        <!-- Card 6: Wedding Sets -->
+        <div class="collection-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="collection-card-img">
+            <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=600&h=400&fit=crop" alt="Complete bridal gold jewellery wedding set" loading="lazy">
+            <div class="collection-card-overlay"></div>
+            <span class="collection-tag">Complete Set</span>
+          </div>
+          <div class="collection-card-body">
+            <h3>Bridal Wedding Sets</h3>
+            <p>Head-to-toe bridal packages — nath, necklace, bangles, payal, and everything the bride needs.</p>
+            <span class="price-hint">Starting ₹3,50,000</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About / Legacy Section ===== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image" data-aos="fade-right" data-aos-delay="100">
+          <img src="https://images.unsplash.com/photo-1515562141589-67f0d937e39a?w=700&h=500&fit=crop" alt="Artisan crafting traditional gold jewellery in workshop" loading="lazy">
+          <div class="about-image-badge">
+            <h3>1965</h3>
+            <span>Established</span>
+          </div>
+        </div>
+        <div class="about-content" data-aos="fade-left" data-aos-delay="200">
+          <h2>Three Generations of <em>Golden Legacy</em></h2>
+          <p>
+            It started with a small workshop in the heart of Narayan Peth. Shri Raghunath Deshpande — our founder — believed that every piece of jewellery should carry a story. Not just gold and gemstones, but the prayers of a mother, the dreams of a bride, the pride of a family.
+          </p>
+          <p>
+            Sixty years later, his grandson still sits at the same workbench, shaping naths by hand the way Aajoba taught him. We've grown — yes — but the philosophy hasn't changed: honest gold, fair making charges, and the kind of personal attention that makes you feel like family, not a customer.
+          </p>
+          <p>
+            Every piece that leaves our store is BIS hallmarked, handchecked, and blessed. Because in Pune, your jeweller isn't just a shopkeeper — he's part of your family's milestones.
+          </p>
+          <div class="about-values">
+            <div class="about-value">
+              <div class="about-value-icon"><i class="fas fa-certificate"></i></div>
+              <div>
+                <h4>BIS 916 Hallmarked</h4>
+                <p>Every piece certified pure</p>
+              </div>
+            </div>
+            <div class="about-value">
+              <div class="about-value-icon"><i class="fas fa-hand-sparkles"></i></div>
+              <div>
+                <h4>Handcrafted</h4>
+                <p>By master karigars</p>
+              </div>
+            </div>
+            <div class="about-value">
+              <div class="about-value-icon"><i class="fas fa-exchange-alt"></i></div>
+              <div>
+                <h4>Old Gold Exchange</h4>
+                <p>Full value, no deductions</p>
+              </div>
+            </div>
+            <div class="about-value">
+              <div class="about-value-icon"><i class="fas fa-shield-alt"></i></div>
+              <div>
+                <h4>Lifetime Guarantee</h4>
+                <p>Free polishing & repairs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Testimonials ===== -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-divider">❈ ❈ ❈</div>
+      <h2 class="section-title" data-aos="fade-up">What Our Families Say</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Stories from real customers who trusted us with their most precious moments</p>
+
+      <div class="testimonials-grid">
+
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="testimonial-quote">"</div>
+          <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+          <p>
+            My sasubai bought her mangalsutra here in 1987. When it was my turn, there was no question — it had to be Shree Laxmi. The nath they made for me had everyone at the haldi ceremony in tears. Such fine work, and Deshpande kaka treated us like his own family.
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">SM</div>
+            <div>
+              <h4>Snehal Marathe</h4>
+              <span>Bride, Sadashiv Peth &bull; Dec 2024</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="testimonial-quote">"</div>
+          <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+          <p>
+            We compared gold rates at six shops in Narayan Peth and Laxmi Road. Shree Laxmi's making charges were the most transparent — no hidden costs, no games. Got a full vajratik set for my daughter's wedding. The quality is absolutely outstanding, worth every rupee.
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">RK</div>
+            <div>
+              <h4>Rajesh Kulkarni</h4>
+              <span>Father of the Bride, Kothrud &bull; Feb 2025</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="testimonial-quote">"</div>
+          <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+          <p>
+            I've been buying gold from them for Diwali every year since 2010. Last year I exchanged my mother's old bangles for a beautiful thushi — they gave full value, no fuss. That's the kind of trust you can't build with advertisements. You build it over decades.
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">AP</div>
+            <div>
+              <h4>Anjali Patwardhan</h4>
+              <span>Loyal Customer, Deccan &bull; Nov 2024</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Offers Banner ===== -->
+  <section class="offers" id="offers">
+    <div class="container">
+      <div class="offers-content">
+        <h2 data-aos="fade-up">✦ Akshaya Tritiya Special ✦</h2>
+        <p data-aos="fade-up" data-aos-delay="100">The most auspicious day to buy gold is coming. Don't miss our biggest offer of the year.</p>
+        <div class="offer-detail" data-aos="fade-up" data-aos-delay="200">
+          Flat 20% OFF on Making Charges + Free Gold Coin on Orders Above ₹1 Lakh
+        </div>
+        <div class="offers-features" data-aos="fade-up" data-aos-delay="300">
+          <div class="offers-feature"><i class="fas fa-check-circle"></i> 0% EMI Available</div>
+          <div class="offers-feature"><i class="fas fa-check-circle"></i> Old Gold Exchange</div>
+          <div class="offers-feature"><i class="fas fa-check-circle"></i> Free Lifetime Polish</div>
+          <div class="offers-feature"><i class="fas fa-check-circle"></i> BIS Hallmarked</div>
+        </div>
+        <a href="https://wa.me/919845001234?text=Namaskar!%20I'm%20interested%20in%20the%20Akshaya%20Tritiya%20offer.%20Please%20share%20details." class="btn btn-white" data-aos="fade-up" data-aos-delay="400" target="_blank">
+          <i class="fab fa-whatsapp"></i> Claim Offer on WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact + Map ===== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-divider">❈ ❈ ❈</div>
+      <h2 class="section-title" data-aos="fade-up">Visit Our Showroom</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Step in for chai, stay for gold. We'd love to meet you in person.</p>
+
+      <div class="contact-grid">
+        <div class="contact-info" data-aos="fade-right" data-aos-delay="200">
+
+          <div class="contact-card">
+            <div class="contact-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Showroom Address</h4>
+              <p>Shop No. 12, Near Vishrambaag Wada,<br>Narayan Peth, Pune — 411030<br>Maharashtra, India</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-icon"><i class="fas fa-phone-alt"></i></div>
+            <div>
+              <h4>Call Us</h4>
+              <p>
+                Landline: <a href="tel:+912024441234">020-2444-1234</a><br>
+                Mobile: <a href="tel:+919845001234">+91 98450 01234</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <h4>Store Hours</h4>
+              <p>
+                Mon–Sat: 10:00 AM — 8:30 PM<br>
+                Sunday: 10:00 AM — 2:00 PM<br>
+                <em style="color:var(--saffron); font-size:0.85rem;">Closed on major festivals — call ahead</em>
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-icon"><i class="fab fa-whatsapp"></i></div>
+            <div>
+              <h4>WhatsApp Catalogue</h4>
+              <p>
+                Browse our latest designs on WhatsApp.<br>
+                <a href="https://wa.me/919845001234?text=Namaskar!%20Please%20share%20your%20latest%20catalogue." target="_blank">Send us a message →</a>
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="contact-map" data-aos="fade-left" data-aos-delay="300">
+          <!-- Google Maps Embed Placeholder — Replace with actual embed -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.3!2d73.855!3d18.516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sNarayan+Peth%2C+Pune!5e0!3m2!1sen!2sin!4v1700000000000"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Shree Laxmi Jewellers — Narayan Peth, Pune on Google Maps">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>🪷 Shree Laxmi Jewellers</h3>
+          <p>
+            Pune's beloved destination for authentic Maharashtrian gold jewellery since 1965. Three generations of trust, craftsmanship, and family values — served with a cup of chai and a smile.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://wa.me/919845001234" aria-label="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Collections</h4>
+          <ul>
+            <li><a href="#collections">Maharashtrian Nath</a></li>
+            <li><a href="#collections">Tanmani Sets</a></li>
+            <li><a href="#collections">Kolhapuri Thushi</a></li>
+            <li><a href="#collections">Vajratik</a></li>
+            <li><a href="#collections">Mangalsutra</a></li>
+            <li><a href="#collections">Wedding Sets</a></li>
+            <li><a href="#collections">Bangles & Payal</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">Our Legacy</a></li>
+            <li><a href="#testimonials">Customer Reviews</a></li>
+            <li><a href="#offers">Current Offers</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#">Gold Rate Today</a></li>
+            <li><a href="#">EMI & Schemes</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter">
+          <h4>Gold Rate Alerts</h4>
+          <p>Get daily gold rates and exclusive offers straight to your inbox. No spam — just gold.</p>
+          <form class="footer-newsletter-form" onsubmit="event.preventDefault(); alert('Thank you! You will receive gold rate alerts soon.');">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Shree Laxmi Jewellers. All rights reserved. | Narayan Peth, Pune 411030 | BIS Licensed Jeweller | GST: 27XXXXX1234X1ZX</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== WhatsApp Floating CTA ===== -->
+  <a href="https://wa.me/919845001234?text=Namaskar!%20I%20want%20to%20know%20about%20your%20jewellery%20collections." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span>Chat with us</span>
+  </a>
+
+  <!-- AOS Animation Library -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 800,
+      easing: 'ease-out-cubic',
+      once: true,
+      offset: 80,
+      disable: 'mobile'
+    });
+
+    // Sticky Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    let lastScroll = 0;
+
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset;
+      if (currentScroll > 60) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+      lastScroll = currentScroll;
+    });
+
+    // Close mobile nav on link click
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('navLinks').classList.remove('active');
+      });
+    });
+
+    // Simple scroll reveal for elements without AOS
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealOnScroll = () => {
+      revealElements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          el.classList.add('active');
+        }
+      });
+    };
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
+  </script>
+
 </body>
 </html>
